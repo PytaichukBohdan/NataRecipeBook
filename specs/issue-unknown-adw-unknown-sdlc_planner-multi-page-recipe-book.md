@@ -211,7 +211,7 @@ Integrate all components into `app/page.tsx`, replace hardcoded recipe data with
 ## Validation Commands
 Execute every command to validate the feature works correctly with zero regressions.
 
-```bash
+\`\`\`bash
 # Validate TypeScript compilation
 npx tsc --noEmit
 
@@ -234,7 +234,7 @@ npm run dev
 # Test: Verify smooth animations
 # Test: Test navigation boundaries (first/last page wrapping)
 # Test: Verify Ukrainian text appears correctly throughout
-```
+\`\`\`
 
 ## Notes
 

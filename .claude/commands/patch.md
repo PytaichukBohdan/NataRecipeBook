@@ -44,7 +44,7 @@ Ignore all other files in the codebase.
 
 ## Plan Format
 
-```md
+\`\`\`md
 # Patch: <concise patch title>
 
 ## Metadata
@@ -85,7 +85,7 @@ Execute every command to validate the patch is complete with zero regressions.
 **Lines of code to change:** <estimate>
 **Risk level:** <low|medium|high>
 **Testing required:** <brief description>
-```
+\`\`\`
 
 ## Report
 

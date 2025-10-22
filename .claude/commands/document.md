@@ -53,7 +53,7 @@ documentation_screenshots_dir: $3 if provided, otherwise leave it blank
 
 ## Documentation Format
 
-```md
+\`\`\`md
 # <Feature Title>
 
 **ADW ID:** <adw_id>
@@ -110,19 +110,19 @@ documentation_screenshots_dir: $3 if provided, otherwise leave it blank
 ## Notes
 
 <Any additional context, limitations, or future considerations>
-```
+\`\`\`
 
 ## Conditional Docs Entry Format
 
 After creating the documentation, add this entry to `.claude/commands/conditional_docs.md`:
 
-```md
+\`\`\`md
 - app_docs/<your_documentation_file>.md
   - Conditions:
     - When working with <feature area>
     - When implementing <related functionality>
     - When troubleshooting <specific issues>
-```
+\`\`\`
 
 ## Report
 

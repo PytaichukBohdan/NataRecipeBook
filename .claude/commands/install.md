@@ -8,11 +8,11 @@
 - Check if .env.sample exists and note if user needs to create .env file
 
 ## Commands
-```bash
+\`\`\`bash
 # Install dependencies
 npm install
 # or if using pnpm: pnpm install
-```
+\`\`\`
 
 ## Report
 - Output the work you've just done in a concise bullet point list

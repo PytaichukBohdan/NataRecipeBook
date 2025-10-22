@@ -64,7 +64,7 @@ TEST_COMMAND_TIMEOUT: 5 minutes
 
 ### Output Structure
 
-```json
+\`\`\`json
 [
   {
     "test_name": "string",
@@ -75,11 +75,11 @@ TEST_COMMAND_TIMEOUT: 5 minutes
   },
   ...
 ]
-```
+\`\`\`
 
 ### Example Output
 
-```json
+\`\`\`json
 [
   {
     "test_name": "frontend_build",
@@ -95,4 +95,4 @@ TEST_COMMAND_TIMEOUT: 5 minutes
     "test_purpose": "Validates TypeScript type correctness without generating output files, catching type errors, missing imports, and incorrect function signatures"
   }
 ]
-```
+\`\`\`

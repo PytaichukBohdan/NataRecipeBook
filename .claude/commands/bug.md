@@ -43,7 +43,7 @@ Ignore all other files in the codebase.
 
 ## Plan Format
 
-```md
+\`\`\`md
 # Bug: <bug name>
 
 ## Metadata
@@ -89,7 +89,7 @@ Execute every command to validate the bug is fixed with zero regressions.
 
 ## Notes
 <optionally list any additional notes or context that are relevant to the bug that will be helpful to the developer>
-```
+\`\`\`
 
 ## Bug
 Extract the bug details from the `issue_json` variable (parse the JSON and use the title and body fields).

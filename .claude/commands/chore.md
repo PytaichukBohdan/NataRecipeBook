@@ -39,7 +39,7 @@ Ignore all other files in the codebase.
 
 ## Plan Format
 
-```md
+\`\`\`md
 # Chore: <chore name>
 
 ## Metadata
@@ -69,7 +69,7 @@ Execute every command to validate the chore is complete with zero regressions.
 
 ## Notes
 <optionally list any additional notes or context that are relevant to the chore that will be helpful to the developer>
-```
+\`\`\`
 
 ## Chore
 Extract the chore details from the `issue_json` variable (parse the JSON and use the title and body fields).

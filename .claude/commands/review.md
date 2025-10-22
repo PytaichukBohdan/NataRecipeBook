@@ -48,7 +48,7 @@ No special setup needed. Review is done by analyzing git diff and spec file.
 
 ### Output Structure
 
-```json
+\`\`\`json
 {
     success: "boolean - true if there are NO BLOCKING issues (can have skippable/tech_debt issues), false if there are BLOCKING issues",
     review_summary: "string - 2-4 sentences describing what was built and whether it matches the spec. Written as if reporting during a standup meeting. Example: 'The recipe display feature has been implemented with responsive card layout and search functionality. The implementation matches the spec requirements and follows Next.js best practices. Minor styling improvements could be made but all core functionality is working as specified.'",

@@ -42,7 +42,7 @@ Ignore all other files in the codebase.
 
 ## Plan Format
 
-```md
+\`\`\`md
 # Feature: <feature name>
 
 ## Metadata
@@ -107,7 +107,7 @@ Execute every command to validate the feature works correctly with zero regressi
 
 ## Notes
 <optionally list any additional notes, future considerations, or context that are relevant to the feature that will be helpful to the developer>
-```
+\`\`\`
 
 ## Feature
 Extract the feature details from the `issue_json` variable (parse the JSON and use the title and body fields).

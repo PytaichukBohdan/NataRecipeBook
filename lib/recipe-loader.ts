@@ -1,5 +1,5 @@
-import type { RecipeData } from '@/types/recipe'
-import recipesData from '@/public/recipes.json'
+import type { RecipeData } from "@/types/recipe"
+import recipesData from "@/data/recipes.json"
 
 /**
  * Loads and validates recipe data from recipes.json
@@ -10,7 +10,7 @@ export function loadRecipes(): RecipeData {
   try {
     // Validate that we have the expected structure
     if (!recipesData || !recipesData.categories || !Array.isArray(recipesData.categories)) {
-      throw new Error('Invalid recipes.json structure: missing categories array')
+      throw new Error("Invalid recipes.json structure: missing categories array")
     }
 
     // Validate each category
@@ -22,7 +22,7 @@ export function loadRecipes(): RecipeData {
 
     return recipesData as RecipeData
   } catch (error) {
-    console.error('Error loading recipes:', error)
+    console.error("Error loading recipes:", error)
     throw error
   }
 }
@@ -34,18 +34,18 @@ export function loadRecipes(): RecipeData {
  * @returns Normalized path for Next.js Image component
  */
 export function normalizeImagePath(imagePath: string): string {
-  if (!imagePath) return '/placeholder.svg'
+  if (!imagePath) return "/placeholder.svg"
 
   // Remove 'public/' prefix if present
-  if (imagePath.startsWith('public/')) {
-    return '/' + imagePath.substring(7)
+  if (imagePath.startsWith("public/")) {
+    return "/" + imagePath.substring(7)
   }
 
   // If already starts with '/', return as is
-  if (imagePath.startsWith('/')) {
+  if (imagePath.startsWith("/")) {
     return imagePath
   }
 
   // Otherwise add '/' prefix
-  return '/' + imagePath
+  return "/" + imagePath
 }
