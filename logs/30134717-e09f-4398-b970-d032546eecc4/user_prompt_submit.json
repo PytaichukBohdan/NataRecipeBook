@@ -14,5 +14,29 @@
     "permission_mode": "bypassPermissions",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "/commit "
+  },
+  {
+    "session_id": "30134717-e09f-4398-b970-d032546eecc4",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/30134717-e09f-4398-b970-d032546eecc4.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push to main"
+  },
+  {
+    "session_id": "30134717-e09f-4398-b970-d032546eecc4",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/30134717-e09f-4398-b970-d032546eecc4.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Review & analyze current page structure (of how we show the recipe)\\\nANything you think can be improved? To make it better looking?\\\n\\\nFor example - photos are duplicate - you don't need to see 2 photos"
+  },
+  {
+    "session_id": "30134717-e09f-4398-b970-d032546eecc4",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/30134717-e09f-4398-b970-d032546eecc4.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/feature      \u2502 Recipe Page Visual Improvements                                        \u2502\n     \u2502                                                                        \u2502\n     \u2502 Changes to RecipeCard Component:                                       \u2502\n     \u2502                                                                        \u2502\n     \u2502 1. Remove Duplicate Image \u2705                                            \u2502\n     \u2502                                                                        \u2502\n     \u2502 - Keep only the hero section image                                     \u2502\n     \u2502 - Remove lines 105-118 (duplicate image in details section)            \u2502\n     \u2502                                                                        \u2502\n     \u2502 2. Remove Generic Tips Section \u2705                                       \u2502\n     \u2502                                                                        \u2502\n     \u2502 - Remove lines 148-160 (generic placeholder tips)                      \u2502\n     \u2502 - Only show tips section if we have recipe-specific tips               \u2502\n     \u2502                                                                        \u2502\n     \u2502 3. Consolidate Details Section Layout                                  \u2502\n     \u2502                                                                        \u2502\n     \u2502 - Remove min-h-screen from details section to make it more compact     \u2502\n     \u2502 - Adjust spacing to be more efficient                                  \u2502\n     \u2502 - Better balance between ingredients and instructions columns          \u2502\n     \u2502                                                                        \u2502\n     \u2502 4. Add Quick Stats to Hero                                             \u2502\n     \u2502                                                                        \u2502\n     \u2502 - Add ingredient count below title                                     \u2502\n     \u2502 - Add instruction indicator if available                               \u2502\n     \u2502 - Visual badges for quick scanning                                     \u2502\n     \u2502                                                                        \u2502\n     \u2502 5. Improve Ingredient Display                                          \u2502\n     \u2502                                                                        \u2502\n     \u2502 - Parse and visually separate ingredient groups (text ending with \":\") \u2502\n     \u2502 - Better visual hierarchy                                              \u2502\n     \u2502 - Keep numbered list but with sections                                 \u2502\n     \u2502                                                                        \u2502\n     \u2502 6. Better Empty Instructions State                                     \u2502\n     \u2502                                                                        \u2502\n     \u2502 - More elegant message when no instructions                            \u2502\n     \u2502 - Highlight that it's a \"quick recipe\" or \"freestyle recipe\"           \u2502\n     \u2502                                                                        \u2502\n     \u2502 Files to Modify:                                                       \u2502\n     \u2502                                                                        \u2502\n     \u2502 - components/RecipeCard.tsx - Main changes                             \u2502\n     \u2502 - app/globals.css - May need minor style adjustments                   \u2502\n     \u2502                                                                        \u2502\n     \u2502 Expected Result:                                                       \u2502\n     \u2502                                                                        \u2502\n     \u2502 - Cleaner, less repetitive layout                                      \u2502\n     \u2502 - Better use of screen space                                           \u2502\n     \u2502 - More informative hero section                                        \u2502\n     \u2502 - Professional appearance without generic filler content  "
   }
 ]

@@ -1,0 +1,562 @@
+[
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/specs/issue-unknown-adw-unknown-sdlc_planner-recipe-page-visual-improvements.md"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Read current RecipeCard.tsx implementation",
+          "status": "in_progress",
+          "activeForm": "Reading current RecipeCard.tsx implementation"
+        },
+        {
+          "content": "Create helper functions for ingredient parsing and stats",
+          "status": "pending",
+          "activeForm": "Creating helper functions for ingredient parsing and stats"
+        },
+        {
+          "content": "Remove duplicate image and generic tips section",
+          "status": "pending",
+          "activeForm": "Removing duplicate image and generic tips section"
+        },
+        {
+          "content": "Add quick stats badges to hero section",
+          "status": "pending",
+          "activeForm": "Adding quick stats badges to hero section"
+        },
+        {
+          "content": "Implement ingredient section grouping",
+          "status": "pending",
+          "activeForm": "Implementing ingredient section grouping"
+        },
+        {
+          "content": "Improve empty instructions state",
+          "status": "pending",
+          "activeForm": "Improving empty instructions state"
+        },
+        {
+          "content": "Add CSS styles for new elements",
+          "status": "pending",
+          "activeForm": "Adding CSS styles for new elements"
+        },
+        {
+          "content": "Validate TypeScript compilation and build",
+          "status": "pending",
+          "activeForm": "Validating TypeScript compilation and build"
+        },
+        {
+          "content": "Test in development mode",
+          "status": "pending",
+          "activeForm": "Testing in development mode"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/types/recipe.ts"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Read current RecipeCard.tsx implementation",
+          "status": "completed",
+          "activeForm": "Reading current RecipeCard.tsx implementation"
+        },
+        {
+          "content": "Create helper functions for ingredient parsing and stats",
+          "status": "in_progress",
+          "activeForm": "Creating helper functions for ingredient parsing and stats"
+        },
+        {
+          "content": "Remove duplicate image and generic tips section",
+          "status": "pending",
+          "activeForm": "Removing duplicate image and generic tips section"
+        },
+        {
+          "content": "Add quick stats badges to hero section",
+          "status": "pending",
+          "activeForm": "Adding quick stats badges to hero section"
+        },
+        {
+          "content": "Implement ingredient section grouping",
+          "status": "pending",
+          "activeForm": "Implementing ingredient section grouping"
+        },
+        {
+          "content": "Improve empty instructions state",
+          "status": "pending",
+          "activeForm": "Improving empty instructions state"
+        },
+        {
+          "content": "Add CSS styles for new elements",
+          "status": "pending",
+          "activeForm": "Adding CSS styles for new elements"
+        },
+        {
+          "content": "Validate TypeScript compilation and build",
+          "status": "pending",
+          "activeForm": "Validating TypeScript compilation and build"
+        },
+        {
+          "content": "Test in development mode",
+          "status": "pending",
+          "activeForm": "Testing in development mode"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "import { memo } from 'react'\nimport Image from 'next/image'\nimport type { Recipe } from '@/types/recipe'\nimport { normalizeImagePath } from '@/lib/recipe-loader'\n\ninterface RecipeCardProps {\n  recipe: Recipe\n  categoryNameUk: string\n  categoryId: string\n}\n\nfunction RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardProps) {\n  const imagePath = normalizeImagePath(recipe.image_path)\n\n  // Determine category display name and color\n  const getCategoryInfo = () => {\n    switch (categoryId) {\n      case 'breakfast':\n        return { name: '\u0421\u043d\u0456\u0434\u0430\u043d\u043a\u0438', class: 'category-daily' }\n      case 'lunch_dinner':\n        return { name: '\u041e\u0431\u0456\u0434/\u0412\u0435\u0447\u0435\u0440\u044f', class: 'category-occasional' }\n      case 'desserts':\n        return { name: '\u0414\u0435\u0441\u0435\u0440\u0442\u0438', class: 'category-special' }\n      default:\n        return { name: categoryNameUk, class: 'category-daily' }\n    }\n  }\n\n  const categoryInfo = getCategoryInfo()",
+      "new_string": "import { memo, useMemo } from 'react'\nimport Image from 'next/image'\nimport type { Recipe } from '@/types/recipe'\nimport { normalizeImagePath } from '@/lib/recipe-loader'\n\ninterface RecipeCardProps {\n  recipe: Recipe\n  categoryNameUk: string\n  categoryId: string\n}\n\n// Helper interface for ingredient sections\ninterface IngredientSection {\n  header?: string\n  items: string[]\n}\n\n// Helper function to parse ingredient sections\nfunction parseIngredientSections(ingredients: string[]): IngredientSection[] {\n  const sections: IngredientSection[] = []\n  let currentSection: IngredientSection = { items: [] }\n\n  for (const ingredient of ingredients) {\n    // Check if this is a section header (ends with \":\")\n    if (ingredient.trim().endsWith(':')) {\n      // Save the current section if it has items\n      if (currentSection.items.length > 0) {\n        sections.push(currentSection)\n      }\n      // Start a new section with this header\n      currentSection = { header: ingredient, items: [] }\n    } else {\n      // Add to current section\n      currentSection.items.push(ingredient)\n    }\n  }\n\n  // Add the final section if it has items\n  if (currentSection.items.length > 0) {\n    sections.push(currentSection)\n  }\n\n  return sections\n}\n\n// Helper function to get recipe stats\nfunction getRecipeStats(recipe: Recipe) {\n  const ingredientCount = recipe.ingredients.length\n  const hasInstructions = recipe.how_to_cook.length > 0\n\n  return {\n    ingredientCount,\n    hasInstructions,\n    ingredientLabel: `${ingredientCount} ${ingredientCount === 1 ? '\u0456\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442' : ingredientCount < 5 ? '\u0456\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438' : '\u0456\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0456\u0432'}`,\n    instructionLabel: hasInstructions ? '\u041f\u043e\u043a\u0440\u043e\u043a\u043e\u0432\u0430 \u0456\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u044f' : '\u0428\u0432\u0438\u0434\u043a\u0438\u0439 \u0440\u0435\u0446\u0435\u043f\u0442'\n  }\n}\n\nfunction RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardProps) {\n  const imagePath = normalizeImagePath(recipe.image_path)\n\n  // Determine category display name and color\n  const getCategoryInfo = () => {\n    switch (categoryId) {\n      case 'breakfast':\n        return { name: '\u0421\u043d\u0456\u0434\u0430\u043d\u043a\u0438', class: 'category-daily' }\n      case 'lunch_dinner':\n        return { name: '\u041e\u0431\u0456\u0434/\u0412\u0435\u0447\u0435\u0440\u044f', class: 'category-occasional' }\n      case 'desserts':\n        return { name: '\u0414\u0435\u0441\u0435\u0440\u0442\u0438', class: 'category-special' }\n      default:\n        return { name: categoryNameUk, class: 'category-daily' }\n    }\n  }\n\n  const categoryInfo = getCategoryInfo()\n\n  // Parse ingredient sections (memoized for performance)\n  const ingredientSections = useMemo(() => parseIngredientSections(recipe.ingredients), [recipe.ingredients])\n\n  // Get recipe stats\n  const stats = getRecipeStats(recipe)"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "          <div className=\"mb-12\">\n            <h1 className=\"text-5xl md:text-6xl font-serif text-foreground mb-4 text-balance\">\n              {recipe.title}\n            </h1>\n            <div className=\"recipe-divider w-24 mx-auto mb-6\"></div>\n          </div>",
+      "new_string": "          <div className=\"mb-12\">\n            <h1 className=\"text-5xl md:text-6xl font-serif text-foreground mb-4 text-balance\">\n              {recipe.title}\n            </h1>\n            <div className=\"recipe-divider w-24 mx-auto mb-6\"></div>\n\n            {/* Quick Stats Badges */}\n            <div className=\"flex flex-wrap items-center justify-center gap-3 mt-6\">\n              <div className=\"recipe-stat-badge\">\n                <span className=\"stat-icon\">\ud83e\udd58</span>\n                <span>{stats.ingredientLabel}</span>\n              </div>\n              <div className={`recipe-stat-badge ${stats.hasInstructions ? 'stat-badge-success' : 'stat-badge-info'}`}>\n                <span className=\"stat-icon\">{stats.hasInstructions ? '\ud83d\udcd6' : '\u26a1'}</span>\n                <span>{stats.instructionLabel}</span>\n              </div>\n            </div>\n          </div>"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "      {/* Details Section */}\n      <div className=\"min-h-screen bg-background px-8 py-16\">\n        <div className=\"max-w-6xl mx-auto\">\n          <div className=\"text-center mb-16\">\n            <h3 className=\"text-4xl font-serif text-foreground mb-4\">\u0420\u0435\u0446\u0435\u043f\u0442 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f</h3>\n            <div className=\"recipe-divider w-16 mx-auto\"></div>\n          </div>\n\n          <div className=\"grid lg:grid-cols-2 gap-16\">\n            {/* Left Column - Ingredients */}\n            <div className=\"space-y-12\">\n              <section>\n                <h4 className=\"text-2xl font-serif text-foreground mb-8\">\u0406\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438</h4>\n\n                {recipe.ingredients.length > 0 ? (\n                  <div className=\"space-y-4\">\n                    {recipe.ingredients.map((ingredient, index) => (\n                      <div\n                        key={index}\n                        className=\"flex items-start py-3 border-b border-border\"\n                      >\n                        <span className=\"flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full bg-muted text-muted-foreground text-xs mr-3 mt-0.5\">\n                          {index + 1}\n                        </span>\n                        <span className=\"text-foreground flex-1\">{ingredient}</span>\n                      </div>\n                    ))}\n                  </div>\n                ) : (\n                  <p className=\"text-muted-foreground italic\">\u0406\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438 \u043d\u0435 \u0432\u043a\u0430\u0437\u0430\u043d\u0456</p>\n                )}\n              </section>\n\n              {/* Image in details section */}\n              <section>\n                <div className=\"relative w-full h-80 rounded-lg overflow-hidden shadow-lg\">\n                  <Image\n                    src={imagePath}\n                    alt={`${recipe.title} - \u0434\u0435\u0442\u0430\u043b\u0456`}\n                    fill\n                    className=\"object-cover\"\n                    sizes=\"(max-width: 768px) 100vw, 50vw\"\n                    loading=\"lazy\"\n                    quality={85}\n                  />\n                </div>\n              </section>\n            </div>",
+      "new_string": "      {/* Details Section */}\n      <div className=\"bg-background px-8 py-16\">\n        <div className=\"max-w-6xl mx-auto\">\n          <div className=\"text-center mb-16\">\n            <h3 className=\"text-4xl font-serif text-foreground mb-4\">\u0420\u0435\u0446\u0435\u043f\u0442 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f</h3>\n            <div className=\"recipe-divider w-16 mx-auto\"></div>\n          </div>\n\n          <div className=\"grid lg:grid-cols-2 gap-16\">\n            {/* Left Column - Ingredients */}\n            <div>\n              <section>\n                <h4 className=\"text-2xl font-serif text-foreground mb-8\">\u0406\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438</h4>\n\n                {recipe.ingredients.length > 0 ? (\n                  <div className=\"space-y-6\">\n                    {ingredientSections.map((section, sectionIndex) => {\n                      // Calculate starting number for this section\n                      const startNumber = ingredientSections\n                        .slice(0, sectionIndex)\n                        .reduce((sum, s) => sum + s.items.length, 0) + 1\n\n                      return (\n                        <div key={sectionIndex}>\n                          {/* Section Header */}\n                          {section.header && (\n                            <div className=\"ingredient-section-header mb-3\">\n                              {section.header}\n                            </div>\n                          )}\n\n                          {/* Section Items */}\n                          <div className=\"space-y-3\">\n                            {section.items.map((ingredient, itemIndex) => (\n                              <div\n                                key={itemIndex}\n                                className=\"flex items-start py-3 border-b border-border\"\n                              >\n                                <span className=\"flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full bg-muted text-muted-foreground text-xs mr-3 mt-0.5\">\n                                  {startNumber + itemIndex}\n                                </span>\n                                <span className=\"text-foreground flex-1\">{ingredient}</span>\n                              </div>\n                            ))}\n                          </div>\n                        </div>\n                      )\n                    })}\n                  </div>\n                ) : (\n                  <p className=\"text-muted-foreground italic\">\u0406\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438 \u043d\u0435 \u0432\u043a\u0430\u0437\u0430\u043d\u0456</p>\n                )}\n              </section>\n            </div>"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "            {/* Right Column - Instructions */}\n            <div className=\"space-y-12\">\n              <section>\n                <h4 className=\"text-2xl font-serif text-foreground mb-8\">\u0421\u043f\u043e\u0441\u0456\u0431 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f</h4>\n\n                {recipe.how_to_cook.length > 0 ? (\n                  <div className=\"space-y-6\">\n                    {recipe.how_to_cook.map((instruction, index) => (\n                      <div key={index} className=\"flex gap-4\">\n                        <div className=\"flex-shrink-0\">\n                          <span className=\"inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground font-mono text-sm\">\n                            {index + 1}\n                          </span>\n                        </div>\n                        <p className=\"text-muted-foreground leading-relaxed pt-1\">{instruction}</p>\n                      </div>\n                    ))}\n                  </div>\n                ) : (\n                  <div className=\"p-6 bg-muted rounded-lg\">\n                    <p className=\"text-muted-foreground italic text-center\">\n                      \u0406\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u0457 \u0437 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u043d\u0435 \u0432\u043a\u0430\u0437\u0430\u043d\u0456. \u041d\u0430\u0441\u043e\u043b\u043e\u0434\u0436\u0443\u0439\u0442\u0435\u0441\u044c \u0441\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044f\u043c \u0446\u0456\u0454\u0457 \u0441\u0442\u0440\u0430\u0432\u0438 \u043d\u0430 \u0441\u0432\u0456\u0439 \u0440\u043e\u0437\u0441\u0443\u0434!\n                    </p>\n                  </div>\n                )}\n              </section>\n\n              {/* Tips section - only show for recipes with instructions */}\n              {recipe.how_to_cook.length > 0 && (\n                <section>\n                  <div className=\"p-6 bg-muted rounded-lg\">\n                    <h5 className=\"font-serif text-lg text-foreground mb-4\">\u041f\u043e\u0440\u0430\u0434\u0438</h5>\n                    <div className=\"space-y-2 text-sm text-muted-foreground\">\n                      <p>\u2022 \u0412\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0439\u0442\u0435 \u0441\u0432\u0456\u0436\u0456 \u0456\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438 \u0434\u043b\u044f \u043a\u0440\u0430\u0449\u043e\u0433\u043e \u0441\u043c\u0430\u043a\u0443</p>\n                      <p>\u2022 \u041c\u043e\u0436\u043d\u0430 \u0430\u0434\u0430\u043f\u0442\u0443\u0432\u0430\u0442\u0438 \u0440\u0435\u0446\u0435\u043f\u0442 \u043f\u0456\u0434 \u0441\u0432\u043e\u0457 \u0443\u043f\u043e\u0434\u043e\u0431\u0430\u043d\u043d\u044f</p>\n                      <p>\u2022 \u0417\u0431\u0435\u0440\u0456\u0433\u0430\u0439\u0442\u0435 \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u0430\u043d\u0443 \u0441\u0442\u0440\u0430\u0432\u0443 \u043d\u0430\u043b\u0435\u0436\u043d\u0438\u043c \u0447\u0438\u043d\u043e\u043c</p>\n                    </div>\n                  </div>\n                </section>\n              )}\n            </div>\n          </div>\n        </div>\n      </div>",
+      "new_string": "            {/* Right Column - Instructions */}\n            <div>\n              <section>\n                <h4 className=\"text-2xl font-serif text-foreground mb-8\">\u0421\u043f\u043e\u0441\u0456\u0431 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f</h4>\n\n                {recipe.how_to_cook.length > 0 ? (\n                  <div className=\"space-y-6\">\n                    {recipe.how_to_cook.map((instruction, index) => (\n                      <div key={index} className=\"flex gap-4\">\n                        <div className=\"flex-shrink-0\">\n                          <span className=\"inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent text-accent-foreground font-mono text-sm\">\n                            {index + 1}\n                          </span>\n                        </div>\n                        <p className=\"text-muted-foreground leading-relaxed pt-1\">{instruction}</p>\n                      </div>\n                    ))}\n                  </div>\n                ) : (\n                  <div className=\"empty-instructions-message\">\n                    <div className=\"empty-message-icon\">\u26a1</div>\n                    <h5 className=\"empty-message-title\">\u0428\u0432\u0438\u0434\u043a\u0438\u0439 \u0440\u0435\u0446\u0435\u043f\u0442</h5>\n                    <p className=\"empty-message-text\">\n                      \u0426\u0435 \u0448\u0432\u0438\u0434\u043a\u0438\u0439 \u0440\u0435\u0446\u0435\u043f\u0442 \u0431\u0435\u0437 \u043f\u043e\u043a\u0440\u043e\u043a\u043e\u0432\u043e\u0457 \u0456\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0456\u0457. \u041d\u0430\u0441\u043e\u043b\u043e\u0434\u0436\u0443\u0439\u0442\u0435\u0441\u044c \u0442\u0432\u043e\u0440\u0447\u0438\u043c \u043f\u0440\u043e\u0446\u0435\u0441\u043e\u043c \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f!\n                    </p>\n                  </div>\n                )}\n              </section>\n            </div>\n          </div>\n        </div>\n      </div>"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Read current RecipeCard.tsx implementation",
+          "status": "completed",
+          "activeForm": "Reading current RecipeCard.tsx implementation"
+        },
+        {
+          "content": "Create helper functions for ingredient parsing and stats",
+          "status": "completed",
+          "activeForm": "Creating helper functions for ingredient parsing and stats"
+        },
+        {
+          "content": "Remove duplicate image and generic tips section",
+          "status": "completed",
+          "activeForm": "Removing duplicate image and generic tips section"
+        },
+        {
+          "content": "Add quick stats badges to hero section",
+          "status": "completed",
+          "activeForm": "Adding quick stats badges to hero section"
+        },
+        {
+          "content": "Implement ingredient section grouping",
+          "status": "completed",
+          "activeForm": "Implementing ingredient section grouping"
+        },
+        {
+          "content": "Improve empty instructions state",
+          "status": "completed",
+          "activeForm": "Improving empty instructions state"
+        },
+        {
+          "content": "Add CSS styles for new elements",
+          "status": "in_progress",
+          "activeForm": "Adding CSS styles for new elements"
+        },
+        {
+          "content": "Validate TypeScript compilation and build",
+          "status": "pending",
+          "activeForm": "Validating TypeScript compilation and build"
+        },
+        {
+          "content": "Test in development mode",
+          "status": "pending",
+          "activeForm": "Testing in development mode"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": "/* Adding elegant fade animations for recipe transitions */\n.recipe-content {\n  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;\n  opacity: 1;\n  transform: translateY(0);\n}\n\n.recipe-content.fade-out {\n  opacity: 0;\n  transform: translateY(-10px);\n}\n\n.recipe-content.fade-in {\n  opacity: 1;\n  transform: translateY(0);\n}",
+      "new_string": "/* Adding elegant fade animations for recipe transitions */\n.recipe-content {\n  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;\n  opacity: 1;\n  transform: translateY(0);\n}\n\n.recipe-content.fade-out {\n  opacity: 0;\n  transform: translateY(-10px);\n}\n\n.recipe-content.fade-in {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n/* Recipe stat badges for quick-scan information */\n.recipe-stat-badge {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 1rem;\n  border-radius: 1.5rem;\n  background: oklch(0.98 0 0);\n  border: 1px solid oklch(0.92 0 0);\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: var(--color-foreground);\n  transition: all 0.2s ease;\n}\n\n.recipe-stat-badge .stat-icon {\n  font-size: 1rem;\n  line-height: 1;\n}\n\n.recipe-stat-badge:hover {\n  background: oklch(0.96 0 0);\n  transform: translateY(-1px);\n  box-shadow: 0 2px 8px oklch(0 0 0 / 0.1);\n}\n\n.stat-badge-success {\n  background: oklch(0.95 0.05 145);\n  border-color: oklch(0.6 0.15 145);\n  color: oklch(0.3 0.1 145);\n}\n\n.stat-badge-info {\n  background: oklch(0.95 0.05 240);\n  border-color: oklch(0.6 0.15 240);\n  color: oklch(0.3 0.1 240);\n}\n\n/* Ingredient section headers */\n.ingredient-section-header {\n  font-size: 1.125rem;\n  font-weight: 600;\n  font-family: var(--font-serif);\n  color: var(--color-foreground);\n  padding: 0.75rem 1rem;\n  background: oklch(0.98 0 0);\n  border-left: 3px solid var(--color-primary);\n  border-radius: 0.375rem;\n  margin-top: 0.5rem;\n}\n\n/* Empty instructions message styling */\n.empty-instructions-message {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 3rem 2rem;\n  border-radius: 1rem;\n  background: linear-gradient(135deg, oklch(0.98 0 0) 0%, oklch(0.96 0 0) 100%);\n  border: 2px dashed oklch(0.88 0 0);\n}\n\n.empty-message-icon {\n  font-size: 3rem;\n  line-height: 1;\n  margin-bottom: 1rem;\n  opacity: 0.8;\n}\n\n.empty-message-title {\n  font-size: 1.5rem;\n  font-weight: 600;\n  font-family: var(--font-serif);\n  color: var(--color-foreground);\n  margin-bottom: 0.75rem;\n}\n\n.empty-message-text {\n  font-size: 1rem;\n  color: var(--color-muted-foreground);\n  line-height: 1.6;\n  max-width: 28rem;\n}"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Read current RecipeCard.tsx implementation",
+          "status": "completed",
+          "activeForm": "Reading current RecipeCard.tsx implementation"
+        },
+        {
+          "content": "Create helper functions for ingredient parsing and stats",
+          "status": "completed",
+          "activeForm": "Creating helper functions for ingredient parsing and stats"
+        },
+        {
+          "content": "Remove duplicate image and generic tips section",
+          "status": "completed",
+          "activeForm": "Removing duplicate image and generic tips section"
+        },
+        {
+          "content": "Add quick stats badges to hero section",
+          "status": "completed",
+          "activeForm": "Adding quick stats badges to hero section"
+        },
+        {
+          "content": "Implement ingredient section grouping",
+          "status": "completed",
+          "activeForm": "Implementing ingredient section grouping"
+        },
+        {
+          "content": "Improve empty instructions state",
+          "status": "completed",
+          "activeForm": "Improving empty instructions state"
+        },
+        {
+          "content": "Add CSS styles for new elements",
+          "status": "completed",
+          "activeForm": "Adding CSS styles for new elements"
+        },
+        {
+          "content": "Validate TypeScript compilation and build",
+          "status": "in_progress",
+          "activeForm": "Validating TypeScript compilation and build"
+        },
+        {
+          "content": "Test in development mode",
+          "status": "pending",
+          "activeForm": "Testing in development mode"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npx --package=typescript tsc --noEmit",
+      "description": "Validate TypeScript compilation"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run build",
+      "timeout": 120000,
+      "description": "Build the application"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Read current RecipeCard.tsx implementation",
+          "status": "completed",
+          "activeForm": "Reading current RecipeCard.tsx implementation"
+        },
+        {
+          "content": "Create helper functions for ingredient parsing and stats",
+          "status": "completed",
+          "activeForm": "Creating helper functions for ingredient parsing and stats"
+        },
+        {
+          "content": "Remove duplicate image and generic tips section",
+          "status": "completed",
+          "activeForm": "Removing duplicate image and generic tips section"
+        },
+        {
+          "content": "Add quick stats badges to hero section",
+          "status": "completed",
+          "activeForm": "Adding quick stats badges to hero section"
+        },
+        {
+          "content": "Implement ingredient section grouping",
+          "status": "completed",
+          "activeForm": "Implementing ingredient section grouping"
+        },
+        {
+          "content": "Improve empty instructions state",
+          "status": "completed",
+          "activeForm": "Improving empty instructions state"
+        },
+        {
+          "content": "Add CSS styles for new elements",
+          "status": "completed",
+          "activeForm": "Adding CSS styles for new elements"
+        },
+        {
+          "content": "Validate TypeScript compilation and build",
+          "status": "completed",
+          "activeForm": "Validating TypeScript compilation and build"
+        },
+        {
+          "content": "Test in development mode",
+          "status": "in_progress",
+          "activeForm": "Testing in development mode"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --stat",
+      "description": "Show files and lines changed"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run dev",
+      "timeout": 300000,
+      "description": "Start development server",
+      "run_in_background": true
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sleep 5",
+      "description": "Wait for server to start"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "419874"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Read current RecipeCard.tsx implementation",
+          "status": "completed",
+          "activeForm": "Reading current RecipeCard.tsx implementation"
+        },
+        {
+          "content": "Create helper functions for ingredient parsing and stats",
+          "status": "completed",
+          "activeForm": "Creating helper functions for ingredient parsing and stats"
+        },
+        {
+          "content": "Remove duplicate image and generic tips section",
+          "status": "completed",
+          "activeForm": "Removing duplicate image and generic tips section"
+        },
+        {
+          "content": "Add quick stats badges to hero section",
+          "status": "completed",
+          "activeForm": "Adding quick stats badges to hero section"
+        },
+        {
+          "content": "Implement ingredient section grouping",
+          "status": "completed",
+          "activeForm": "Implementing ingredient section grouping"
+        },
+        {
+          "content": "Improve empty instructions state",
+          "status": "completed",
+          "activeForm": "Improving empty instructions state"
+        },
+        {
+          "content": "Add CSS styles for new elements",
+          "status": "completed",
+          "activeForm": "Adding CSS styles for new elements"
+        },
+        {
+          "content": "Validate TypeScript compilation and build",
+          "status": "completed",
+          "activeForm": "Validating TypeScript compilation and build"
+        },
+        {
+          "content": "Test in development mode",
+          "status": "completed",
+          "activeForm": "Testing in development mode"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "KillShell",
+    "tool_input": {
+      "shell_id": "419874"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff HEAD",
+      "description": "Show changes to be committed"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git add -A",
+      "description": "Stage all changes"
+    }
+  }
+]

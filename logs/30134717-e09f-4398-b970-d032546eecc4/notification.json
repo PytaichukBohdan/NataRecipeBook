@@ -5,5 +5,19 @@
     "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
     "hook_event_name": "Notification",
     "message": "Claude is waiting for your input"
+  },
+  {
+    "session_id": "30134717-e09f-4398-b970-d032546eecc4",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/30134717-e09f-4398-b970-d032546eecc4.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan"
+  },
+  {
+    "session_id": "30134717-e09f-4398-b970-d032546eecc4",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/30134717-e09f-4398-b970-d032546eecc4.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
   }
 ]

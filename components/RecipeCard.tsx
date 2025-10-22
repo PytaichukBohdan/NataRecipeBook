@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo, useMemo } from 'react'
 import Image from 'next/image'
 import type { Recipe } from '@/types/recipe'
 import { normalizeImagePath } from '@/lib/recipe-loader'
@@ -7,6 +7,53 @@ interface RecipeCardProps {
   recipe: Recipe
   categoryNameUk: string
   categoryId: string
+}
+
+// Helper interface for ingredient sections
+interface IngredientSection {
+  header?: string
+  items: string[]
+}
+
+// Helper function to parse ingredient sections
+function parseIngredientSections(ingredients: string[]): IngredientSection[] {
+  const sections: IngredientSection[] = []
+  let currentSection: IngredientSection = { items: [] }
+
+  for (const ingredient of ingredients) {
+    // Check if this is a section header (ends with ":")
+    if (ingredient.trim().endsWith(':')) {
+      // Save the current section if it has items
+      if (currentSection.items.length > 0) {
+        sections.push(currentSection)
+      }
+      // Start a new section with this header
+      currentSection = { header: ingredient, items: [] }
+    } else {
+      // Add to current section
+      currentSection.items.push(ingredient)
+    }
+  }
+
+  // Add the final section if it has items
+  if (currentSection.items.length > 0) {
+    sections.push(currentSection)
+  }
+
+  return sections
+}
+
+// Helper function to get recipe stats
+function getRecipeStats(recipe: Recipe) {
+  const ingredientCount = recipe.ingredients.length
+  const hasInstructions = recipe.how_to_cook.length > 0
+
+  return {
+    ingredientCount,
+    hasInstructions,
+    ingredientLabel: `${ingredientCount} ${ingredientCount === 1 ? 'інгредієнт' : ingredientCount < 5 ? 'інгредієнти' : 'інгредієнтів'}`,
+    instructionLabel: hasInstructions ? 'Покрокова інструкція' : 'Швидкий рецепт'
+  }
 }
 
 function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardProps) {
@@ -28,6 +75,12 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
 
   const categoryInfo = getCategoryInfo()
 
+  // Parse ingredient sections (memoized for performance)
+  const ingredientSections = useMemo(() => parseIngredientSections(recipe.ingredients), [recipe.ingredients])
+
+  // Get recipe stats
+  const stats = getRecipeStats(recipe)
+
   return (
     <>
       {/* Hero Section */}
@@ -44,6 +97,18 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
               {recipe.title}
             </h1>
             <div className="recipe-divider w-24 mx-auto mb-6"></div>
+
+            {/* Quick Stats Badges */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-6">
+              <div className="recipe-stat-badge">
+                <span className="stat-icon">🥘</span>
+                <span>{stats.ingredientLabel}</span>
+              </div>
+              <div className={`recipe-stat-badge ${stats.hasInstructions ? 'stat-badge-success' : 'stat-badge-info'}`}>
+                <span className="stat-icon">{stats.hasInstructions ? '📖' : '⚡'}</span>
+                <span>{stats.instructionLabel}</span>
+              </div>
+            </div>
           </div>
 
           <div className="mb-12">
@@ -70,7 +135,7 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
       </div>
 
       {/* Details Section */}
-      <div className="min-h-screen bg-background px-8 py-16">
+      <div className="bg-background px-8 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-serif text-foreground mb-4">Рецепт приготування</h3>
@@ -79,47 +144,53 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
 
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Left Column - Ingredients */}
-            <div className="space-y-12">
+            <div>
               <section>
                 <h4 className="text-2xl font-serif text-foreground mb-8">Інгредієнти</h4>
 
                 {recipe.ingredients.length > 0 ? (
-                  <div className="space-y-4">
-                    {recipe.ingredients.map((ingredient, index) => (
-                      <div
-                        key={index}
-                        className="flex items-start py-3 border-b border-border"
-                      >
-                        <span className="flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full bg-muted text-muted-foreground text-xs mr-3 mt-0.5">
-                          {index + 1}
-                        </span>
-                        <span className="text-foreground flex-1">{ingredient}</span>
-                      </div>
-                    ))}
+                  <div className="space-y-6">
+                    {ingredientSections.map((section, sectionIndex) => {
+                      // Calculate starting number for this section
+                      const startNumber = ingredientSections
+                        .slice(0, sectionIndex)
+                        .reduce((sum, s) => sum + s.items.length, 0) + 1
+
+                      return (
+                        <div key={sectionIndex}>
+                          {/* Section Header */}
+                          {section.header && (
+                            <div className="ingredient-section-header mb-3">
+                              {section.header}
+                            </div>
+                          )}
+
+                          {/* Section Items */}
+                          <div className="space-y-3">
+                            {section.items.map((ingredient, itemIndex) => (
+                              <div
+                                key={itemIndex}
+                                className="flex items-start py-3 border-b border-border"
+                              >
+                                <span className="flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full bg-muted text-muted-foreground text-xs mr-3 mt-0.5">
+                                  {startNumber + itemIndex}
+                                </span>
+                                <span className="text-foreground flex-1">{ingredient}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )
+                    })}
                   </div>
                 ) : (
                   <p className="text-muted-foreground italic">Інгредієнти не вказані</p>
                 )}
               </section>
-
-              {/* Image in details section */}
-              <section>
-                <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
-                  <Image
-                    src={imagePath}
-                    alt={`${recipe.title} - деталі`}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    loading="lazy"
-                    quality={85}
-                  />
-                </div>
-              </section>
             </div>
 
             {/* Right Column - Instructions */}
-            <div className="space-y-12">
+            <div>
               <section>
                 <h4 className="text-2xl font-serif text-foreground mb-8">Спосіб приготування</h4>
 
@@ -137,27 +208,15 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
                     ))}
                   </div>
                 ) : (
-                  <div className="p-6 bg-muted rounded-lg">
-                    <p className="text-muted-foreground italic text-center">
-                      Інструкції з приготування не вказані. Насолоджуйтесь створенням цієї страви на свій розсуд!
+                  <div className="empty-instructions-message">
+                    <div className="empty-message-icon">⚡</div>
+                    <h5 className="empty-message-title">Швидкий рецепт</h5>
+                    <p className="empty-message-text">
+                      Це швидкий рецепт без покрокової інструкції. Насолоджуйтесь творчим процесом приготування!
                     </p>
                   </div>
                 )}
               </section>
-
-              {/* Tips section - only show for recipes with instructions */}
-              {recipe.how_to_cook.length > 0 && (
-                <section>
-                  <div className="p-6 bg-muted rounded-lg">
-                    <h5 className="font-serif text-lg text-foreground mb-4">Поради</h5>
-                    <div className="space-y-2 text-sm text-muted-foreground">
-                      <p>• Використовуйте свіжі інгредієнти для кращого смаку</p>
-                      <p>• Можна адаптувати рецепт під свої уподобання</p>
-                      <p>• Зберігайте приготовану страву належним чином</p>
-                    </div>
-                  </div>
-                </section>
-              )}
             </div>
           </div>
         </div>
