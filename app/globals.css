@@ -1,0 +1,287 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@theme inline {
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+
+  /* Colors - Elegant khaki base with subtle cherry red accents */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Primary khaki tones */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  /* Subtle cherry red accent */
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* Secondary warm tones */
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Destructive (keeping cherry red theme) */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Card and popover */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  /* Border radius */
+  --radius: var(--radius);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Custom recipe layout styles */
+.recipe-hero {
+  background: linear-gradient(135deg, var(--color-muted) 0%, var(--color-background) 100%);
+}
+
+.recipe-accent {
+  color: var(--color-accent);
+}
+
+.recipe-divider {
+  background: linear-gradient(90deg, var(--color-primary) 0%, transparent 100%);
+  height: 2px;
+}
+
+/* Adding elegant category indicator styles */
+.category-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  background: oklch(0.98 0 0);
+  border: 1px solid oklch(0.92 0 0);
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  transition: all 0.2s ease;
+}
+
+.category-indicator:hover {
+  background: oklch(0.96 0 0);
+  border-color: oklch(0.88 0 0);
+}
+
+.category-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.category-daily {
+  background: oklch(0.6 0.15 145);
+  box-shadow: 0 0 0 2px oklch(0.6 0.15 145 / 0.2);
+}
+
+.category-occasional {
+  background: oklch(0.65 0.18 85);
+  box-shadow: 0 0 0 2px oklch(0.65 0.18 85 / 0.2);
+}
+
+.category-special {
+  background: oklch(0.55 0.2 25);
+  box-shadow: 0 0 0 2px oklch(0.55 0.2 25 / 0.2);
+}
+
+.nutrition-bar {
+  background: oklch(0.95 0 0);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 8px;
+  width: 100%;
+}
+
+.nutrition-segment {
+  height: 8px;
+  display: block;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.nutrition-protein {
+  background: oklch(0.45 0.15 120);
+}
+
+.nutrition-carbs {
+  background: oklch(0.55 0.2 60);
+}
+
+.nutrition-fats {
+  background: oklch(0.35 0.1 30);
+}
+
+.nutrition-fiber {
+  background: oklch(0.6 0.18 150);
+}
+
+/* Adding elegant recipe navigation styles */
+.recipe-nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: oklch(0.98 0 0);
+  border: 1px solid oklch(0.92 0 0);
+  color: var(--color-foreground);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px oklch(0 0 0 / 0.1);
+  position: relative;
+}
+
+.recipe-nav-button:hover {
+  background: oklch(0.95 0 0);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px oklch(0 0 0 / 0.15);
+}
+
+.recipe-nav-button:active {
+  transform: scale(0.95);
+}
+
+.recipe-nav-tooltip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-foreground);
+  color: var(--color-background);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.recipe-nav-button:hover .recipe-nav-tooltip {
+  opacity: 1;
+}
+
+.recipe-nav-button:first-child .recipe-nav-tooltip {
+  right: calc(100% + 0.75rem);
+}
+
+.recipe-nav-button:last-child .recipe-nav-tooltip {
+  left: calc(100% + 0.75rem);
+}
+
+.recipe-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: oklch(0.85 0 0);
+  border: 2px solid oklch(0.92 0 0);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.recipe-indicator:hover {
+  background: oklch(0.75 0 0);
+  transform: scale(1.1);
+}
+
+.recipe-indicator.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px oklch(0.205 0 0 / 0.2);
+}
+
+/* Adding elegant fade animations for recipe transitions */
+.recipe-content {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.recipe-content.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.recipe-content.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
