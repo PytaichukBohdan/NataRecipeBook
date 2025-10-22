@@ -1,0 +1,42 @@
+[
+  {
+    "session_id": "f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "@public/recipe_images/ Contains images of recipes by different categories in Ukrainian. Desserts, obid vechery, snedanke. *\u0414\u0435\u0441\u0435\u0440\u0442\u0438, \u043e\u0431\u0456\u0434-\u0432\u0435\u0447\u0435\u0440\u044f, \u0441\u043d\u0456\u0434\u0430\u043d\u043a\u0438\\\n\\\nALso - there's the @public/recipe_unstructured_text.txt containing texts with corresponding numbers\\\n\"\u0421\u043c\u0430\u043a\u043e\u043b\u0438\u043a\u0438, \u0437 \u044f\u043a\u0438\u043c\u0438 \u0442\u0438 \u0437\u0430\u0431\u0443\u0434\u0435\u0448 \u043f\u0440\u043e \u0432\u0456\u0434\u0447\u0443\u0442\u0442\u044f \u043f\u0440\u043e\u0432\u0438\u043d\u0438\" - \"\u0414\u0435\u0441\u0435\u0440\u0442\u0438\", And others are corresponding.\\\n\\\nYour goal is to prepare the data so later I can know which text to use with which images to use, meaning you have to parse the unstructured text into structured format, which would be easily obtainable for example in JSON. You have to map the corresponding recipe_images and it would be great if you translated them into English and removed the spaces between them because that could become confusing."
+  },
+  {
+    "session_id": "f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "image_original remove\\\n\\\ninstructions are sometimes end late - rewise so its actual "
+  },
+  {
+    "session_id": "f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "ALSO - there's \"\u041f\u0440\u0438\u043a\u0440\u0430\u0448\u0430\u0454\u043c\u043e\" - which is to decorate and is part of instructions\\\nAND INSTRUCTIONS should be renamed as \"how_to_cook\" section"
+  },
+  {
+    "session_id": "f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Now remove these scripts you needed to make this JSON because we won't need it anymore."
+  },
+  {
+    "session_id": "f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f13d5d15-1e1d-4af1-b79e-24e0eb8ae08e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "commit & push git "
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "session_id": "64579aa7-a85a-4eef-aba1-22109cb7c117",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/64579aa7-a85a-4eef-aba1-22109cb7c117.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "64579aa7-a85a-4eef-aba1-22109cb7c117",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/64579aa7-a85a-4eef-aba1-22109cb7c117.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]

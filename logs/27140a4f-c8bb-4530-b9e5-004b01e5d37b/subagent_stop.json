@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "default",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false
+  }
+]

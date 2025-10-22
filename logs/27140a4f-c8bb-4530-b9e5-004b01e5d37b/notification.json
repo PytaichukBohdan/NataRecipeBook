@@ -1,0 +1,16 @@
+[
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "hook_event_name": "Notification",
+    "message": "Claude needs your permission to use Bash"
+  },
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "hook_event_name": "Notification",
+    "message": "Claude Code needs your approval for the plan"
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/commands/implement.md"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/commands/implement.md",
+        "content": "# Implement the following plan\nFollow the `Instructions` to implement the `Plan` then `Report` the completed work.\n\n## Instructions\n- Read the plan, think hard about the plan and implement the plan.\n\n## Plan\n$ARGUMENTS\n\n## Report\n- Summarize the work you've just done in a concise bullet point list.\n- Report the files and total lines changed with `git diff --stat`",
+        "numLines": 12,
+        "startLine": 1,
+        "totalLines": 12
+      }
+    }
+  },
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls -la app/",
+      "description": "Check app directory structure"
+    },
+    "tool_response": {
+      "stdout": "total 64\ndrwxr-xr-x   5 bohdanpytaichuk  staff    160 Oct 22 19:57 .\ndrwxr-xr-x@ 19 bohdanpytaichuk  staff    608 Oct 22 19:58 ..\n-rw-r--r--   1 bohdanpytaichuk  staff   7152 Oct 22 19:57 globals.css\n-rw-r--r--   1 bohdanpytaichuk  staff    610 Oct 22 19:57 layout.tsx\n-rw-r--r--   1 bohdanpytaichuk  staff  17714 Oct 22 19:57 page.tsx",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat package.json | grep -E '\"(dev|build|start|test|lint)\"'",
+      "description": "Check available npm scripts"
+    },
+    "tool_response": {
+      "stdout": "    \"build\": \"next build\",\n    \"dev\": \"next dev\",\n    \"lint\": \"next lint\",\n    \"start\": \"next start\"",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/adws/README.md"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/adws/README.md",
+        "content": "# AI Developer Workflow (ADW) System - Isolated Workflows\n\nADW automates software development using isolated git worktrees. The `_iso` suffix stands for \"isolated\" - these workflows run in separate git worktrees, enabling multiple agents to run at the same time in their own respective directories. Each workflow gets its own complete copy of the repository with dedicated ports and filesystem isolation.\n\n## Key Concepts\n\n### Isolated Execution\nEvery ADW workflow runs in an isolated git worktree under `trees/<adw_id>/` with:\n- Complete filesystem isolation\n- Dedicated port ranges (backend: 9100-9114, frontend: 9200-9214)\n- Independent git branches\n- Support for 15 concurrent instances\n\n### ADW ID\nEach workflow run is assigned a unique 8-character identifier (e.g., `a1b2c3d4`). This ID:\n- Tracks all phases of a workflow (plan \u2192 build \u2192 test \u2192 review \u2192 document)\n- Appears in GitHub comments, commits, and PR titles\n- Creates an isolated worktree at `trees/{adw_id}/`\n- Allocates unique ports deterministically\n- Enables resuming workflows and debugging\n\n### State Management\nADW uses persistent state files (`agents/{adw_id}/adw_state.json`) to:\n- Share data between workflow phases\n- Track worktree locations and port assignments\n- Enable workflow composition and chaining\n- Track essential workflow data:\n  - `adw_id`: Unique workflow identifier\n  - `issue_number`: GitHub issue being processed\n  - `branch_name`: Git branch for changes\n  - `plan_file`: Path to implementation plan\n  - `issue_class`: Issue type (`/chore`, `/bug`, `/feature`)\n  - `worktree_path`: Absolute path to isolated worktree\n  - `backend_port`: Allocated backend port (9100-9114)\n  - `frontend_port`: Allocated frontend port (9200-9214)\n\n## Quick Start\n\n### 1. Set Environment Variables\n\n```bash\nexport GITHUB_REPO_URL=\"https://github.com/owner/repository\"\nexport ANTHROPIC_API_KEY=\"sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\nexport CLAUDE_CODE_PATH=\"/path/to/claude\"  # Optional, defaults to \"claude\"\nexport GITHUB_PAT=\"ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"  # Optional, only if using different account than 'gh auth login'\n```\n\n### 2. Install Prerequisites\n\n```bash\n# GitHub CLI\nbrew install gh              # macOS\n# or: sudo apt install gh    # Ubuntu/Debian\n# or: winget install --id GitHub.cli  # Windows\n\n# Claude Code CLI\n# Follow instructions at https://docs.anthropic.com/en/docs/claude-code\n\n# Python dependency manager (uv)\ncurl -LsSf https://astral.sh/uv/install.sh | sh  # macOS/Linux\n# or: powershell -c \"irm https://astral.sh/uv/install.ps1 | iex\"  # Windows\n\n# Authenticate GitHub\ngh auth login\n```\n\n### 3. Run Isolated ADW Workflows\n\n```bash\ncd adws/\n\n# Process a single issue in isolation (plan + build)\nuv run adw_plan_build_iso.py 123\n\n# Process with testing in isolation (plan + build + test)\nuv run adw_plan_build_test_iso.py 123\n\n# Process with review in isolation (plan + build + test + review)\nuv run adw_plan_build_test_review_iso.py 123\n\n# Process with review but skip tests (plan + build + review)\nuv run adw_plan_build_review_iso.py 123\n\n# Process with documentation (plan + build + document)\nuv run adw_plan_build_document_iso.py 123\n\n# Complete SDLC workflow in isolation\nuv run adw_sdlc_iso.py 123\n\n# Zero Touch Execution - Complete SDLC with auto-ship (\u26a0\ufe0f merges to main!)\nuv run adw_sdlc_zte_iso.py 123\n\n# Run individual isolated phases\nuv run adw_plan_iso.py 123              # Planning phase (creates worktree)\nuv run adw_patch_iso.py 123             # Patch workflow (creates worktree)\nuv run adw_build_iso.py 123 <adw-id>    # Build phase (requires worktree)\nuv run adw_test_iso.py 123 <adw-id>     # Test phase (requires worktree)\nuv run adw_review_iso.py 123 <adw-id>   # Review phase (requires worktree)\nuv run adw_document_iso.py 123 <adw-id> # Documentation phase (requires worktree)\nuv run adw_ship_iso.py 123 <adw-id>     # Ship phase (approve & merge PR)\n\n# Run continuous monitoring (polls every 20 seconds)\nuv run adw_triggers/trigger_cron.py\n\n# Start webhook server (for instant GitHub events)\nuv run adw_triggers/trigger_webhook.py\n```\n\n## ADW Isolated Workflow Scripts\n\n### Entry Point Workflows (Create Worktrees)\n\n#### adw_plan_iso.py - Isolated Planning\nCreates isolated worktree and generates implementation plans.\n\n**Usage:**\n```bash\nuv run adw_plan_iso.py <issue-number> [adw-id]\n```\n\n**What it does:**\n1. Creates isolated git worktree at `trees/<adw_id>/`\n2. Allocates unique ports (backend: 9100-9114, frontend: 9200-9214)\n3. Sets up environment with `.ports.env`\n4. Fetches issue details and classifies type\n5. Creates feature branch in worktree\n6. Generates implementation plan in isolation\n7. Commits and pushes from worktree\n8. Creates/updates pull request\n\n#### adw_patch_iso.py - Isolated Patch Workflow\nQuick patches in isolated environment triggered by 'adw_patch' keyword.\n\n**Usage:**\n```bash\nuv run adw_patch_iso.py <issue-number> [adw-id]\n```\n\n**What it does:**\n1. Searches for 'adw_patch' in issue/comments\n2. Creates isolated worktree with unique ports\n3. Creates targeted patch plan in isolation\n4. Implements specific changes\n5. Commits and creates PR from worktree\n\n### Dependent Workflows (Require Existing Worktree)\n\n#### adw_build_iso.py - Isolated Implementation\nImplements solutions in existing isolated environment.\n\n**Requirements:**\n- Existing worktree created by `adw_plan_iso.py` or `adw_patch_iso.py`\n- ADW ID is mandatory\n\n**Usage:**\n```bash\nuv run adw_build_iso.py <issue-number> <adw-id>\n```\n\n**What it does:**\n1. Validates worktree exists\n2. Switches to correct branch if needed\n3. Locates plan file in worktree\n4. Implements solution in isolated environment\n5. Commits and pushes from worktree\n\n#### adw_test_iso.py - Isolated Testing\nRuns tests in isolated environment.\n\n**Requirements:**\n- Existing worktree\n- ADW ID is mandatory\n\n**Usage:**\n```bash\nuv run adw_test_iso.py <issue-number> <adw-id> [--skip-e2e]\n```\n\n**What it does:**\n1. Validates worktree exists\n2. Runs tests with allocated ports\n3. Auto-resolves failures in isolation\n4. Optionally runs E2E tests\n5. Commits results from worktree\n\n#### adw_review_iso.py - Isolated Review\nReviews implementation in isolated environment.\n\n**Requirements:**\n- Existing worktree\n- ADW ID is mandatory\n\n**Usage:**\n```bash\nuv run adw_review_iso.py <issue-number> <adw-id> [--skip-resolution]\n```\n\n**What it does:**\n1. Validates worktree exists\n2. Reviews against spec in isolation\n3. Captures screenshots using allocated ports\n4. Auto-resolves blockers in worktree\n5. Uploads screenshots and commits\n\n#### adw_document_iso.py - Isolated Documentation\nGenerates documentation in isolated environment.\n\n**Requirements:**\n- Existing worktree\n- ADW ID is mandatory\n\n**Usage:**\n```bash\nuv run adw_document_iso.py <issue-number> <adw-id>\n```\n\n**What it does:**\n1. Validates worktree exists\n2. Analyzes changes in worktree\n3. Generates documentation in isolation\n4. Commits to `app_docs/` from worktree\n\n### Orchestrator Scripts\n\n#### adw_plan_build_iso.py - Isolated Plan + Build\nRuns planning and building in isolation.\n\n**Usage:**\n```bash\nuv run adw_plan_build_iso.py <issue-number> [adw-id]\n```\n\n#### adw_plan_build_test_iso.py - Isolated Plan + Build + Test\nFull pipeline with testing in isolation.\n\n**Usage:**\n```bash\nuv run adw_plan_build_test_iso.py <issue-number> [adw-id]\n```\n\n#### adw_plan_build_test_review_iso.py - Isolated Plan + Build + Test + Review\nComplete pipeline with review in isolation.\n\n**Usage:**\n```bash\nuv run adw_plan_build_test_review_iso.py <issue-number> [adw-id]\n```\n\n#### adw_plan_build_review_iso.py - Isolated Plan + Build + Review\nPipeline with review, skipping tests.\n\n**Usage:**\n```bash\nuv run adw_plan_build_review_iso.py <issue-number> [adw-id]\n```\n\n#### adw_plan_build_document_iso.py - Isolated Plan + Build + Document\nDocumentation pipeline in isolation.\n\n**Usage:**\n```bash\nuv run adw_plan_build_document_iso.py <issue-number> [adw-id]\n```\n\n#### adw_sdlc_iso.py - Complete Isolated SDLC\nFull Software Development Life Cycle in isolation.\n\n**Usage:**\n```bash\nuv run adw_sdlc_iso.py <issue-number> [adw-id] [--skip-e2e] [--skip-resolution]\n```\n\n**Phases:**\n1. **Plan**: Creates worktree and implementation spec\n2. **Build**: Implements solution in isolation\n3. **Test**: Runs tests with dedicated ports\n4. **Review**: Validates and captures screenshots\n5. **Document**: Generates comprehensive docs\n\n**Output:**\n- Isolated worktree at `trees/<adw_id>/`\n- Feature implementation on dedicated branch\n- Test results with port isolation\n- Review screenshots from isolated instance\n- Complete documentation in `app_docs/`\n\n#### adw_ship_iso.py - Approve and Merge PR\nFinal shipping phase that validates state and merges to main.\n\n**Requirements:**\n- Complete ADWState with all fields populated\n- Existing worktree and PR\n- ADW ID is mandatory\n\n**Usage:**\n```bash\nuv run adw_ship_iso.py <issue-number> <adw-id>\n```\n\n**What it does:**\n1. Validates all ADWState fields have values\n2. Verifies worktree exists\n3. Finds PR for the branch\n4. Approves the PR\n5. Merges PR to main using squash method\n\n**State validation ensures:**\n- `adw_id` is set\n- `issue_number` is set\n- `branch_name` exists\n- `plan_file` was created\n- `issue_class` was determined\n- `worktree_path` exists\n- `backend_port` and `frontend_port` allocated\n\n#### adw_sdlc_zte_iso.py - Zero Touch Execution\nComplete SDLC with automatic shipping - no human intervention required.\n\n**Usage:**\n```bash\nuv run adw_sdlc_zte_iso.py <issue-number> [adw-id] [--skip-e2e] [--skip-resolution]\n```\n\n**Phases:**\n1. **Plan**: Creates worktree and implementation spec\n2. **Build**: Implements solution in isolation\n3. **Test**: Runs tests (stops on failure)\n4. **Review**: Validates implementation (stops on failure)\n5. **Document**: Generates comprehensive docs\n6. **Ship**: Automatically approves and merges PR\n\n**\u26a0\ufe0f WARNING:** This workflow will automatically merge code to main if all phases pass!\n\n**Output:**\n- Complete feature implementation\n- Automatic PR approval\n- Code merged to main branch\n- Production deployment\n\n### Automation Triggers\n\n#### trigger_cron.py - Polling Monitor\nContinuously monitors GitHub for triggers.\n\n**Usage:**\n```bash\nuv run adw_triggers/trigger_cron.py\n```\n\n**Triggers on:**\n- New issues with no comments\n- Any issue where latest comment is exactly \"adw\"\n- Polls every 20 seconds\n\n**Workflow selection:**\n- Uses `adw_plan_build_iso.py` by default\n- Supports all isolated workflows via issue body keywords\n\n#### trigger_webhook.py - Real-time Events\nWebhook server for instant GitHub event processing.\n\n**Usage:**\n```bash\nuv run adw_triggers/trigger_webhook.py\n```\n\n**Configuration:**\n- Default port: 8001\n- Endpoints:\n  - `/gh-webhook` - GitHub event receiver\n  - `/health` - Health check\n- GitHub webhook settings:\n  - Payload URL: `https://your-domain.com/gh-webhook`\n  - Content type: `application/json`\n  - Events: Issues, Issue comments\n\n**Security:**\n- Validates GitHub webhook signatures\n- Requires `GITHUB_WEBHOOK_SECRET` environment variable\n\n## How ADW Works\n\n1. **Issue Classification**: Analyzes GitHub issue and determines type:\n   - `/chore` - Maintenance, documentation, refactoring\n   - `/bug` - Bug fixes and corrections\n   - `/feature` - New features and enhancements\n\n2. **Planning**: `sdlc_planner` agent creates implementation plan with:\n   - Technical approach\n   - Step-by-step tasks\n   - File modifications\n   - Testing requirements\n\n3. **Implementation**: `sdlc_implementor` agent executes the plan:\n   - Analyzes codebase\n   - Implements changes\n   - Runs tests\n   - Ensures quality\n\n4. **Integration**: Creates git commits and pull request:\n   - Semantic commit messages\n   - Links to original issue\n   - Implementation summary\n\n## Common Usage Scenarios\n\n### Process a bug report in isolation\n```bash\n# User reports bug in issue #789\nuv run adw_plan_build_iso.py 789\n# ADW creates isolated worktree, analyzes, creates fix, and opens PR\n```\n\n### Run multiple workflows concurrently\n```bash\n# Process three issues in parallel\nuv run adw_plan_build_iso.py 101 &\nuv run adw_plan_build_iso.py 102 &\nuv run adw_plan_build_iso.py 103 &\n# Each gets its own worktree and ports\n```\n\n### Run complete SDLC in isolation\n```bash\n# Full SDLC with review and documentation\nuv run adw_sdlc_iso.py 789\n# Creates worktree at trees/abc12345/\n# Runs on ports 9107 (backend) and 9207 (frontend)\n# Generates complete documentation with screenshots\n```\n\n### Zero Touch Execution (Auto-ship)\n```bash\n# Complete SDLC with automatic PR merge\nuv run adw_sdlc_zte_iso.py 789\n# \u26a0\ufe0f WARNING: Automatically merges to main if all phases pass!\n# Creates worktree, implements, tests, reviews, documents, and ships\n```\n\n### Manual shipping workflow\n```bash\n# After running SDLC, manually approve and merge\nuv run adw_ship_iso.py 789 abc12345\n# Validates all state fields are populated\n# Approves PR\n# Merges to main using squash method\n```\n\n### Run individual phases\n```bash\n# Plan only (creates worktree)\nuv run adw_plan_iso.py 789\n\n# Build in existing worktree\nuv run adw_build_iso.py 789 abc12345\n\n# Test in isolation\nuv run adw_test_iso.py 789 abc12345\n\n# Ship when ready\nuv run adw_ship_iso.py 789 abc12345\n```\n\n### Enable automatic processing\n```bash\n# Start cron monitoring\nuv run adw_triggers/trigger_cron.py\n# New issues are processed automatically\n# Users can comment \"adw\" to trigger processing\n```\n\n### Deploy webhook for instant response\n```bash\n# Start webhook server\nuv run adw_triggers/trigger_webhook.py\n# Configure in GitHub settings\n# Issues processed immediately on creation\n```\n\n### Triggering Workflows via GitHub Issues\n\nInclude the workflow name in your issue body to trigger a specific isolated workflow:\n\n**Available Workflows:**\n- `adw_plan_iso` - Isolated planning only\n- `adw_patch_iso` - Quick patch in isolation\n- `adw_plan_build_iso` - Plan and build in isolation\n- `adw_plan_build_test_iso` - Plan, build, and test in isolation\n- `adw_plan_build_test_review_iso` - Plan, build, test, and review in isolation\n- `adw_sdlc_iso` - Complete SDLC in isolation\n\n**Example Issue:**\n```\nTitle: Add export functionality\nBody: Please add the ability to export data to CSV.\nInclude workflow: adw_plan_build_iso\n```\n\n**Note:** Dependent workflows (`adw_build_iso`, `adw_test_iso`, `adw_review_iso`, `adw_document_iso`) require an existing worktree and cannot be triggered directly via webhook.\n\n## Worktree Architecture\n\n### Worktree Structure\n\n```\ntrees/\n\u251c\u2500\u2500 abc12345/              # Complete repo copy for ADW abc12345\n\u2502   \u251c\u2500\u2500 .git/              # Worktree git directory\n\u2502   \u251c\u2500\u2500 .env               # Copied from main repo\n\u2502   \u251c\u2500\u2500 .ports.env         # Port configuration\n\u2502   \u251c\u2500\u2500 app/               # Application code\n\u2502   \u251c\u2500\u2500 adws/              # ADW scripts\n\u2502   \u2514\u2500\u2500 ...\n\u2514\u2500\u2500 def67890/              # Another isolated instance\n    \u2514\u2500\u2500 ...\n\nagents/                    # Shared state location (not in worktree)\n\u251c\u2500\u2500 abc12345/\n\u2502   \u2514\u2500\u2500 adw_state.json     # Persistent state\n\u2514\u2500\u2500 def67890/\n    \u2514\u2500\u2500 adw_state.json\n```\n\n### Port Allocation\n\nEach isolated instance gets unique ports:\n- Backend: 9100-9114 (15 ports)\n- Frontend: 9200-9214 (15 ports)\n- Deterministic assignment based on ADW ID hash\n- Automatic fallback if preferred ports are busy\n\n**Port Assignment Algorithm:**\n```python\ndef get_ports_for_adw(adw_id: str) -> Tuple[int, int]:\n    \"\"\"Deterministically assign ports based on ADW ID.\"\"\"\n    index = int(adw_id[:8], 36) % 15\n    backend_port = 9100 + index\n    frontend_port = 9200 + index\n    return backend_port, frontend_port\n```\n\n**Example Allocations:**\n```\nADW abc12345: Backend 9107, Frontend 9207\nADW def67890: Backend 9103, Frontend 9203\n```\n\n### Benefits of Isolated Workflows\n\n1. **Parallel Execution**: Run up to 15 ADWs simultaneously\n2. **No Interference**: Each instance has its own:\n   - Git worktree and branch\n   - Filesystem (complete repo copy)\n   - Backend and frontend ports\n   - Environment configuration\n3. **Clean Isolation**: Changes in one instance don't affect others\n4. **Easy Cleanup**: Remove worktree to clean everything\n5. **Better Debugging**: Isolated environment for troubleshooting\n6. **Experiment Safely**: Test changes without affecting main repo\n\n### Cleanup and Maintenance\n\nWorktrees persist until manually removed:\n\n```bash\n# Remove specific worktree\ngit worktree remove trees/abc12345\n\n# List all worktrees\ngit worktree list\n\n# Clean up worktrees (removes invalid entries)\ngit worktree prune\n\n# Remove worktree directory if git doesn't know about it\nrm -rf trees/abc12345\n```\n\n**Best Practices:**\n- Remove worktrees after PR merge\n- Monitor disk usage (each worktree is a full repo copy)\n- Use `git worktree prune` periodically\n- Consider automation for cleanup after 7 days\n\n## Troubleshooting\n\n### Environment Issues\n```bash\n# Check required variables\nenv | grep -E \"(GITHUB|ANTHROPIC|CLAUDE)\"\n\n# Verify GitHub auth\ngh auth status\n\n# Test Claude Code\nclaude --version\n```\n\n### Common Errors\n\n**\"No worktree found\"**\n```bash\n# Check if worktree exists\ngit worktree list\n# Run an entry point workflow first\nuv run adw_plan_iso.py <issue-number>\n```\n\n**\"Port already in use\"**\n```bash\n# Check what's using the port\nlsof -i :9107\n# Kill the process or let ADW find alternative ports\n```\n\n**\"Worktree validation failed\"**\n```bash\n# Check worktree state\ncat agents/<adw-id>/adw_state.json | jq .worktree_path\n# Verify directory exists\nls -la trees/<adw-id>/\n```\n\n**\"Agent execution failed\"**\n```bash\n# Check agent output in worktree\ncat trees/<adw-id>/agents/*/planner/raw_output.jsonl | tail -1 | jq .\n```\n\n### Debug Mode\n```bash\nexport ADW_DEBUG=true\nuv run adw_plan_build_iso.py 123  # Verbose output\n```\n\n## Configuration\n\n### ADW Tracking\nEach workflow run gets a unique 8-character ID (e.g., `a1b2c3d4`) that appears in:\n- Issue comments: `a1b2c3d4_ops: \u2705 Starting ADW workflow`\n- Output files: `agents/a1b2c3d4/sdlc_planner/raw_output.jsonl`\n- Git commits and PRs\n\n### Model Selection\n\nADW supports dynamic model selection based on workflow complexity. Users can specify whether to use a \"base\" model set (optimized for speed and cost) or a \"heavy\" model set (optimized for complex tasks).\n\n#### How to Specify Model Set\n\nInclude `model_set base` or `model_set heavy` in your GitHub issue or comment:\n\n```\nTitle: Add export functionality  \nBody: Please add the ability to export data to CSV.\nInclude workflow: adw_plan_build_iso model_set heavy\n```\n\nIf not specified, the system defaults to \"base\".\n\n#### Model Mapping\n\nEach slash command has a configured model for both base and heavy sets:\n\n```python\nSLASH_COMMAND_MODEL_MAP = {\n    \"/implement\": {\"base\": \"sonnet\", \"heavy\": \"opus\"},\n    \"/review\": {\"base\": \"sonnet\", \"heavy\": \"opus\"},\n    \"/classify_issue\": {\"base\": \"sonnet\", \"heavy\": \"sonnet\"},\n    # ... etc\n}\n```\n\n#### Commands Using Opus in Heavy Mode\n\nThe following commands switch to Opus when using the heavy model set:\n- `/implement` - Complex implementation tasks\n- `/resolve_failed_test` - Debugging test failures\n- `/resolve_failed_e2e_test` - Debugging E2E test failures\n- `/document` - Documentation generation\n- `/chore`, `/bug`, `/feature` - Issue-specific implementations\n- `/patch` - Creating patches for changes\n\n#### Model Selection Flow\n\n1. User triggers workflow with optional `model_set` parameter\n2. ADW extracts and stores model_set in state (defaults to \"base\")\n3. Each slash command execution:\n   - Loads state to get model_set\n   - Looks up appropriate model from SLASH_COMMAND_MODEL_MAP\n   - Executes with selected model\n\n#### Testing Model Selection\n\n```bash\npython adws/adw_tests/test_model_selection.py\n```\n\nThis verifies:\n- All commands have both base and heavy mappings\n- Model selection logic works correctly\n- State persistence includes model_set\n- Default behavior when no state exists\n\n### Modular Architecture\nThe system uses a modular architecture optimized for isolated execution:\n\n- **State Management**: `ADWState` tracks worktree paths and ports\n- **Worktree Operations**: `worktree_ops.py` manages isolated environments\n- **Git Operations**: `git_ops.py` supports `cwd` parameter for worktree context\n- **Workflow Operations**: Core logic in `workflow_ops.py` with `working_dir` support\n- **Agent Integration**: `agent.py` executes Claude Code in worktree context\n\n### Workflow Output Structure\n\nEach ADW workflow creates an isolated workspace:\n\n```\nagents/\n\u2514\u2500\u2500 {adw_id}/                     # Unique workflow directory\n    \u251c\u2500\u2500 adw_state.json            # Persistent state file\n    \u251c\u2500\u2500 {adw_id}_plan_spec.md     # Implementation plan\n    \u251c\u2500\u2500 planner/                  # Planning agent output\n    \u2502   \u2514\u2500\u2500 raw_output.jsonl      # Claude Code session\n    \u251c\u2500\u2500 implementor/              # Implementation agent output\n    \u2502   \u2514\u2500\u2500 raw_output.jsonl\n    \u251c\u2500\u2500 tester/                   # Test agent output\n    \u2502   \u2514\u2500\u2500 raw_output.jsonl\n    \u251c\u2500\u2500 reviewer/                 # Review agent output\n    \u2502   \u251c\u2500\u2500 raw_output.jsonl\n    \u2502   \u2514\u2500\u2500 review_img/           # Screenshots directory\n    \u251c\u2500\u2500 documenter/               # Documentation agent output\n    \u2502   \u2514\u2500\u2500 raw_output.jsonl\n    \u2514\u2500\u2500 patch_*/                  # Patch resolution attempts\n\napp_docs/                         # Generated documentation\n\u2514\u2500\u2500 features/\n    \u2514\u2500\u2500 {feature_name}/\n        \u251c\u2500\u2500 overview.md\n        \u251c\u2500\u2500 technical-guide.md\n        \u2514\u2500\u2500 images/\n```\n\n## Security Best Practices\n\n- Store tokens as environment variables, never in code\n- Use GitHub fine-grained tokens with minimal permissions\n- Set up branch protection rules\n- Require PR reviews for ADW changes\n- Monitor API usage and set billing alerts\n\n## Technical Details\n\n### Core Components\n\n#### Modules\n- `adw_modules/agent.py` - Claude Code CLI integration with worktree support\n- `adw_modules/data_types.py` - Pydantic models including worktree fields\n- `adw_modules/github.py` - GitHub API operations\n- `adw_modules/git_ops.py` - Git operations with `cwd` parameter support\n- `adw_modules/state.py` - State management tracking worktrees and ports\n- `adw_modules/workflow_ops.py` - Core workflow operations with isolation\n- `adw_modules/worktree_ops.py` - Worktree and port management\n- `adw_modules/utils.py` - Utility functions\n\n#### Entry Point Workflows (Create Worktrees)\n- `adw_plan_iso.py` - Isolated planning workflow\n- `adw_patch_iso.py` - Isolated patch workflow\n\n#### Dependent Workflows (Require Worktrees)\n- `adw_build_iso.py` - Isolated implementation workflow\n- `adw_test_iso.py` - Isolated testing workflow\n- `adw_review_iso.py` - Isolated review workflow\n- `adw_document_iso.py` - Isolated documentation workflow\n\n#### Orchestrators\n- `adw_plan_build_iso.py` - Plan & build in isolation\n- `adw_plan_build_test_iso.py` - Plan & build & test in isolation\n- `adw_plan_build_test_review_iso.py` - Plan & build & test & review in isolation\n- `adw_plan_build_review_iso.py` - Plan & build & review in isolation\n- `adw_plan_build_document_iso.py` - Plan & build & document in isolation\n- `adw_sdlc_iso.py` - Complete SDLC in isolation\n\n### Branch Naming\n```\n{type}-{issue_number}-{adw_id}-{slug}\n```\nExample: `feat-456-e5f6g7h8-add-user-authentication`\n",
+        "numLines": 788,
+        "startLine": 1,
+        "totalLines": 788
+      }
+    }
+  },
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "default",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "ExitPlanMode",
+    "tool_input": {
+      "plan": "## Commands Adaptation Plan for NataRecipeBook\n\n### Phase 1: Remove Incompatible Commands (10 commands)\nDelete commands that reference non-existent infrastructure:\n- `health_check.md` - ADW health checks\n- `classify_adw.md` - ADW workflow extraction\n- `install_worktree.md` - Git worktree + ports + backend\n- `cleanup_worktrees.md` - Worktree management\n- `prepare_app.md` - Database reset + backend/frontend servers\n- `track_agentic_kpis.md` - ADW KPI tracking\n- `test_e2e.md` - Playwright E2E with MCP server\n- `resolve_failed_e2e_test.md` - E2E test resolution\n- `start.md` - Complex app startup with ports\n\n### Phase 2: Adapt Core Workflow Commands (5 commands)\nModify for Next.js frontend-only architecture:\n\n**`test.md`**: Remove Python/backend tests, keep TypeScript checks and build\n- Remove: `pytest`, `ruff check`, Python syntax checks\n- Keep: `bun tsc --noEmit`, `bun run build` (replace bun with npm/pnpm)\n\n**`install.md`**: Simplify for Next.js only\n- Remove: Backend dependencies, database setup, git remote operations\n- Keep: Frontend dependency installation\n- Add: Instructions for .env setup if needed\n\n**`prime.md`**: Simplify for Next.js\n- Remove: ADW references, backend setup\n- Keep: Basic repo exploration\n\n**`feature.md`, `bug.md`, `chore.md`**: Update file paths and remove backend references\n- Remove: `app/server/**`, `scripts/**`, `adws/**`, E2E test creation\n- Update: File paths to match Next.js structure (`app/**`, `components/**`, `lib/**`)\n- Remove: Backend validation commands (pytest)\n- Keep: TypeScript checks and build validation\n\n### Phase 3: Update Review Commands (2 commands)\n**`review.md`**: Remove Playwright/E2E automation\n- Remove: Playwright MCP server, E2E test navigation, screenshot automation\n- Keep: Git diff review, spec validation\n\n**`resolve_failed_test.md`**: Adapt for frontend-only\n- Update: Commands to focus on TypeScript/build errors only\n\n### Phase 4: Keep Working Commands (9 commands)\nNo changes needed, should work as-is:\n- `commit.md`, `pull_request.md`, `document.md`, `generate_branch_name.md`\n- `classify_issue.md`, `in_loop_review.md`, `patch.md`, `conditional_docs.md`\n- `implement.md`, `tools.md`\n\n**Total**: Remove 9, Adapt 7, Keep 9 commands"
+    },
+    "tool_response": {
+      "plan": "## Commands Adaptation Plan for NataRecipeBook\n\n### Phase 1: Remove Incompatible Commands (10 commands)\nDelete commands that reference non-existent infrastructure:\n- `health_check.md` - ADW health checks\n- `classify_adw.md` - ADW workflow extraction\n- `install_worktree.md` - Git worktree + ports + backend\n- `cleanup_worktrees.md` - Worktree management\n- `prepare_app.md` - Database reset + backend/frontend servers\n- `track_agentic_kpis.md` - ADW KPI tracking\n- `test_e2e.md` - Playwright E2E with MCP server\n- `resolve_failed_e2e_test.md` - E2E test resolution\n- `start.md` - Complex app startup with ports\n\n### Phase 2: Adapt Core Workflow Commands (5 commands)\nModify for Next.js frontend-only architecture:\n\n**`test.md`**: Remove Python/backend tests, keep TypeScript checks and build\n- Remove: `pytest`, `ruff check`, Python syntax checks\n- Keep: `bun tsc --noEmit`, `bun run build` (replace bun with npm/pnpm)\n\n**`install.md`**: Simplify for Next.js only\n- Remove: Backend dependencies, database setup, git remote operations\n- Keep: Frontend dependency installation\n- Add: Instructions for .env setup if needed\n\n**`prime.md`**: Simplify for Next.js\n- Remove: ADW references, backend setup\n- Keep: Basic repo exploration\n\n**`feature.md`, `bug.md`, `chore.md`**: Update file paths and remove backend references\n- Remove: `app/server/**`, `scripts/**`, `adws/**`, E2E test creation\n- Update: File paths to match Next.js structure (`app/**`, `components/**`, `lib/**`)\n- Remove: Backend validation commands (pytest)\n- Keep: TypeScript checks and build validation\n\n### Phase 3: Update Review Commands (2 commands)\n**`review.md`**: Remove Playwright/E2E automation\n- Remove: Playwright MCP server, E2E test navigation, screenshot automation\n- Keep: Git diff review, spec validation\n\n**`resolve_failed_test.md`**: Adapt for frontend-only\n- Update: Commands to focus on TypeScript/build errors only\n\n### Phase 4: Keep Working Commands (9 commands)\nNo changes needed, should work as-is:\n- `commit.md`, `pull_request.md`, `document.md`, `generate_branch_name.md`\n- `classify_issue.md`, `in_loop_review.md`, `patch.md`, `conditional_docs.md`\n- `implement.md`, `tools.md`\n\n**Total**: Remove 9, Adapt 7, Keep 9 commands",
+      "isAgent": false
+    }
+  },
+  {
+    "session_id": "27140a4f-c8bb-4530-b9e5-004b01e5d37b",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/27140a4f-c8bb-4530-b9e5-004b01e5d37b.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Remove incompatible commands (9 files)",
+          "status": "in_progress",
+          "activeForm": "Removing incompatible commands"
+        },
+        {
+          "content": "Adapt test.md for Next.js",
+          "status": "pending",
+          "activeForm": "Adapting test.md for Next.js"
+        },
+        {
+          "content": "Adapt install.md for Next.js",
+          "status": "pending",
+          "activeForm": "Adapting install.md for Next.js"
+        },
+        {
+          "content": "Adapt prime.md for Next.js",
+          "status": "pending",
+          "activeForm": "Adapting prime.md for Next.js"
+        },
+        {
+          "content": "Adapt feature.md, bug.md, chore.md",
+          "status": "pending",
+          "activeForm": "Adapting feature.md, bug.md, chore.md"
+        },
+        {
+          "content": "Adapt review.md for frontend-only",
+          "status": "pending",
+          "activeForm": "Adapting review.md for frontend-only"
+        },
+        {
+          "content": "Adapt resolve_failed_test.md",
+          "status": "pending",
+          "activeForm": "Adapting resolve_failed_test.md"
+        },
+        {
+          "content": "Verify all remaining commands work",
+          "status": "pending",
+          "activeForm": "Verifying all remaining commands work"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [],
+      "newTodos": [
+        {
+          "content": "Remove incompatible commands (9 files)",
+          "status": "in_progress",
+          "activeForm": "Removing incompatible commands"
+        },
+        {
+          "content": "Adapt test.md for Next.js",
+          "status": "pending",
+          "activeForm": "Adapting test.md for Next.js"
+        },
+        {
+          "content": "Adapt install.md for Next.js",
+          "status": "pending",
+          "activeForm": "Adapting install.md for Next.js"
+        },
+        {
+          "content": "Adapt prime.md for Next.js",
+          "status": "pending",
+          "activeForm": "Adapting prime.md for Next.js"
+        },
+        {
+          "content": "Adapt feature.md, bug.md, chore.md",
+          "status": "pending",
+          "activeForm": "Adapting feature.md, bug.md, chore.md"
+        },
+        {
+          "content": "Adapt review.md for frontend-only",
+          "status": "pending",
+          "activeForm": "Adapting review.md for frontend-only"
+        },
+        {
+          "content": "Adapt resolve_failed_test.md",
+          "status": "pending",
+          "activeForm": "Adapting resolve_failed_test.md"
+        },
+        {
+          "content": "Verify all remaining commands work",
+          "status": "pending",
+          "activeForm": "Verifying all remaining commands work"
+        }
+      ]
+    }
+  }
+]
