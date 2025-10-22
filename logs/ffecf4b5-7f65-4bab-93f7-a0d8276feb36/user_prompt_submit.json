@@ -38,5 +38,21 @@
     "permission_mode": "bypassPermissions",
     "hook_event_name": "UserPromptSubmit",
     "prompt": "COMMIT current changes & push as BetterBohdanGaiera"
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Issue!! YOU\"re PUSHING VIA USER BohdanPytaichukNeuronLabs\\\n\\\nI NEED YO UTO PUSH TRHOUGH SSH OF BetterBohdanGaiera"
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "COMMIT \\\nAND PUSH NOT VIA bohdan.pytaichuk@neurons-lab.com - LOOK FOR OTHER EMAILS INSIDE .ssh OF WHERE TO PUSH"
   }
 ]

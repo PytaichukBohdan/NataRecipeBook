@@ -594,5 +594,173 @@
       "command": "git add -A && git commit -m \"chore: update logs and spec documentation\" && git push origin main",
       "description": "Stage, commit, and push changes"
     }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git config user.name && git config user.email",
+      "description": "Check current git user configuration"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git log -1 --format='%an <%ae>'",
+      "description": "Check author of last commit"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git log --oneline -3 --format='%h - %an <%ae> - %s'",
+      "description": "Show recent commits with author"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git remote get-url origin",
+      "description": "Show remote URL"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.ssh/config",
+      "description": "Check SSH config for git identities"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls -la ~/.ssh/ | grep -E \"id_|config\"",
+      "description": "List SSH keys and config"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git config --list | grep -E \"user\\.|email\"",
+      "description": "Check all git configurations"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.ssh/id_ed25519_gaiera.pub",
+      "description": "Check gaiera SSH public key"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git config --global --list | grep -i email",
+      "description": "Check global git email config"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git config user.email \"bohdan@gaiera.ai\"",
+      "description": "Update git email to gaiera.ai"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git config user.email",
+      "description": "Verify email was updated"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git log -1 --format='%an <%ae>' && echo \"---\" && git config user.name && git config user.email",
+      "description": "Compare last commit vs current config"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git status --short",
+      "description": "Check for uncommitted changes"
+    }
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git add -A && git commit -m \"chore: sync logs and documentation\" && git push origin main",
+      "description": "Commit and push with new email"
+    }
   }
 ]
