@@ -5008,5 +5008,155 @@
       "stderrLines": 1,
       "timestamp": "2025-11-07T16:33:08.495Z"
     }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git add -A && git status",
+      "description": "Stage all changes and check status"
+    },
+    "tool_response": {
+      "stdout": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges to be committed:\n  (use \"git restore --staged <file>...\" to unstage)\n\tnew file:   .eslintrc.json\n\tnew file:   add_nutrition_data.py\n\tmodified:   app/globals.css\n\tnew file:   components/NutritionCard.tsx\n\tmodified:   components/RecipeCard.tsx\n\tmodified:   data/recipes.json\n\tnew file:   lib/nutrition-utils.ts\n\tnew file:   logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/chat.json\n\tnew file:   logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/notification.json\n\tnew file:   logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/post_tool_use.json\n\tnew file:   logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/pre_tool_use.json\n\tnew file:   logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/stop.json\n\tnew file:   logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/user_prompt_submit.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/chat.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/notification.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/post_tool_use.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/pre_tool_use.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/stop.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/subagent_stop.json\n\tnew file:   logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/user_prompt_submit.json\n\tnew file:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/chat.json\n\tnew file:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/notification.json\n\tnew file:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/post_tool_use.json\n\tnew file:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/pre_tool_use.json\n\tnew file:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/stop.json\n\tnew file:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/user_prompt_submit.json\n\tmodified:   logs/ffecf4b5-7f65-4bab-93f7-a0d8276feb36/chat.json\n\tmodified:   logs/ffecf4b5-7f65-4bab-93f7-a0d8276feb36/notification.json\n\tmodified:   logs/ffecf4b5-7f65-4bab-93f7-a0d8276feb36/post_tool_use.json\n\tmodified:   logs/ffecf4b5-7f65-4bab-93f7-a0d8276feb36/pre_tool_use.json\n\tmodified:   logs/ffecf4b5-7f65-4bab-93f7-a0d8276feb36/stop.json\n\tnew file:   nutrition_update_report.txt\n\tnew file:   package-lock.json\n\tmodified:   package.json\n\tnew file:   specs/issue-unknown-adw-unknown-sdlc_planner-add-nutrition-visual-display.md\n\tmodified:   types/recipe.ts",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git commit -m \"$(cat <<'EOF'\nfeat: add minimalist nutrition display with horizontal bars\n\n- Added Nutrition interface and nutrition field to Recipe type\n- Created NutritionCard component with horizontal bar charts\n- Removed circular progress indicators and emojis\n- Shows only gram amounts without percentages\n- Applied Apple-style minimalist design\n- Relocated nutrition card below cooking instructions\n- Added utility functions for macro calculations\n- Implemented responsive design for mobile/tablet/desktop\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\"",
+      "description": "Create commit for nutrition feature"
+    },
+    "tool_response": {
+      "stdout": "[main 3c562c7] feat: add minimalist nutrition display with horizontal bars\n 36 files changed, 32194 insertions(+), 67 deletions(-)\n create mode 100644 .eslintrc.json\n create mode 100644 add_nutrition_data.py\n create mode 100644 components/NutritionCard.tsx\n create mode 100644 lib/nutrition-utils.ts\n create mode 100644 logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/chat.json\n create mode 100644 logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/notification.json\n create mode 100644 logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/post_tool_use.json\n create mode 100644 logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/pre_tool_use.json\n create mode 100644 logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/stop.json\n create mode 100644 logs/0332cb9c-47c0-4a30-bb1d-27660413cf3c/user_prompt_submit.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/chat.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/notification.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/post_tool_use.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/pre_tool_use.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/stop.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/subagent_stop.json\n create mode 100644 logs/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3/user_prompt_submit.json\n create mode 100644 logs/f93946af-8226-4abc-b149-feb27eb0e7ba/chat.json\n create mode 100644 logs/f93946af-8226-4abc-b149-feb27eb0e7ba/notification.json\n create mode 100644 logs/f93946af-8226-4abc-b149-feb27eb0e7ba/post_tool_use.json\n create mode 100644 logs/f93946af-8226-4abc-b149-feb27eb0e7ba/pre_tool_use.json\n create mode 100644 logs/f93946af-8226-4abc-b149-feb27eb0e7ba/stop.json\n create mode 100644 logs/f93946af-8226-4abc-b149-feb27eb0e7ba/user_prompt_submit.json\n create mode 100644 nutrition_update_report.txt\n create mode 100644 package-lock.json\n create mode 100644 specs/issue-unknown-adw-unknown-sdlc_planner-add-nutrition-visual-display.md",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git push origin main",
+      "timeout": 60000,
+      "description": "Push changes to origin main"
+    },
+    "tool_response": {
+      "stdout": "To github.com-bohdangaiera:BetterBohdanGaiera/NataRecipeBook.git\n   22bfaf1..3c562c7  main -> main",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat package.json | grep -A 5 -B 5 eslint",
+      "description": "Check eslint in package.json"
+    },
+    "tool_response": {
+      "stdout": "  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"eslint\": \"^9.39.1\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/package.json"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/package.json",
+        "content": "{\n  \"name\": \"my-v0-project\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"build\": \"next build\",\n    \"dev\": \"next dev\",\n    \"lint\": \"next lint\",\n    \"start\": \"next start\"\n  },\n  \"dependencies\": {\n    \"@hookform/resolvers\": \"^3.10.0\",\n    \"@radix-ui/react-accordion\": \"1.2.2\",\n    \"@radix-ui/react-alert-dialog\": \"1.1.4\",\n    \"@radix-ui/react-aspect-ratio\": \"1.1.1\",\n    \"@radix-ui/react-avatar\": \"1.1.2\",\n    \"@radix-ui/react-checkbox\": \"1.1.3\",\n    \"@radix-ui/react-collapsible\": \"1.1.2\",\n    \"@radix-ui/react-context-menu\": \"2.2.4\",\n    \"@radix-ui/react-dialog\": \"1.1.4\",\n    \"@radix-ui/react-dropdown-menu\": \"2.1.4\",\n    \"@radix-ui/react-hover-card\": \"1.1.4\",\n    \"@radix-ui/react-label\": \"2.1.1\",\n    \"@radix-ui/react-menubar\": \"1.1.4\",\n    \"@radix-ui/react-navigation-menu\": \"1.2.3\",\n    \"@radix-ui/react-popover\": \"1.1.4\",\n    \"@radix-ui/react-progress\": \"1.1.1\",\n    \"@radix-ui/react-radio-group\": \"1.2.2\",\n    \"@radix-ui/react-scroll-area\": \"1.2.2\",\n    \"@radix-ui/react-select\": \"2.1.4\",\n    \"@radix-ui/react-separator\": \"1.1.1\",\n    \"@radix-ui/react-slider\": \"1.2.2\",\n    \"@radix-ui/react-slot\": \"1.1.1\",\n    \"@radix-ui/react-switch\": \"1.1.2\",\n    \"@radix-ui/react-tabs\": \"1.1.2\",\n    \"@radix-ui/react-toast\": \"1.2.4\",\n    \"@radix-ui/react-toggle\": \"1.1.1\",\n    \"@radix-ui/react-toggle-group\": \"1.1.1\",\n    \"@radix-ui/react-tooltip\": \"1.1.6\",\n    \"@vercel/analytics\": \"latest\",\n    \"autoprefixer\": \"^10.4.20\",\n    \"class-variance-authority\": \"^0.7.1\",\n    \"clsx\": \"^2.1.1\",\n    \"cmdk\": \"1.0.4\",\n    \"date-fns\": \"4.1.0\",\n    \"embla-carousel-react\": \"8.5.1\",\n    \"geist\": \"latest\",\n    \"input-otp\": \"1.4.1\",\n    \"lucide-react\": \"^0.454.0\",\n    \"next\": \"14.2.25\",\n    \"next-themes\": \"latest\",\n    \"react\": \"^19\",\n    \"react-day-picker\": \"9.8.0\",\n    \"react-dom\": \"^19\",\n    \"react-hook-form\": \"^7.60.0\",\n    \"react-resizable-panels\": \"^2.1.7\",\n    \"recharts\": \"2.15.4\",\n    \"sonner\": \"^1.7.4\",\n    \"tailwind-merge\": \"^2.5.5\",\n    \"tailwindcss-animate\": \"^1.0.7\",\n    \"vaul\": \"^0.9.9\",\n    \"zod\": \"3.25.67\"\n  },\n  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"eslint\": \"^9.39.1\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }\n}\n",
+        "numLines": 76,
+        "startLine": 1,
+        "totalLines": 76
+      }
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/package.json",
+      "old_string": "  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"eslint\": \"^9.39.1\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }",
+      "new_string": "  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }"
+    },
+    "tool_response": {
+      "filePath": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/package.json",
+      "oldString": "  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"eslint\": \"^9.39.1\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }",
+      "newString": "  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }",
+      "originalFile": "{\n  \"name\": \"my-v0-project\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"build\": \"next build\",\n    \"dev\": \"next dev\",\n    \"lint\": \"next lint\",\n    \"start\": \"next start\"\n  },\n  \"dependencies\": {\n    \"@hookform/resolvers\": \"^3.10.0\",\n    \"@radix-ui/react-accordion\": \"1.2.2\",\n    \"@radix-ui/react-alert-dialog\": \"1.1.4\",\n    \"@radix-ui/react-aspect-ratio\": \"1.1.1\",\n    \"@radix-ui/react-avatar\": \"1.1.2\",\n    \"@radix-ui/react-checkbox\": \"1.1.3\",\n    \"@radix-ui/react-collapsible\": \"1.1.2\",\n    \"@radix-ui/react-context-menu\": \"2.2.4\",\n    \"@radix-ui/react-dialog\": \"1.1.4\",\n    \"@radix-ui/react-dropdown-menu\": \"2.1.4\",\n    \"@radix-ui/react-hover-card\": \"1.1.4\",\n    \"@radix-ui/react-label\": \"2.1.1\",\n    \"@radix-ui/react-menubar\": \"1.1.4\",\n    \"@radix-ui/react-navigation-menu\": \"1.2.3\",\n    \"@radix-ui/react-popover\": \"1.1.4\",\n    \"@radix-ui/react-progress\": \"1.1.1\",\n    \"@radix-ui/react-radio-group\": \"1.2.2\",\n    \"@radix-ui/react-scroll-area\": \"1.2.2\",\n    \"@radix-ui/react-select\": \"2.1.4\",\n    \"@radix-ui/react-separator\": \"1.1.1\",\n    \"@radix-ui/react-slider\": \"1.2.2\",\n    \"@radix-ui/react-slot\": \"1.1.1\",\n    \"@radix-ui/react-switch\": \"1.1.2\",\n    \"@radix-ui/react-tabs\": \"1.1.2\",\n    \"@radix-ui/react-toast\": \"1.2.4\",\n    \"@radix-ui/react-toggle\": \"1.1.1\",\n    \"@radix-ui/react-toggle-group\": \"1.1.1\",\n    \"@radix-ui/react-tooltip\": \"1.1.6\",\n    \"@vercel/analytics\": \"latest\",\n    \"autoprefixer\": \"^10.4.20\",\n    \"class-variance-authority\": \"^0.7.1\",\n    \"clsx\": \"^2.1.1\",\n    \"cmdk\": \"1.0.4\",\n    \"date-fns\": \"4.1.0\",\n    \"embla-carousel-react\": \"8.5.1\",\n    \"geist\": \"latest\",\n    \"input-otp\": \"1.4.1\",\n    \"lucide-react\": \"^0.454.0\",\n    \"next\": \"14.2.25\",\n    \"next-themes\": \"latest\",\n    \"react\": \"^19\",\n    \"react-day-picker\": \"9.8.0\",\n    \"react-dom\": \"^19\",\n    \"react-hook-form\": \"^7.60.0\",\n    \"react-resizable-panels\": \"^2.1.7\",\n    \"recharts\": \"2.15.4\",\n    \"sonner\": \"^1.7.4\",\n    \"tailwind-merge\": \"^2.5.5\",\n    \"tailwindcss-animate\": \"^1.0.7\",\n    \"vaul\": \"^0.9.9\",\n    \"zod\": \"3.25.67\"\n  },\n  \"devDependencies\": {\n    \"@tailwindcss/postcss\": \"^4.1.9\",\n    \"@types/node\": \"^22\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"eslint\": \"^9.39.1\",\n    \"postcss\": \"^8.5\",\n    \"tailwindcss\": \"^4.1.9\",\n    \"tw-animate-css\": \"1.3.3\",\n    \"typescript\": \"^5\"\n  }\n}\n",
+      "structuredPatch": [
+        {
+          "oldStart": 66,
+          "oldLines": 7,
+          "newStart": 66,
+          "newLines": 6,
+          "lines": [
+            "     \"@types/node\": \"^22\",",
+            "     \"@types/react\": \"^18\",",
+            "     \"@types/react-dom\": \"^18\",",
+            "-    \"eslint\": \"^9.39.1\",",
+            "     \"postcss\": \"^8.5\",",
+            "     \"tailwindcss\": \"^4.1.9\",",
+            "     \"tw-animate-css\": \"1.3.3\","
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "rm .eslintrc.json package-lock.json && git status",
+      "description": "Remove eslint config and npm lockfile"
+    },
+    "tool_response": {
+      "stdout": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add/rm <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tdeleted:    .eslintrc.json\n\tmodified:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/chat.json\n\tmodified:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/post_tool_use.json\n\tmodified:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/pre_tool_use.json\n\tmodified:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/stop.json\n\tmodified:   logs/f93946af-8226-4abc-b149-feb27eb0e7ba/user_prompt_submit.json\n\tdeleted:    package-lock.json\n\tmodified:   package.json\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
   }
 ]
