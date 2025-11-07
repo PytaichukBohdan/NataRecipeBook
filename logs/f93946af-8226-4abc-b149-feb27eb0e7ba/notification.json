@@ -54,5 +54,12 @@
     "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
     "hook_event_name": "Notification",
     "message": "Claude Code needs your approval for the plan"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
   }
 ]
