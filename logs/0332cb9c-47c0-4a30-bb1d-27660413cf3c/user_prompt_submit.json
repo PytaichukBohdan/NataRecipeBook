@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "0332cb9c-47c0-4a30-bb1d-27660413cf3c",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/0332cb9c-47c0-4a30-bb1d-27660413cf3c.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/feature @data/recipes.json now include \"nutrition\"\\\nI NEED YOU TO add visual showing that nutrition on the page\\\nMAKE IT VERY VISUALLY APPEALING "
+  }
+]

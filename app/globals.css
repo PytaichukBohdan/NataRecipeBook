@@ -362,6 +362,149 @@
   max-width: 28rem;
 }
 
+/* Nutrition Card Styles - Minimalistic Apple Design */
+.nutrition-card {
+  background: oklch(0.99 0 0);
+  border: 1px solid oklch(0.92 0 0);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px oklch(0 0 0 / 0.04);
+  transition: none;
+  animation: none;
+}
+
+.nutrition-card:hover {
+  box-shadow: 0 1px 3px oklch(0 0 0 / 0.04);
+  transform: none;
+}
+
+.nutrition-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: var(--color-foreground);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.015em;
+}
+
+.nutrition-calories {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: oklch(0.985 0 0);
+  border-radius: 0.625rem;
+  border: 1px solid oklch(0.88 0 0);
+}
+
+.nutrition-calories-value {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: oklch(0.3 0 0);
+  line-height: 1;
+  margin-bottom: 0.375rem;
+  letter-spacing: -0.02em;
+}
+
+.nutrition-calories-label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: oklch(0.5 0 0);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.nutrition-macros-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.nutrition-macro-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 60px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nutrition-macro-label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: oklch(0.3 0 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.nutrition-bar-container {
+  position: relative;
+  height: 8px;
+  background: oklch(0.94 0 0);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.nutrition-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease-out;
+}
+
+.nutrition-bar-protein {
+  background: oklch(0.5 0.08 150);
+}
+
+.nutrition-bar-carbs {
+  background: oklch(0.55 0.08 90);
+}
+
+.nutrition-bar-fat {
+  background: oklch(0.45 0.05 50);
+}
+
+.nutrition-macro-amount {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: oklch(0.3 0 0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  letter-spacing: -0.01em;
+  text-align: right;
+}
+
+
+/* Responsive adjustments for nutrition card */
+@media (max-width: 768px) {
+  .nutrition-card {
+    padding: 1.25rem;
+  }
+
+  .nutrition-macro-row {
+    grid-template-columns: 80px 1fr 50px;
+    gap: 0.75rem;
+  }
+
+  .nutrition-macro-label {
+    font-size: 0.875rem;
+  }
+
+  .nutrition-macro-amount {
+    font-size: 0.875rem;
+  }
+
+  .nutrition-calories-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .nutrition-macro-row {
+    grid-template-columns: 70px 1fr 45px;
+    gap: 0.5rem;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

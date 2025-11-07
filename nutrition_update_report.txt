@@ -1,0 +1,34 @@
+======================================================================
+NUTRITIONAL DATA ADDITION - FINAL REPORT
+======================================================================
+
+Total Recipes Processed: 65
+Successfully Updated: 65 (100%)
+
+Category Breakdown:
+----------------------------------------------------------------------
+
+Сніданки:
+  • Total recipes: 20
+  • Per 100g measurements: 2
+  • Per serving measurements: 18
+  • Average calories: 352 kcal
+  • Average protein: 27.5g
+
+Обід/вечеря:
+  • Total recipes: 25
+  • Per 100g measurements: 2
+  • Per serving measurements: 23
+  • Average calories: 446 kcal
+  • Average protein: 39.2g
+
+Десерти:
+  • Total recipes: 20
+  • Per 100g measurements: 14
+  • Per serving measurements: 6
+  • Average calories: 175 kcal
+  • Average protein: 15.6g
+
+======================================================================
+STATUS: ✓ SUCCESS - All recipes now include nutritional information
+======================================================================

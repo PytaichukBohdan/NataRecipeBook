@@ -1,11 +1,20 @@
 // Recipe data structure types based on recipes.json
 
+export interface Nutrition {
+  serving_type: 'per_100g' | 'per_serving'
+  calories: number
+  protein: number
+  fat: number
+  carbs: number
+}
+
 export interface Recipe {
   id: number
   title: string
   ingredients: string[]
   how_to_cook: string[]
   image_path: string
+  nutrition?: Nutrition
 }
 
 export interface Category {

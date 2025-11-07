@@ -18,7 +18,14 @@
             "50г сир кисломолочний нежирний"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_1.jpeg"
+          "image_path": "public/recipe_images/breakfast_1.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 126,
+            "protein": 6,
+            "fat": 2,
+            "carbs": 20
+          }
         },
         {
           "id": 2,
@@ -37,7 +44,14 @@
             "10г родзинок",
             "1 інжир"
           ],
-          "image_path": "public/recipe_images/breakfast_2.jpeg"
+          "image_path": "public/recipe_images/breakfast_2.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 112,
+            "protein": 15,
+            "fat": 2,
+            "carbs": 8
+          }
         },
         {
           "id": 3,
@@ -58,7 +72,14 @@
           "how_to_cook": [
             "Мікрогріном прикрашаємо та посипаю трохи горішками за смаком"
           ],
-          "image_path": "public/recipe_images/breakfast_3.jpeg"
+          "image_path": "public/recipe_images/breakfast_3.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 349,
+            "protein": 27,
+            "fat": 12,
+            "carbs": 35
+          }
         },
         {
           "id": 4,
@@ -78,7 +99,14 @@
             "15г лохина",
             "10г пармезану"
           ],
-          "image_path": "public/recipe_images/breakfast_4.jpeg"
+          "image_path": "public/recipe_images/breakfast_4.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 334,
+            "protein": 16,
+            "fat": 17,
+            "carbs": 26
+          }
         },
         {
           "id": 5,
@@ -90,7 +118,14 @@
             "5-10г гарбузове насіння"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_5.jpeg"
+          "image_path": "public/recipe_images/breakfast_5.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 386,
+            "protein": 24,
+            "fat": 9,
+            "carbs": 52
+          }
         },
         {
           "id": 6,
@@ -108,7 +143,14 @@
             "30г горошок консервований"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_6.jpeg"
+          "image_path": "public/recipe_images/breakfast_6.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 381,
+            "protein": 22,
+            "fat": 6,
+            "carbs": 31
+          }
         },
         {
           "id": 7,
@@ -126,7 +168,14 @@
             "5г мигдалеві пластівці"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_7.jpeg"
+          "image_path": "public/recipe_images/breakfast_7.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 240,
+            "protein": 15,
+            "fat": 3,
+            "carbs": 35
+          }
         },
         {
           "id": 8,
@@ -147,7 +196,14 @@
             "10г джем вишневий без цукру на омлет"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_8.jpeg"
+          "image_path": "public/recipe_images/breakfast_8.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 411,
+            "protein": 32,
+            "fat": 13,
+            "carbs": 39
+          }
         },
         {
           "id": 9,
@@ -164,7 +220,14 @@
             "80г полуниці або сезонного фрукта нарізаємо під кожен слайс",
             "Корицею посипаємо по бажанню"
           ],
-          "image_path": "public/recipe_images/breakfast_9.jpeg"
+          "image_path": "public/recipe_images/breakfast_9.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 273,
+            "protein": 29,
+            "fat": 8,
+            "carbs": 19
+          }
         },
         {
           "id": 10,
@@ -187,7 +250,14 @@
             "10г абрикоса",
             "(Фрукти обираємо за бажанням)"
           ],
-          "image_path": "public/recipe_images/breakfast_10.jpeg"
+          "image_path": "public/recipe_images/breakfast_10.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 320,
+            "protein": 24,
+            "fat": 11,
+            "carbs": 30
+          }
         },
         {
           "id": 11,
@@ -205,7 +275,14 @@
             "50г капуста пелюстками по-корейськи"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_11.jpeg"
+          "image_path": "public/recipe_images/breakfast_11.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 430,
+            "protein": 35,
+            "fat": 7,
+            "carbs": 51
+          }
         },
         {
           "id": 12,
@@ -228,7 +305,14 @@
             "20г шпинату"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_12.jpeg"
+          "image_path": "public/recipe_images/breakfast_12.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 447,
+            "protein": 46,
+            "fat": 7,
+            "carbs": 48
+          }
         },
         {
           "id": 13,
@@ -250,7 +334,14 @@
             "20г сир вершковий fitline 0,2%",
             "Прикрашаємо руколою та малиною"
           ],
-          "image_path": "public/recipe_images/breakfast_13.jpeg"
+          "image_path": "public/recipe_images/breakfast_13.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 329,
+            "protein": 29,
+            "fat": 9,
+            "carbs": 30
+          }
         },
         {
           "id": 14,
@@ -267,7 +358,14 @@
             "50г вареної кукурудзи"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_14.jpeg"
+          "image_path": "public/recipe_images/breakfast_14.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 480,
+            "protein": 39,
+            "fat": 6,
+            "carbs": 64
+          }
         },
         {
           "id": 15,
@@ -285,7 +383,14 @@
             "25г ожини"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_15.jpeg"
+          "image_path": "public/recipe_images/breakfast_15.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 428,
+            "protein": 48,
+            "fat": 13,
+            "carbs": 23
+          }
         },
         {
           "id": 16,
@@ -306,7 +411,14 @@
             "Спосіб приготування:",
             "Змішуємо всі інгрідієнти і викладаємо на розігріту сковороду. Коли млинець приготувався, викладаємо начинку і накриваємо його."
           ],
-          "image_path": "public/recipe_images/breakfast_16.jpeg"
+          "image_path": "public/recipe_images/breakfast_16.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 428,
+            "protein": 25,
+            "fat": 23,
+            "carbs": 45
+          }
         },
         {
           "id": 17,
@@ -325,7 +437,14 @@
             "20г сушеного інжиру"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_17.jpeg"
+          "image_path": "public/recipe_images/breakfast_17.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 420,
+            "protein": 14,
+            "fat": 14,
+            "carbs": 57
+          }
         },
         {
           "id": 18,
@@ -342,7 +461,14 @@
             "Спосіб приготування:",
             "Поки вівсянка вариться у водичці, ми змішуємо протеїн з йогуртом. Викладаємо на тарілку суміш, зверху вівсянку і прикрашаємо фруктами."
           ],
-          "image_path": "public/recipe_images/breakfast_18.jpeg"
+          "image_path": "public/recipe_images/breakfast_18.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 450,
+            "protein": 40,
+            "fat": 11,
+            "carbs": 49
+          }
         },
         {
           "id": 19,
@@ -358,7 +484,14 @@
             "15г Філадельфії"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/breakfast_19.jpeg"
+          "image_path": "public/recipe_images/breakfast_19.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 317,
+            "protein": 26,
+            "fat": 11,
+            "carbs": 29
+          }
         },
         {
           "id": 20,
@@ -376,7 +509,14 @@
             "Окремо варимо вівсянку на воді та додаємо вкінці збитий шпинат.",
             "Викладаємо на тарілку і посипаємо трошки пармезану."
           ],
-          "image_path": "public/recipe_images/breakfast_20.jpeg"
+          "image_path": "public/recipe_images/breakfast_20.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 379,
+            "protein": 38,
+            "fat": 10,
+            "carbs": 36
+          }
         }
       ]
     },
@@ -399,7 +539,14 @@
             "Макарони варені у воді"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_1.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_1.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 465,
+            "protein": 47,
+            "fat": 4,
+            "carbs": 57
+          }
         },
         {
           "id": 2,
@@ -411,7 +558,14 @@
             "20г листя салату"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_2.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_2.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 391,
+            "protein": 38,
+            "fat": 3,
+            "carbs": 50
+          }
         },
         {
           "id": 3,
@@ -428,7 +582,14 @@
             "5г пармезану"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_3.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_3.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 372,
+            "protein": 13,
+            "fat": 7,
+            "carbs": 61
+          }
         },
         {
           "id": 4,
@@ -448,7 +609,14 @@
             "Мікрогрін",
             "Інжир"
           ],
-          "image_path": "public/recipe_images/lunch_dinner_4.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_4.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 432,
+            "protein": 27,
+            "fat": 7,
+            "carbs": 64
+          }
         },
         {
           "id": 5,
@@ -469,7 +637,14 @@
             "10г кедрових горішок",
             "Мікрогрін"
           ],
-          "image_path": "public/recipe_images/lunch_dinner_5.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_5.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 354,
+            "protein": 33,
+            "fat": 7,
+            "carbs": 34
+          }
         },
         {
           "id": 6,
@@ -489,7 +664,14 @@
             "Приготування:",
             "Куряче філе у спеція просушити на водичці. Батат у спеціях кинути в духовку на 20хв 190градусів ."
           ],
-          "image_path": "public/recipe_images/lunch_dinner_6.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_6.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 390,
+            "protein": 25,
+            "fat": 7,
+            "carbs": 54
+          }
         },
         {
           "id": 7,
@@ -508,7 +690,14 @@
             "20г шпинату",
             "60г черрі"
           ],
-          "image_path": "public/recipe_images/lunch_dinner_7.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_7.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 161,
+            "protein": 14,
+            "fat": 3,
+            "carbs": 19
+          }
         },
         {
           "id": 8,
@@ -523,7 +712,14 @@
             "70г ківі"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_8.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_8.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 390,
+            "protein": 25,
+            "fat": 7,
+            "carbs": 54
+          }
         },
         {
           "id": 9,
@@ -543,7 +739,14 @@
             "Приготування:",
             "Поки готується в духовці картопля, тушимо лосося в спеціях та готуємо снек до фільму. Змішуємо йогурт з італійськими травами. Нарізаємо паличками свіжу морквину та додаємо нарізані овочі до головної тарілки."
           ],
-          "image_path": "public/recipe_images/lunch_dinner_9.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_9.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 488,
+            "protein": 53,
+            "fat": 18,
+            "carbs": 28
+          }
         },
         {
           "id": 10,
@@ -564,7 +767,14 @@
             "Дати настоятись на 10-15хв після приготування.",
             "Прикрашаємо зеленню на свій смак."
           ],
-          "image_path": "public/recipe_images/lunch_dinner_10.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_10.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 143,
+            "protein": 11,
+            "fat": 2,
+            "carbs": 20
+          }
         },
         {
           "id": 11,
@@ -580,7 +790,14 @@
             "10г сушеної журавлини"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_11.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_11.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 405,
+            "protein": 49,
+            "fat": 4,
+            "carbs": 42
+          }
         },
         {
           "id": 12,
@@ -598,7 +815,14 @@
             "Філе спекти в духовці. Брюссельську капусту та моркву стушити на травах.",
             "Полити сіком лайму"
           ],
-          "image_path": "public/recipe_images/lunch_dinner_12.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_12.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 755,
+            "protein": 69,
+            "fat": 27,
+            "carbs": 55
+          }
         },
         {
           "id": 13,
@@ -616,7 +840,14 @@
             "Все звертаємо та об смажу ємо на сухій сковорідці."
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_13.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_13.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 496,
+            "protein": 39,
+            "fat": 7,
+            "carbs": 68
+          }
         },
         {
           "id": 14,
@@ -630,7 +861,14 @@
             "Все тушимо в спеціях, змішуємо, додаємо трохи лимонного соку та насолоджуємось."
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_14.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_14.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 466,
+            "protein": 35,
+            "fat": 3,
+            "carbs": 72
+          }
         },
         {
           "id": 15,
@@ -645,7 +883,14 @@
             "Окремо все тушимо в спеціях. Та фантазуємо з розкладкою цього ідеального поєднання"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_15.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_15.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 698,
+            "protein": 68,
+            "fat": 11,
+            "carbs": 78
+          }
         },
         {
           "id": 16,
@@ -662,7 +907,14 @@
             "60г тофу"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_16.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_16.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 323,
+            "protein": 32,
+            "fat": 15,
+            "carbs": 13
+          }
         },
         {
           "id": 17,
@@ -677,7 +929,14 @@
             "10г курячого паштету"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_17.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_17.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 498,
+            "protein": 37,
+            "fat": 9,
+            "carbs": 61
+          }
         },
         {
           "id": 18,
@@ -693,7 +952,14 @@
             "20г мікс салату"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_18.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_18.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 411,
+            "protein": 42,
+            "fat": 13,
+            "carbs": 32
+          }
         },
         {
           "id": 19,
@@ -707,7 +973,14 @@
             "50г лохини"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_19.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_19.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 454,
+            "protein": 33,
+            "fat": 3,
+            "carbs": 73
+          }
         },
         {
           "id": 20,
@@ -721,7 +994,14 @@
             "50г йогурта 1,5%"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_20.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_20.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 559,
+            "protein": 51,
+            "fat": 10,
+            "carbs": 62
+          }
         },
         {
           "id": 21,
@@ -741,7 +1021,14 @@
             "Спосіб приготування:",
             "Тунець варимо на водичці по 2 хв з кожного боку. Окремо варимо пасту. Нарізаємо інші інгрідієнти та оформляємо тарілочку."
           ],
-          "image_path": "public/recipe_images/lunch_dinner_21.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_21.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 548,
+            "protein": 50,
+            "fat": 13,
+            "carbs": 56
+          }
         },
         {
           "id": 22,
@@ -758,7 +1045,14 @@
             "35г томатної пасти"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_22.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_22.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 616,
+            "protein": 58,
+            "fat": 6,
+            "carbs": 79
+          }
         },
         {
           "id": 23,
@@ -780,7 +1074,14 @@
             "100г лохини"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_23.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_23.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 275,
+            "protein": 22,
+            "fat": 2,
+            "carbs": 41
+          }
         },
         {
           "id": 24,
@@ -797,7 +1098,14 @@
             "25г аджика"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/lunch_dinner_24.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_24.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 484,
+            "protein": 55,
+            "fat": 13,
+            "carbs": 37
+          }
         },
         {
           "id": 25,
@@ -816,7 +1124,14 @@
             "Спосіб приготування:",
             "Окремо варите на водичці булгур, буряк та філе курочки. Всі інгрідієнти нарізаємо та тушимо разом у бажаних спеція 5-10хв."
           ],
-          "image_path": "public/recipe_images/lunch_dinner_25.jpeg"
+          "image_path": "public/recipe_images/lunch_dinner_25.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 587,
+            "protein": 55,
+            "fat": 5,
+            "carbs": 78
+          }
         }
       ]
     },
@@ -843,7 +1158,14 @@
             "Приготування є:",
             "Все замішуємо посипаємо кокосовою стружкою і кидаємо в духовку на 15-20хв 180 градусів"
           ],
-          "image_path": "public/recipe_images/desserts_1.jpeg"
+          "image_path": "public/recipe_images/desserts_1.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 158,
+            "protein": 12,
+            "fat": 7,
+            "carbs": 12
+          }
         },
         {
           "id": 2,
@@ -858,7 +1180,14 @@
             "Приготування:",
             "Змішуємо інгрідієнти, занурюємо у формочку і кидаємо в морозилку."
           ],
-          "image_path": "public/recipe_images/desserts_2.jpeg"
+          "image_path": "public/recipe_images/desserts_2.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 97,
+            "protein": 10,
+            "fat": 2,
+            "carbs": 11
+          }
         },
         {
           "id": 3,
@@ -875,7 +1204,14 @@
             "Все змішуємо, формуємо формочку яку бажаємо і кидаємо а духовку на 15-20хв на 180градусів"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/desserts_3.jpeg"
+          "image_path": "public/recipe_images/desserts_3.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 164,
+            "protein": 14,
+            "fat": 8,
+            "carbs": 12
+          }
         },
         {
           "id": 4,
@@ -893,7 +1229,14 @@
             "Все як зазвичай просто. Всі інгрідієнти змішуємо та кладемо у формочку. Випікаємо на 20-25хв при температурі 180-190 градусів"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/desserts_4.jpeg"
+          "image_path": "public/recipe_images/desserts_4.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 121,
+            "protein": 13,
+            "fat": 1,
+            "carbs": 14
+          }
         },
         {
           "id": 5,
@@ -910,7 +1253,14 @@
             "Приготування є:",
             "Все змішуємо блондином і кидаємо в мікрохвильову на 3хв"
           ],
-          "image_path": "public/recipe_images/desserts_5.jpeg"
+          "image_path": "public/recipe_images/desserts_5.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 98,
+            "protein": 8,
+            "fat": 2,
+            "carbs": 11
+          }
         },
         {
           "id": 6,
@@ -926,7 +1276,14 @@
           "how_to_cook": [
             "Приготування: все змішуємо, викладаємо у будь-яку формочку або на дошку і поливаємо зверху пудингом. Кладемо в морозилку на годину."
           ],
-          "image_path": "public/recipe_images/desserts_6.jpeg"
+          "image_path": "public/recipe_images/desserts_6.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 173,
+            "protein": 6,
+            "fat": 2,
+            "carbs": 32
+          }
         },
         {
           "id": 7,
@@ -942,7 +1299,14 @@
             "Приготування:",
             "Все збиваємо в блендері, кладемо у формочку. Зверху накладаємо тонкий шар арахісової пасти або чорного шоколаду 95% і кладемо в морозилку на годину."
           ],
-          "image_path": "public/recipe_images/desserts_7.jpeg"
+          "image_path": "public/recipe_images/desserts_7.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 390,
+            "protein": 60,
+            "fat": 8,
+            "carbs": 19
+          }
         },
         {
           "id": 8,
@@ -958,7 +1322,14 @@
             "50г творога",
             "70г ягід на ваш смак"
           ],
-          "image_path": "public/recipe_images/desserts_8.jpeg"
+          "image_path": "public/recipe_images/desserts_8.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 83,
+            "protein": 12,
+            "fat": 1,
+            "carbs": 7
+          }
         },
         {
           "id": 9,
@@ -972,7 +1343,14 @@
             "15-20г йогурта до 1,5%"
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/desserts_9.jpeg"
+          "image_path": "public/recipe_images/desserts_9.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 210,
+            "protein": 10,
+            "fat": 11,
+            "carbs": 15
+          }
         },
         {
           "id": 10,
@@ -989,7 +1367,14 @@
             "Приготування:",
             "Збиваємо всі інгрідієнти блендером і замішуємо окремо вошнею."
           ],
-          "image_path": "public/recipe_images/desserts_10.jpeg"
+          "image_path": "public/recipe_images/desserts_10.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 103,
+            "protein": 15,
+            "fat": 1,
+            "carbs": 9
+          }
         },
         {
           "id": 11,
@@ -1012,7 +1397,14 @@
             "Приготування:",
             "Змішати всі інгрідієнти в блендері, окремо замішати з консистенцією заморожену чорницю, викласти у форму, зверху потицяти 30г лохини, випікати 170 °C 40–45 хв."
           ],
-          "image_path": "public/recipe_images/desserts_11.jpeg"
+          "image_path": "public/recipe_images/desserts_11.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 133,
+            "protein": 10,
+            "fat": 2,
+            "carbs": 19
+          }
         },
         {
           "id": 12,
@@ -1033,7 +1425,14 @@
             "Приготування:",
             "Змішати всі інгрідієнти у блендері, додати порізаний шматочками шоколад, випікати 170 °C 20–25 хв."
           ],
-          "image_path": "public/recipe_images/desserts_12.jpeg"
+          "image_path": "public/recipe_images/desserts_12.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 205,
+            "protein": 9,
+            "fat": 8,
+            "carbs": 25
+          }
         },
         {
           "id": 13,
@@ -1048,7 +1447,14 @@
           "how_to_cook": [
             "Спосіб приготування: всі інгрідієнти змішуємо міксером і смажимо на сухій сковорідці. Начинку додаємо під кожен слайс."
           ],
-          "image_path": "public/recipe_images/desserts_13.jpeg"
+          "image_path": "public/recipe_images/desserts_13.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 252,
+            "protein": 30,
+            "fat": 4,
+            "carbs": 24
+          }
         },
         {
           "id": 14,
@@ -1069,7 +1475,14 @@
             "Розімʼяти банани до стану пюре. Додайте яйця, білок, підсолоджувач, перемішати вінчиком. В окремій мисці змішати обидва види борошна, розпушувач і корицю. З’єднати інгредієнти. Якщо маса густа, додай трохи молока. Викладаємо у форму, застелену пергаментом.",
             "Випікати при 180°C 40-45хв, до сухої шпажки."
           ],
-          "image_path": "public/recipe_images/desserts_14.jpeg"
+          "image_path": "public/recipe_images/desserts_14.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 163,
+            "protein": 6,
+            "fat": 3,
+            "carbs": 26
+          }
         },
         {
           "id": 15,
@@ -1092,7 +1505,14 @@
             "Перемішай, випікай при 170 градусів 20 хв, періодично перемішуючи.",
             "У шар: чіа-пудинг, йогурт, ягоди, гранола, зверху ложечка пасти або протеїновий пудинг."
           ],
-          "image_path": "public/recipe_images/desserts_15.jpeg"
+          "image_path": "public/recipe_images/desserts_15.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 260,
+            "protein": 22,
+            "fat": 5,
+            "carbs": 30
+          }
         },
         {
           "id": 16,
@@ -1108,7 +1528,14 @@
             "Спосіб приготування:",
             "Поламай хлібці на шматочки. Змішай пудинг, протеїн, какао і краплю рідини - має вийти густий шоколадний крем. Обваляй шматочки хлібців у кремі, розклади на пергамент. Постав у морозильну камеру на 20–30 хв, поки застигне."
           ],
-          "image_path": "public/recipe_images/desserts_16.png"
+          "image_path": "public/recipe_images/desserts_16.png",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 149,
+            "protein": 15,
+            "fat": 2,
+            "carbs": 17
+          }
         },
         {
           "id": 17,
@@ -1133,7 +1560,14 @@
             "Змішуємо всі інгрідієнти і кидаємо в духовку на 170 градусів 30хв (кожні 10хв помішуємо)."
           ],
           "how_to_cook": [],
-          "image_path": "public/recipe_images/desserts_17.jpeg"
+          "image_path": "public/recipe_images/desserts_17.jpeg",
+          "nutrition": {
+            "serving_type": "per_serving",
+            "calories": 426,
+            "protein": 28,
+            "fat": 13,
+            "carbs": 50
+          }
         },
         {
           "id": 18,
@@ -1152,7 +1586,14 @@
             "Збити білки з підсолоджувачем до легкої піни. Додати борошно, протеїн, розпушувач, воду/молоко. Далі вирішуємо вишні. Випікаємо 3-4 хв.",
             "Подати можна з додатковими вишнями, або пюре з вишень, йогуртом 1,5% та посипати трошки улюблених горішків."
           ],
-          "image_path": "public/recipe_images/desserts_18.jpeg"
+          "image_path": "public/recipe_images/desserts_18.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 110,
+            "protein": 10,
+            "fat": 1,
+            "carbs": 14
+          }
         },
         {
           "id": 19,
@@ -1171,7 +1612,14 @@
             "Викладаємо на пергамент у духовку або у форму для аерогрилю.",
             "Випікаємо при 180 градусів  20–25 хвилин до золотистої скоринки."
           ],
-          "image_path": "public/recipe_images/desserts_19.jpeg"
+          "image_path": "public/recipe_images/desserts_19.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 113,
+            "protein": 15,
+            "fat": 2,
+            "carbs": 9
+          }
         },
         {
           "id": 20,
@@ -1191,7 +1639,14 @@
             "Випікати при 180градусів 20–25 хвилин, доки кекс стане золотистим і пружним.",
             "◦"
           ],
-          "image_path": "public/recipe_images/desserts_20.jpeg"
+          "image_path": "public/recipe_images/desserts_20.jpeg",
+          "nutrition": {
+            "serving_type": "per_100g",
+            "calories": 93,
+            "protein": 6,
+            "fat": 0,
+            "carbs": 16
+          }
         }
       ]
     }

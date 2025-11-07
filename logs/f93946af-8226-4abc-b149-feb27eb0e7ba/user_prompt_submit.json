@@ -1,0 +1,74 @@
+[
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/implement @specs/issue-unknown-adw-unknown-sdlc_planner-add-nutrition-visual-display.md "
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run locally"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "So the location of this new interface should be placed below Ingredients and Sposib pregotuvanya. Below Sposib pregotuvanya. The design should be more minimalistic like Apple style. For example, remove the emoji near \u0445\u0430\u0440\u0447\u0443\u0432\u0430\u043d\u043d\u044f. The green frame around calories should be more like grey toned, not green. The button of 100 degrees should also be removed. And these circles should indicate the baseline for the daily intake that you need and be calculated accordingly. Implement these improvements."
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "1 of 1 error\nNext.js (14.2.25) is outdated (learn more)\nServer Error\nTypeError: e[o] is not a function\n\nThis error happened while generating the page. Any console logs will be displayed in the terminal window.\nCall Stack\nNext.js\nObject.t [as require]\nfile:///Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.next/server/webpack-runtime.js (1:127)\nrequire\nfile:///Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js (16:18839)\nI\nfile:///Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js (12:94364)\n<unknown>\nfile:///Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js (12:96670)\nF._fromJSON\nfile:///Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js (12:97108)\nJSON.parse\n<anonymous>\nNext.js\nO\nfile:///Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js (12:94085)"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1] Remove emmohies\\\nRemove circles (propose something else)\\\nRemove that badly visible numbers (12%) on the top left of each icon"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Plan changes"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "The whole css isnot working"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "[Image #1]"
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push origin main"
+  }
+]

@@ -5,5 +5,12 @@
     "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
     "hook_event_name": "Notification",
     "message": "Claude is waiting for your input"
+  },
+  {
+    "session_id": "ffecf4b5-7f65-4bab-93f7-a0d8276feb36",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/ffecf4b5-7f65-4bab-93f7-a0d8276feb36.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
   }
 ]

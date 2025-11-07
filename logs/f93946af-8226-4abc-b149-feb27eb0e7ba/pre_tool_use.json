@@ -1,0 +1,1899 @@
+[
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "pending",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "pending",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "pending",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "pending",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "pending",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add visual polish and animations to CSS",
+          "status": "pending",
+          "activeForm": "Adding visual polish and animations to CSS"
+        },
+        {
+          "content": "Implement responsive design refinements",
+          "status": "pending",
+          "activeForm": "Implementing responsive design refinements"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "pending",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "pending",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/types/recipe.ts"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "offset": 0,
+      "limit": 100
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "offset": 100,
+      "limit": 200
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "head -100 data/recipes.json | grep -A 10 \"nutrition\"",
+      "description": "Check nutrition data structure in recipes.json"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "in_progress",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "pending",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "pending",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "pending",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "pending",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add visual polish and animations to CSS",
+          "status": "pending",
+          "activeForm": "Adding visual polish and animations to CSS"
+        },
+        {
+          "content": "Implement responsive design refinements",
+          "status": "pending",
+          "activeForm": "Implementing responsive design refinements"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "pending",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "pending",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/types/recipe.ts",
+      "old_string": "// Recipe data structure types based on recipes.json\n\nexport interface Recipe {\n  id: number\n  title: string\n  ingredients: string[]\n  how_to_cook: string[]\n  image_path: string\n}",
+      "new_string": "// Recipe data structure types based on recipes.json\n\nexport interface Nutrition {\n  serving_type: 'per_100g' | 'per_serving'\n  calories: number\n  protein: number\n  fat: number\n  carbs: number\n}\n\nexport interface Recipe {\n  id: number\n  title: string\n  ingredients: string[]\n  how_to_cook: string[]\n  image_path: string\n  nutrition?: Nutrition\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "completed",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "in_progress",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "pending",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "pending",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "pending",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add visual polish and animations to CSS",
+          "status": "pending",
+          "activeForm": "Adding visual polish and animations to CSS"
+        },
+        {
+          "content": "Implement responsive design refinements",
+          "status": "pending",
+          "activeForm": "Implementing responsive design refinements"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "pending",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "pending",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/lib/nutrition-utils.ts",
+      "content": "import type { Nutrition } from '@/types/recipe'\n\n/**\n * Calculate the total macronutrients (protein + fat + carbs) in grams\n * @param nutrition - The nutrition data object\n * @returns Total macronutrients in grams\n */\nexport function calculateTotalMacros(nutrition: Nutrition): number {\n  return nutrition.protein + nutrition.fat + nutrition.carbs\n}\n\n/**\n * Calculate the percentage of a specific macro relative to total macros\n * @param macro - The macro value in grams\n * @param total - Total macronutrients in grams\n * @returns Percentage (0-100)\n */\nexport function getMacroPercentage(macro: number, total: number): number {\n  if (total === 0) return 0\n  return Math.round((macro / total) * 100)\n}\n\n/**\n * Format serving type for display in Ukrainian\n * @param servingType - The serving type string from the data\n * @returns Formatted serving type in Ukrainian\n */\nexport function formatServingType(servingType: string): string {\n  switch (servingType) {\n    case 'per_100g':\n      return '\u041d\u0430 100\u0433'\n    case 'per_serving':\n      return '\u041d\u0430 \u043f\u043e\u0440\u0446\u0456\u044e'\n    default:\n      return servingType\n  }\n}\n\n/**\n * Get the CSS color class for a specific macronutrient type\n * @param macroType - The type of macronutrient\n * @returns CSS class name for coloring\n */\nexport function getNutritionColor(macroType: 'protein' | 'carbs' | 'fat'): string {\n  switch (macroType) {\n    case 'protein':\n      return 'nutrition-protein'\n    case 'carbs':\n      return 'nutrition-carbs'\n    case 'fat':\n      return 'nutrition-fats'\n  }\n}\n\n/**\n * Get the display label for a macronutrient in Ukrainian\n * @param macroType - The type of macronutrient\n * @returns Ukrainian label\n */\nexport function getMacroLabel(macroType: 'protein' | 'carbs' | 'fat'): string {\n  switch (macroType) {\n    case 'protein':\n      return '\u0411\u0456\u043b\u043a\u0438'\n    case 'carbs':\n      return '\u0412\u0443\u0433\u043b\u0435\u0432\u043e\u0434\u0438'\n    case 'fat':\n      return '\u0416\u0438\u0440\u0438'\n  }\n}\n\n/**\n * Get the icon emoji for a macronutrient\n * @param macroType - The type of macronutrient\n * @returns Emoji icon\n */\nexport function getMacroIcon(macroType: 'protein' | 'carbs' | 'fat'): string {\n  switch (macroType) {\n    case 'protein':\n      return '\ud83e\udd69'\n    case 'carbs':\n      return '\ud83c\udf3e'\n    case 'fat':\n      return '\ud83e\udd51'\n  }\n}\n"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "completed",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "completed",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "in_progress",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "pending",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "pending",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add visual polish and animations to CSS",
+          "status": "pending",
+          "activeForm": "Adding visual polish and animations to CSS"
+        },
+        {
+          "content": "Implement responsive design refinements",
+          "status": "pending",
+          "activeForm": "Implementing responsive design refinements"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "pending",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "pending",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "wc -l app/globals.css",
+      "description": "Count lines in globals.css"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "offset": 280
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": ".empty-message-text {\n  font-size: 1rem;\n  color: var(--color-muted-foreground);\n  line-height: 1.6;\n  max-width: 28rem;\n}\n\n@layer base {",
+      "new_string": ".empty-message-text {\n  font-size: 1rem;\n  color: var(--color-muted-foreground);\n  line-height: 1.6;\n  max-width: 28rem;\n}\n\n/* Nutrition Card Styles */\n.nutrition-card {\n  background: linear-gradient(135deg, oklch(0.99 0 0) 0%, oklch(0.97 0 0) 100%);\n  border: 1px solid oklch(0.92 0 0);\n  border-radius: 1rem;\n  padding: 2rem;\n  box-shadow: 0 4px 12px oklch(0 0 0 / 0.08);\n  transition: all 0.3s ease;\n  animation: slideInUp 0.5s ease-out;\n}\n\n.nutrition-card:hover {\n  box-shadow: 0 6px 20px oklch(0 0 0 / 0.12);\n  transform: translateY(-2px);\n}\n\n.nutrition-header {\n  font-size: 1.5rem;\n  font-weight: 600;\n  font-family: var(--font-serif);\n  color: var(--color-foreground);\n  text-align: center;\n  margin-bottom: 1.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0.5rem;\n}\n\n.nutrition-calories {\n  text-align: center;\n  margin-bottom: 2rem;\n  padding: 1.5rem;\n  background: oklch(0.98 0 0);\n  border-radius: 0.75rem;\n  border: 2px solid oklch(0.6 0.15 145);\n}\n\n.nutrition-calories-value {\n  font-size: 3rem;\n  font-weight: 700;\n  font-family: var(--font-mono);\n  color: oklch(0.4 0.12 145);\n  line-height: 1;\n  margin-bottom: 0.5rem;\n}\n\n.nutrition-calories-label {\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: var(--color-muted-foreground);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n}\n\n.nutrition-macros-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n  margin-bottom: 1.5rem;\n}\n\n.nutrition-macro-item {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 1rem;\n  border-radius: 0.75rem;\n  background: oklch(0.98 0 0);\n  transition: all 0.3s ease;\n}\n\n.nutrition-macro-item:hover {\n  transform: scale(1.05);\n  background: oklch(0.96 0 0);\n}\n\n.nutrition-macro-item:nth-child(1) {\n  animation-delay: 0.1s;\n}\n\n.nutrition-macro-item:nth-child(2) {\n  animation-delay: 0.2s;\n}\n\n.nutrition-macro-item:nth-child(3) {\n  animation-delay: 0.3s;\n}\n\n.nutrition-circle-progress {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  margin-bottom: 1rem;\n}\n\n.nutrition-circle-background {\n  fill: none;\n  stroke: oklch(0.95 0 0);\n  stroke-width: 8;\n}\n\n.nutrition-circle-fill {\n  fill: none;\n  stroke-width: 8;\n  stroke-linecap: round;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n  transition: stroke-dashoffset 1s ease-out;\n  animation: fillProgress 1.5s ease-out;\n}\n\n.nutrition-circle-fill.nutrition-protein {\n  stroke: oklch(0.45 0.15 120);\n}\n\n.nutrition-circle-fill.nutrition-carbs {\n  stroke: oklch(0.55 0.2 60);\n}\n\n.nutrition-circle-fill.nutrition-fats {\n  stroke: oklch(0.35 0.1 30);\n}\n\n.nutrition-circle-text {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 1.5rem;\n  font-weight: 700;\n  font-family: var(--font-mono);\n  color: var(--color-foreground);\n}\n\n.nutrition-macro-label {\n  font-size: 0.875rem;\n  font-weight: 600;\n  color: var(--color-foreground);\n  margin-bottom: 0.25rem;\n  display: flex;\n  align-items: center;\n  gap: 0.25rem;\n}\n\n.nutrition-macro-value {\n  font-size: 1.125rem;\n  font-weight: 700;\n  font-family: var(--font-mono);\n  color: var(--color-muted-foreground);\n}\n\n.nutrition-serving-badge {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 1rem;\n  border-radius: 1.5rem;\n  background: oklch(0.95 0.05 60);\n  border: 1px solid oklch(0.6 0.15 60);\n  font-size: 0.75rem;\n  font-weight: 600;\n  color: oklch(0.3 0.1 60);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  margin: 0 auto;\n  display: flex;\n  justify-content: center;\n}\n\n@keyframes slideInUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n@keyframes fillProgress {\n  from {\n    stroke-dashoffset: 283;\n  }\n}\n\n/* Responsive adjustments for nutrition card */\n@media (max-width: 768px) {\n  .nutrition-card {\n    padding: 1.5rem;\n  }\n\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n    gap: 1rem;\n  }\n\n  .nutrition-circle-progress {\n    width: 80px;\n    height: 80px;\n  }\n\n  .nutrition-circle-text {\n    font-size: 1.25rem;\n  }\n\n  .nutrition-calories-value {\n    font-size: 2.5rem;\n  }\n}\n\n@media (max-width: 640px) {\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n  }\n}\n\n/* Respect reduced motion preferences */\n@media (prefers-reduced-motion: reduce) {\n  .nutrition-card,\n  .nutrition-macro-item,\n  .nutrition-circle-fill {\n    animation: none;\n    transition: none;\n  }\n\n  .nutrition-card:hover,\n  .nutrition-macro-item:hover {\n    transform: none;\n  }\n}\n\n@layer base {"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "completed",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "completed",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "completed",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "in_progress",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "pending",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add visual polish and animations to CSS",
+          "status": "completed",
+          "activeForm": "Adding visual polish and animations to CSS"
+        },
+        {
+          "content": "Implement responsive design refinements",
+          "status": "completed",
+          "activeForm": "Implementing responsive design refinements"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "pending",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "pending",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "content": "import { memo, useMemo } from 'react'\nimport type { Nutrition } from '@/types/recipe'\nimport {\n  calculateTotalMacros,\n  getMacroPercentage,\n  formatServingType,\n  getNutritionColor,\n  getMacroLabel,\n  getMacroIcon\n} from '@/lib/nutrition-utils'\n\ninterface NutritionCardProps {\n  nutrition: Nutrition\n}\n\ninterface CircularProgressProps {\n  percentage: number\n  colorClass: string\n  size?: number\n  strokeWidth?: number\n}\n\n/**\n * Circular progress indicator component for displaying macro percentages\n */\nfunction CircularProgress({\n  percentage,\n  colorClass,\n  size = 100,\n  strokeWidth = 8\n}: CircularProgressProps) {\n  const radius = (size - strokeWidth) / 2\n  const circumference = 2 * Math.PI * radius\n  const offset = circumference - (percentage / 100) * circumference\n\n  return (\n    <svg\n      className=\"nutrition-circle-progress\"\n      width={size}\n      height={size}\n      viewBox={`0 0 ${size} ${size}`}\n      style={{ width: size, height: size }}\n    >\n      {/* Background circle */}\n      <circle\n        className=\"nutrition-circle-background\"\n        cx={size / 2}\n        cy={size / 2}\n        r={radius}\n        strokeWidth={strokeWidth}\n      />\n      {/* Progress circle */}\n      <circle\n        className={`nutrition-circle-fill ${colorClass}`}\n        cx={size / 2}\n        cy={size / 2}\n        r={radius}\n        strokeWidth={strokeWidth}\n        strokeDasharray={circumference}\n        strokeDashoffset={offset}\n      />\n      {/* Percentage text */}\n      <text\n        className=\"nutrition-circle-text\"\n        x=\"50%\"\n        y=\"50%\"\n        dominantBaseline=\"middle\"\n        textAnchor=\"middle\"\n      >\n        {percentage}%\n      </text>\n    </svg>\n  )\n}\n\n/**\n * NutritionCard component displays nutrition information with visual indicators\n */\nfunction NutritionCardComponent({ nutrition }: NutritionCardProps) {\n  // Calculate total macros and percentages (memoized for performance)\n  const macroData = useMemo(() => {\n    const total = calculateTotalMacros(nutrition)\n    return {\n      protein: {\n        amount: nutrition.protein,\n        percentage: getMacroPercentage(nutrition.protein, total),\n        colorClass: getNutritionColor('protein'),\n        label: getMacroLabel('protein'),\n        icon: getMacroIcon('protein')\n      },\n      carbs: {\n        amount: nutrition.carbs,\n        percentage: getMacroPercentage(nutrition.carbs, total),\n        colorClass: getNutritionColor('carbs'),\n        label: getMacroLabel('carbs'),\n        icon: getMacroIcon('carbs')\n      },\n      fat: {\n        amount: nutrition.fat,\n        percentage: getMacroPercentage(nutrition.fat, total),\n        colorClass: getNutritionColor('fat'),\n        label: getMacroLabel('fat'),\n        icon: getMacroIcon('fat')\n      }\n    }\n  }, [nutrition])\n\n  const servingLabel = formatServingType(nutrition.serving_type)\n\n  return (\n    <div className=\"nutrition-card\" role=\"region\" aria-label=\"\u0406\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f \u043f\u0440\u043e \u0445\u0430\u0440\u0447\u0443\u0432\u0430\u043d\u043d\u044f\">\n      {/* Header */}\n      <div className=\"nutrition-header\">\n        <span role=\"img\" aria-label=\"nutrition\">\n          \ud83d\udcca\n        </span>\n        <span>\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c</span>\n      </div>\n\n      {/* Calories Section */}\n      <div className=\"nutrition-calories\">\n        <div className=\"nutrition-calories-value\" aria-label={`${nutrition.calories} \u043a\u0430\u043b\u043e\u0440\u0456\u0439`}>\n          {nutrition.calories}\n        </div>\n        <div className=\"nutrition-calories-label\">\u041a\u0430\u043b\u043e\u0440\u0456\u0457</div>\n      </div>\n\n      {/* Macros Grid */}\n      <div className=\"nutrition-macros-grid\">\n        {/* Protein */}\n        <div className=\"nutrition-macro-item\">\n          <CircularProgress\n            percentage={macroData.protein.percentage}\n            colorClass={macroData.protein.colorClass}\n          />\n          <div\n            className=\"nutrition-macro-label\"\n            role=\"img\"\n            aria-label={macroData.protein.label}\n          >\n            <span>{macroData.protein.icon}</span>\n            <span>{macroData.protein.label}</span>\n          </div>\n          <div\n            className=\"nutrition-macro-value\"\n            aria-label={`${macroData.protein.amount} \u0433\u0440\u0430\u043c \u0431\u0456\u043b\u043a\u0456\u0432`}\n          >\n            {macroData.protein.amount}\u0433\n          </div>\n        </div>\n\n        {/* Carbs */}\n        <div className=\"nutrition-macro-item\">\n          <CircularProgress\n            percentage={macroData.carbs.percentage}\n            colorClass={macroData.carbs.colorClass}\n          />\n          <div\n            className=\"nutrition-macro-label\"\n            role=\"img\"\n            aria-label={macroData.carbs.label}\n          >\n            <span>{macroData.carbs.icon}</span>\n            <span>{macroData.carbs.label}</span>\n          </div>\n          <div\n            className=\"nutrition-macro-value\"\n            aria-label={`${macroData.carbs.amount} \u0433\u0440\u0430\u043c \u0432\u0443\u0433\u043b\u0435\u0432\u043e\u0434\u0456\u0432`}\n          >\n            {macroData.carbs.amount}\u0433\n          </div>\n        </div>\n\n        {/* Fat */}\n        <div className=\"nutrition-macro-item\">\n          <CircularProgress\n            percentage={macroData.fat.percentage}\n            colorClass={macroData.fat.colorClass}\n          />\n          <div\n            className=\"nutrition-macro-label\"\n            role=\"img\"\n            aria-label={macroData.fat.label}\n          >\n            <span>{macroData.fat.icon}</span>\n            <span>{macroData.fat.label}</span>\n          </div>\n          <div\n            className=\"nutrition-macro-value\"\n            aria-label={`${macroData.fat.amount} \u0433\u0440\u0430\u043c \u0436\u0438\u0440\u0456\u0432`}\n          >\n            {macroData.fat.amount}\u0433\n          </div>\n        </div>\n      </div>\n\n      {/* Serving Type Badge */}\n      <div className=\"nutrition-serving-badge\" role=\"note\" aria-label={servingLabel}>\n        <span role=\"img\" aria-label=\"serving\">\n          \ud83c\udf7d\ufe0f\n        </span>\n        <span>{servingLabel}</span>\n      </div>\n    </div>\n  )\n}\n\n// Memoize the component to prevent unnecessary re-renders\nexport const NutritionCard = memo(NutritionCardComponent)\n"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "completed",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "completed",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "completed",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "completed",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "in_progress",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "completed",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "pending",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "import { memo, useMemo } from 'react'\nimport Image from 'next/image'\nimport type { Recipe } from '@/types/recipe'\nimport { normalizeImagePath } from '@/lib/recipe-loader'",
+      "new_string": "import { memo, useMemo } from 'react'\nimport Image from 'next/image'\nimport type { Recipe } from '@/types/recipe'\nimport { normalizeImagePath } from '@/lib/recipe-loader'\nimport { NutritionCard } from '@/components/NutritionCard'"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "            {/* Quick Stats Badges */}\n            <div className=\"flex flex-wrap items-center justify-center gap-3 mt-6\">\n              <div className=\"recipe-stat-badge\">\n                <span className=\"stat-icon\">\ud83e\udd58</span>\n                <span>{stats.ingredientLabel}</span>\n              </div>\n              <div className={`recipe-stat-badge ${stats.hasInstructions ? 'stat-badge-success' : 'stat-badge-info'}`}>\n                <span className=\"stat-icon\">{stats.hasInstructions ? '\ud83d\udcd6' : '\u26a1'}</span>\n                <span>{stats.instructionLabel}</span>\n              </div>\n            </div>\n          </div>\n\n          <div className=\"mb-12\">",
+      "new_string": "            {/* Quick Stats Badges */}\n            <div className=\"flex flex-wrap items-center justify-center gap-3 mt-6\">\n              <div className=\"recipe-stat-badge\">\n                <span className=\"stat-icon\">\ud83e\udd58</span>\n                <span>{stats.ingredientLabel}</span>\n              </div>\n              <div className={`recipe-stat-badge ${stats.hasInstructions ? 'stat-badge-success' : 'stat-badge-info'}`}>\n                <span className=\"stat-icon\">{stats.hasInstructions ? '\ud83d\udcd6' : '\u26a1'}</span>\n                <span>{stats.instructionLabel}</span>\n              </div>\n            </div>\n          </div>\n\n          {/* Nutrition Information */}\n          {recipe.nutrition && (\n            <div className=\"mb-8 max-w-2xl mx-auto\">\n              <NutritionCard nutrition={recipe.nutrition} />\n            </div>\n          )}\n\n          <div className=\"mb-12\">"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "completed",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "completed",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "completed",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "completed",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "completed",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "completed",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "in_progress",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run lint",
+      "description": "Run linting to validate code quality"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "echo \"\" | npm run lint",
+      "timeout": 120000,
+      "description": "Run linting with default strict config"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": "*eslint*"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.eslintrc.json",
+      "content": "{\n  \"extends\": [\"next/core-web-vitals\", \"next/typescript\"]\n}\n"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run lint",
+      "timeout": 120000,
+      "description": "Run linting to validate code quality"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm install --save-dev eslint",
+      "timeout": 120000,
+      "description": "Install ESLint as dev dependency"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm install --save-dev eslint --legacy-peer-deps",
+      "timeout": 120000,
+      "description": "Install ESLint with legacy peer deps"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run lint",
+      "timeout": 120000,
+      "description": "Run linting to validate code quality"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run build",
+      "timeout": 180000,
+      "description": "Build the project to validate compilation"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run dev",
+      "description": "Start development server for manual testing",
+      "run_in_background": true
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sleep 5",
+      "description": "Wait for dev server to start"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "81d907"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "KillShell",
+    "tool_input": {
+      "shell_id": "81d907"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update type definitions in types/recipe.ts",
+          "status": "completed",
+          "activeForm": "Updating type definitions in types/recipe.ts"
+        },
+        {
+          "content": "Create nutrition utility functions in lib/nutrition-utils.ts",
+          "status": "completed",
+          "activeForm": "Creating nutrition utility functions in lib/nutrition-utils.ts"
+        },
+        {
+          "content": "Add enhanced CSS styles for nutrition display in app/globals.css",
+          "status": "completed",
+          "activeForm": "Adding enhanced CSS styles for nutrition display in app/globals.css"
+        },
+        {
+          "content": "Build NutritionCard component in components/NutritionCard.tsx",
+          "status": "completed",
+          "activeForm": "Building NutritionCard component in components/NutritionCard.tsx"
+        },
+        {
+          "content": "Integrate NutritionCard into RecipeCard component",
+          "status": "completed",
+          "activeForm": "Integrating NutritionCard into RecipeCard component"
+        },
+        {
+          "content": "Add accessibility features",
+          "status": "completed",
+          "activeForm": "Adding accessibility features"
+        },
+        {
+          "content": "Run validation commands (lint, build, and test)",
+          "status": "completed",
+          "activeForm": "Running validation commands (lint, build, and test)"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --stat",
+      "description": "Show git diff statistics for changes"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --stat -- ':!logs' ':!data/recipes.json' ':!package.json' ':!.eslintrc.json'",
+      "description": "Show git diff for implementation files only"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git status --short",
+      "description": "Show git status for all changes"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --stat app/globals.css components/RecipeCard.tsx types/recipe.ts",
+      "description": "Show diff statistics for modified files"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "wc -l lib/nutrition-utils.ts components/NutritionCard.tsx",
+      "description": "Count lines in new files"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run dev",
+      "description": "Start development server",
+      "run_in_background": true
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sleep 3",
+      "description": "Wait for server to start"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "efdcb1"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "AskUserQuestion",
+    "tool_input": {
+      "questions": [
+        {
+          "question": "For the circular progress indicators showing daily intake baseline, what daily values should I use for calculations? (e.g., 2000 kcal, 50g protein, 300g carbs, 65g fat - or different values?)",
+          "header": "Daily Values",
+          "options": [
+            {
+              "label": "Standard 2000 kcal baseline (50g protein, 300g carbs, 65g fat)",
+              "description": "Use common dietary reference intake values based on 2000 calorie diet"
+            },
+            {
+              "label": "Ukrainian dietary recommendations",
+              "description": "Use official Ukrainian nutrition guidelines if available"
+            },
+            {
+              "label": "Custom values you'll specify",
+              "description": "You want to provide specific daily baseline values"
+            }
+          ],
+          "multiSelect": false
+        },
+        {
+          "question": "Should the circles show percentage of daily intake (e.g., '15% of daily protein') or just the gram amounts with a visual indicator?",
+          "header": "Circle Display",
+          "options": [
+            {
+              "label": "Show percentage of daily intake",
+              "description": "Display '15%' in the circle representing portion of daily needs"
+            },
+            {
+              "label": "Show gram amounts only",
+              "description": "Keep displaying actual grams (e.g., '6g') with visual circle progress"
+            },
+            {
+              "label": "Show both grams and percentage",
+              "description": "Display grams in circle and percentage below"
+            }
+          ],
+          "multiSelect": false
+        },
+        {
+          "question": "For the minimalistic Apple-style design, should the nutrition card have a border or be borderless?",
+          "header": "Card Style",
+          "options": [
+            {
+              "label": "Subtle border (very thin, light gray)",
+              "description": "Keep minimal border for card definition"
+            },
+            {
+              "label": "No border, rely on shadow only",
+              "description": "Completely borderless with subtle shadow for depth"
+            },
+            {
+              "label": "No border, no shadow (flat design)",
+              "description": "Ultra-minimal flat design with spacing only"
+            }
+          ],
+          "multiSelect": false
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "AskUserQuestion",
+    "tool_input": {
+      "questions": [
+        {
+          "question": "For the circular progress indicators showing daily intake baseline, what daily values should I use for calculations?",
+          "header": "Daily Values",
+          "options": [
+            {
+              "label": "Standard 2000 kcal baseline (50g protein, 300g carbs, 65g fat)",
+              "description": "Use common dietary reference intake values"
+            },
+            {
+              "label": "Custom: 2000 kcal, 100g protein, 250g carbs, 70g fat",
+              "description": "Higher protein, moderate carb baseline"
+            },
+            {
+              "label": "Just use the macro totals (no daily baseline)",
+              "description": "Show percentages relative to total macros in the recipe, not daily needs"
+            }
+          ],
+          "multiSelect": false
+        },
+        {
+          "question": "Should the circles show percentage of daily intake or gram amounts?",
+          "header": "Circle Display",
+          "options": [
+            {
+              "label": "Show percentage of daily intake (e.g., '15%')",
+              "description": "Display percentage representing portion of daily needs"
+            },
+            {
+              "label": "Show gram amounts only (e.g., '6g')",
+              "description": "Keep displaying actual grams with progress"
+            },
+            {
+              "label": "Show both grams and percentage",
+              "description": "Display grams prominently with small percentage label"
+            }
+          ],
+          "multiSelect": false
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "ExitPlanMode",
+    "tool_input": {
+      "plan": "## Redesign Nutrition Card - Minimalistic Apple Style\n\n### Changes to Implement:\n\n1. **Relocate Nutrition Card**\n   - Move from current position (after quick stats, before image) to after \"\u0421\u043f\u043e\u0441\u0456\u0431 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f\" section\n   - Place in the details section at components/RecipeCard.tsx:220\n\n2. **Minimalistic Design Updates (CSS)**\n   - Remove emoji icon (\ud83d\udcca) from header \"\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c\"\n   - Change calorie section border from green (`oklch(0.6 0.15 145)`) to subtle gray (`oklch(0.88 0 0)`)\n   - Apply subtle border to card: `border: 1px solid oklch(0.92 0 0)` (very thin, light gray)\n   - Reduce padding and spacing for cleaner look\n   - Simplify background to solid white/off-white instead of gradient\n   - Remove hover transform effects for more static, professional feel\n\n3. **Remove Serving Type Badge**\n   - Delete the \"\u041d\u0430 100\u0433\" / \"\u041d\u0430 \u043f\u043e\u0440\u0446\u0456\u044e\" badge at bottom of card\n   - Remove `.nutrition-serving-badge` styles from CSS\n\n4. **Update Circular Progress Indicators**\n   - Change circles to show percentage of **daily intake baseline**\n   - Use standard 2000 kcal baseline: 50g protein, 300g carbs, 65g fat\n   - Calculate: `(recipe_amount / daily_baseline) * 100`\n   - Display percentage in circle (e.g., \"15%\")\n   - Keep gram amounts below circles\n   - Adjust circle colors to more muted, gray-toned palette\n\n5. **Typography Refinements**\n   - Use system font stack (San Francisco on macOS) for cleaner look\n   - Reduce font weights for subtler appearance\n   - Smaller, more refined text sizes\n\n### Files to Modify:\n- `components/RecipeCard.tsx` - Move nutrition card position\n- `components/NutritionCard.tsx` - Remove emoji, update percentage calculations\n- `lib/nutrition-utils.ts` - Add daily baseline calculation functions\n- `app/globals.css` - Apply minimalistic styling, gray tones, remove serving badge styles"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update utility functions to calculate daily intake percentages",
+          "status": "in_progress",
+          "activeForm": "Updating utility functions to calculate daily intake percentages"
+        },
+        {
+          "content": "Update NutritionCard component with minimalistic design",
+          "status": "pending",
+          "activeForm": "Updating NutritionCard component with minimalistic design"
+        },
+        {
+          "content": "Update CSS with Apple-style minimalistic design",
+          "status": "pending",
+          "activeForm": "Updating CSS with Apple-style minimalistic design"
+        },
+        {
+          "content": "Relocate nutrition card to after Sposib pregotuvanya section",
+          "status": "pending",
+          "activeForm": "Relocating nutrition card to after Sposib pregotuvanya section"
+        },
+        {
+          "content": "Test the updated design locally",
+          "status": "pending",
+          "activeForm": "Testing the updated design locally"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/lib/nutrition-utils.ts",
+      "old_string": "import type { Nutrition } from '@/types/recipe'\n\n/**\n * Calculate the total macronutrients (protein + fat + carbs) in grams\n * @param nutrition - The nutrition data object\n * @returns Total macronutrients in grams\n */\nexport function calculateTotalMacros(nutrition: Nutrition): number {\n  return nutrition.protein + nutrition.fat + nutrition.carbs\n}\n\n/**\n * Calculate the percentage of a specific macro relative to total macros\n * @param macro - The macro value in grams\n * @param total - Total macronutrients in grams\n * @returns Percentage (0-100)\n */\nexport function getMacroPercentage(macro: number, total: number): number {\n  if (total === 0) return 0\n  return Math.round((macro / total) * 100)\n}",
+      "new_string": "import type { Nutrition } from '@/types/recipe'\n\n// Daily baseline values (standard 2000 kcal diet)\nconst DAILY_BASELINE = {\n  calories: 2000,\n  protein: 50,    // grams\n  carbs: 300,     // grams\n  fat: 65         // grams\n}\n\n/**\n * Calculate the total macronutrients (protein + fat + carbs) in grams\n * @param nutrition - The nutrition data object\n * @returns Total macronutrients in grams\n */\nexport function calculateTotalMacros(nutrition: Nutrition): number {\n  return nutrition.protein + nutrition.fat + nutrition.carbs\n}\n\n/**\n * Calculate the percentage of a specific macro relative to total macros\n * @param macro - The macro value in grams\n * @param total - Total macronutrients in grams\n * @returns Percentage (0-100)\n */\nexport function getMacroPercentage(macro: number, total: number): number {\n  if (total === 0) return 0\n  return Math.round((macro / total) * 100)\n}\n\n/**\n * Calculate the percentage of daily intake for calories\n * @param calories - The calorie value\n * @returns Percentage of daily baseline (0-100)\n */\nexport function getCaloriesDailyPercentage(calories: number): number {\n  return Math.round((calories / DAILY_BASELINE.calories) * 100)\n}\n\n/**\n * Calculate the percentage of daily intake for a specific macro\n * @param macroType - The type of macronutrient\n * @param amount - The amount in grams\n * @returns Percentage of daily baseline (0-100)\n */\nexport function getMacroDailyPercentage(macroType: 'protein' | 'carbs' | 'fat', amount: number): number {\n  const baseline = DAILY_BASELINE[macroType]\n  return Math.round((amount / baseline) * 100)\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update utility functions to calculate daily intake percentages",
+          "status": "completed",
+          "activeForm": "Updating utility functions to calculate daily intake percentages"
+        },
+        {
+          "content": "Update NutritionCard component with minimalistic design",
+          "status": "in_progress",
+          "activeForm": "Updating NutritionCard component with minimalistic design"
+        },
+        {
+          "content": "Update CSS with Apple-style minimalistic design",
+          "status": "pending",
+          "activeForm": "Updating CSS with Apple-style minimalistic design"
+        },
+        {
+          "content": "Relocate nutrition card to after Sposib pregotuvanya section",
+          "status": "pending",
+          "activeForm": "Relocating nutrition card to after Sposib pregotuvanya section"
+        },
+        {
+          "content": "Test the updated design locally",
+          "status": "pending",
+          "activeForm": "Testing the updated design locally"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "old_string": "import { memo, useMemo } from 'react'\nimport type { Nutrition } from '@/types/recipe'\nimport {\n  calculateTotalMacros,\n  getMacroPercentage,\n  formatServingType,\n  getNutritionColor,\n  getMacroLabel,\n  getMacroIcon\n} from '@/lib/nutrition-utils'",
+      "new_string": "import { memo, useMemo } from 'react'\nimport type { Nutrition } from '@/types/recipe'\nimport {\n  getMacroDailyPercentage,\n  getNutritionColor,\n  getMacroLabel,\n  getMacroIcon\n} from '@/lib/nutrition-utils'"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "old_string": "/**\n * NutritionCard component displays nutrition information with visual indicators\n */\nfunction NutritionCardComponent({ nutrition }: NutritionCardProps) {\n  // Calculate total macros and percentages (memoized for performance)\n  const macroData = useMemo(() => {\n    const total = calculateTotalMacros(nutrition)\n    return {\n      protein: {\n        amount: nutrition.protein,\n        percentage: getMacroPercentage(nutrition.protein, total),\n        colorClass: getNutritionColor('protein'),\n        label: getMacroLabel('protein'),\n        icon: getMacroIcon('protein')\n      },\n      carbs: {\n        amount: nutrition.carbs,\n        percentage: getMacroPercentage(nutrition.carbs, total),\n        colorClass: getNutritionColor('carbs'),\n        label: getMacroLabel('carbs'),\n        icon: getMacroIcon('carbs')\n      },\n      fat: {\n        amount: nutrition.fat,\n        percentage: getMacroPercentage(nutrition.fat, total),\n        colorClass: getNutritionColor('fat'),\n        label: getMacroLabel('fat'),\n        icon: getMacroIcon('fat')\n      }\n    }\n  }, [nutrition])\n\n  const servingLabel = formatServingType(nutrition.serving_type)",
+      "new_string": "/**\n * NutritionCard component displays nutrition information with visual indicators\n */\nfunction NutritionCardComponent({ nutrition }: NutritionCardProps) {\n  // Calculate daily intake percentages (memoized for performance)\n  const macroData = useMemo(() => {\n    return {\n      protein: {\n        amount: nutrition.protein,\n        percentage: getMacroDailyPercentage('protein', nutrition.protein),\n        colorClass: getNutritionColor('protein'),\n        label: getMacroLabel('protein'),\n        icon: getMacroIcon('protein')\n      },\n      carbs: {\n        amount: nutrition.carbs,\n        percentage: getMacroDailyPercentage('carbs', nutrition.carbs),\n        colorClass: getNutritionColor('carbs'),\n        label: getMacroLabel('carbs'),\n        icon: getMacroIcon('carbs')\n      },\n      fat: {\n        amount: nutrition.fat,\n        percentage: getMacroDailyPercentage('fat', nutrition.fat),\n        colorClass: getNutritionColor('fat'),\n        label: getMacroLabel('fat'),\n        icon: getMacroIcon('fat')\n      }\n    }\n  }, [nutrition])"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "old_string": "  return (\n    <div className=\"nutrition-card\" role=\"region\" aria-label=\"\u0406\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f \u043f\u0440\u043e \u0445\u0430\u0440\u0447\u0443\u0432\u0430\u043d\u043d\u044f\">\n      {/* Header */}\n      <div className=\"nutrition-header\">\n        <span role=\"img\" aria-label=\"nutrition\">\n          \ud83d\udcca\n        </span>\n        <span>\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c</span>\n      </div>",
+      "new_string": "  return (\n    <div className=\"nutrition-card\" role=\"region\" aria-label=\"\u0406\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f \u043f\u0440\u043e \u0445\u0430\u0440\u0447\u0443\u0432\u0430\u043d\u043d\u044f\">\n      {/* Header */}\n      <div className=\"nutrition-header\">\n        <span>\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c</span>\n      </div>"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "offset": 180
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "old_string": "          </div>\n        </div>\n      </div>\n\n      {/* Serving Type Badge */}\n      <div className=\"nutrition-serving-badge\" role=\"note\" aria-label={servingLabel}>\n        <span role=\"img\" aria-label=\"serving\">\n          \ud83c\udf7d\ufe0f\n        </span>\n        <span>{servingLabel}</span>\n      </div>\n    </div>\n  )",
+      "new_string": "          </div>\n        </div>\n      </div>\n    </div>\n  )"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update utility functions to calculate daily intake percentages",
+          "status": "completed",
+          "activeForm": "Updating utility functions to calculate daily intake percentages"
+        },
+        {
+          "content": "Update NutritionCard component with minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component with minimalistic design"
+        },
+        {
+          "content": "Update CSS with Apple-style minimalistic design",
+          "status": "in_progress",
+          "activeForm": "Updating CSS with Apple-style minimalistic design"
+        },
+        {
+          "content": "Relocate nutrition card to after Sposib pregotuvanya section",
+          "status": "pending",
+          "activeForm": "Relocating nutrition card to after Sposib pregotuvanya section"
+        },
+        {
+          "content": "Test the updated design locally",
+          "status": "pending",
+          "activeForm": "Testing the updated design locally"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": "/* Nutrition Card Styles */\n.nutrition-card {\n  background: linear-gradient(135deg, oklch(0.99 0 0) 0%, oklch(0.97 0 0) 100%);\n  border: 1px solid oklch(0.92 0 0);\n  border-radius: 1rem;\n  padding: 2rem;\n  box-shadow: 0 4px 12px oklch(0 0 0 / 0.08);\n  transition: all 0.3s ease;\n  animation: slideInUp 0.5s ease-out;\n}\n\n.nutrition-card:hover {\n  box-shadow: 0 6px 20px oklch(0 0 0 / 0.12);\n  transform: translateY(-2px);\n}\n\n.nutrition-header {\n  font-size: 1.5rem;\n  font-weight: 600;\n  font-family: var(--font-serif);\n  color: var(--color-foreground);\n  text-align: center;\n  margin-bottom: 1.5rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 0.5rem;\n}\n\n.nutrition-calories {\n  text-align: center;\n  margin-bottom: 2rem;\n  padding: 1.5rem;\n  background: oklch(0.98 0 0);\n  border-radius: 0.75rem;\n  border: 2px solid oklch(0.6 0.15 145);\n}\n\n.nutrition-calories-value {\n  font-size: 3rem;\n  font-weight: 700;\n  font-family: var(--font-mono);\n  color: oklch(0.4 0.12 145);\n  line-height: 1;\n  margin-bottom: 0.5rem;\n}\n\n.nutrition-calories-label {\n  font-size: 0.875rem;\n  font-weight: 500;\n  color: var(--color-muted-foreground);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n}",
+      "new_string": "/* Nutrition Card Styles - Minimalistic Apple Design */\n.nutrition-card {\n  background: oklch(0.99 0 0);\n  border: 1px solid oklch(0.92 0 0);\n  border-radius: 0.75rem;\n  padding: 1.5rem;\n  box-shadow: 0 1px 3px oklch(0 0 0 / 0.04);\n  transition: none;\n  animation: none;\n}\n\n.nutrition-card:hover {\n  box-shadow: 0 1px 3px oklch(0 0 0 / 0.04);\n  transform: none;\n}\n\n.nutrition-header {\n  font-size: 1.25rem;\n  font-weight: 600;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  color: var(--color-foreground);\n  text-align: center;\n  margin-bottom: 1.5rem;\n  letter-spacing: -0.015em;\n}\n\n.nutrition-calories {\n  text-align: center;\n  margin-bottom: 1.5rem;\n  padding: 1.25rem;\n  background: oklch(0.985 0 0);\n  border-radius: 0.625rem;\n  border: 1px solid oklch(0.88 0 0);\n}\n\n.nutrition-calories-value {\n  font-size: 2.5rem;\n  font-weight: 600;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  color: oklch(0.3 0 0);\n  line-height: 1;\n  margin-bottom: 0.375rem;\n  letter-spacing: -0.02em;\n}\n\n.nutrition-calories-label {\n  font-size: 0.8125rem;\n  font-weight: 500;\n  color: oklch(0.5 0 0);\n  text-transform: none;\n  letter-spacing: 0;\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": ".nutrition-macros-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1.5rem;\n  margin-bottom: 1.5rem;\n}\n\n.nutrition-macro-item {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 1rem;\n  border-radius: 0.75rem;\n  background: oklch(0.98 0 0);\n  transition: all 0.3s ease;\n}\n\n.nutrition-macro-item:hover {\n  transform: scale(1.05);\n  background: oklch(0.96 0 0);\n}\n\n.nutrition-macro-item:nth-child(1) {\n  animation-delay: 0.1s;\n}\n\n.nutrition-macro-item:nth-child(2) {\n  animation-delay: 0.2s;\n}\n\n.nutrition-macro-item:nth-child(3) {\n  animation-delay: 0.3s;\n}\n\n.nutrition-circle-progress {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  margin-bottom: 1rem;\n}\n\n.nutrition-circle-background {\n  fill: none;\n  stroke: oklch(0.95 0 0);\n  stroke-width: 8;\n}\n\n.nutrition-circle-fill {\n  fill: none;\n  stroke-width: 8;\n  stroke-linecap: round;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n  transition: stroke-dashoffset 1s ease-out;\n  animation: fillProgress 1.5s ease-out;\n}\n\n.nutrition-circle-fill.nutrition-protein {\n  stroke: oklch(0.45 0.15 120);\n}\n\n.nutrition-circle-fill.nutrition-carbs {\n  stroke: oklch(0.55 0.2 60);\n}\n\n.nutrition-circle-fill.nutrition-fats {\n  stroke: oklch(0.35 0.1 30);\n}\n\n.nutrition-circle-text {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 1.5rem;\n  font-weight: 700;\n  font-family: var(--font-mono);\n  color: var(--color-foreground);\n}\n\n.nutrition-macro-label {\n  font-size: 0.875rem;\n  font-weight: 600;\n  color: var(--color-foreground);\n  margin-bottom: 0.25rem;\n  display: flex;\n  align-items: center;\n  gap: 0.25rem;\n}\n\n.nutrition-macro-value {\n  font-size: 1.125rem;\n  font-weight: 700;\n  font-family: var(--font-mono);\n  color: var(--color-muted-foreground);\n}",
+      "new_string": ".nutrition-macros-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1rem;\n  margin-bottom: 0;\n}\n\n.nutrition-macro-item {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 0.75rem;\n  border-radius: 0.625rem;\n  background: oklch(0.985 0 0);\n  transition: none;\n  animation: none;\n}\n\n.nutrition-macro-item:hover {\n  transform: none;\n  background: oklch(0.985 0 0);\n}\n\n.nutrition-circle-progress {\n  position: relative;\n  width: 80px;\n  height: 80px;\n  margin-bottom: 0.75rem;\n}\n\n.nutrition-circle-background {\n  fill: none;\n  stroke: oklch(0.92 0 0);\n  stroke-width: 6;\n}\n\n.nutrition-circle-fill {\n  fill: none;\n  stroke-width: 6;\n  stroke-linecap: round;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n  transition: none;\n  animation: none;\n}\n\n.nutrition-circle-fill.nutrition-protein {\n  stroke: oklch(0.5 0.08 150);\n}\n\n.nutrition-circle-fill.nutrition-carbs {\n  stroke: oklch(0.55 0.08 90);\n}\n\n.nutrition-circle-fill.nutrition-fats {\n  stroke: oklch(0.45 0.05 50);\n}\n\n.nutrition-circle-text {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 1.125rem;\n  font-weight: 600;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  color: oklch(0.3 0 0);\n  letter-spacing: -0.01em;\n}\n\n.nutrition-macro-label {\n  font-size: 0.8125rem;\n  font-weight: 500;\n  color: oklch(0.4 0 0);\n  margin-bottom: 0.25rem;\n  display: flex;\n  align-items: center;\n  gap: 0.25rem;\n  letter-spacing: 0;\n}\n\n.nutrition-macro-value {\n  font-size: 0.9375rem;\n  font-weight: 500;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  color: oklch(0.5 0 0);\n  letter-spacing: -0.01em;\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": ".nutrition-serving-badge {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.5rem 1rem;\n  border-radius: 1.5rem;\n  background: oklch(0.95 0.05 60);\n  border: 1px solid oklch(0.6 0.15 60);\n  font-size: 0.75rem;\n  font-weight: 600;\n  color: oklch(0.3 0.1 60);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  margin: 0 auto;\n  display: flex;\n  justify-content: center;\n}\n\n@keyframes slideInUp {\n  from {\n    opacity: 0;\n    transform: translateY(20px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n@keyframes fillProgress {\n  from {\n    stroke-dashoffset: 283;\n  }\n}",
+      "new_string": ""
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": "/* Responsive adjustments for nutrition card */\n@media (max-width: 768px) {\n  .nutrition-card {\n    padding: 1.5rem;\n  }\n\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n    gap: 1rem;\n  }\n\n  .nutrition-circle-progress {\n    width: 80px;\n    height: 80px;\n  }\n\n  .nutrition-circle-text {\n    font-size: 1.25rem;\n  }\n\n  .nutrition-calories-value {\n    font-size: 2.5rem;\n  }\n}\n\n@media (max-width: 640px) {\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n  }\n}\n\n/* Respect reduced motion preferences */\n@media (prefers-reduced-motion: reduce) {\n  .nutrition-card,\n  .nutrition-macro-item,\n  .nutrition-circle-fill {\n    animation: none;\n    transition: none;\n  }\n\n  .nutrition-card:hover,\n  .nutrition-macro-item:hover {\n    transform: none;\n  }\n}",
+      "new_string": "/* Responsive adjustments for nutrition card */\n@media (max-width: 768px) {\n  .nutrition-card {\n    padding: 1.25rem;\n  }\n\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n    gap: 0.75rem;\n  }\n\n  .nutrition-circle-progress {\n    width: 70px;\n    height: 70px;\n  }\n\n  .nutrition-circle-text {\n    font-size: 1rem;\n  }\n\n  .nutrition-calories-value {\n    font-size: 2rem;\n  }\n}\n\n@media (max-width: 640px) {\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n  }\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update utility functions to calculate daily intake percentages",
+          "status": "completed",
+          "activeForm": "Updating utility functions to calculate daily intake percentages"
+        },
+        {
+          "content": "Update NutritionCard component with minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component with minimalistic design"
+        },
+        {
+          "content": "Update CSS with Apple-style minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating CSS with Apple-style minimalistic design"
+        },
+        {
+          "content": "Relocate nutrition card to after Sposib pregotuvanya section",
+          "status": "in_progress",
+          "activeForm": "Relocating nutrition card to after Sposib pregotuvanya section"
+        },
+        {
+          "content": "Test the updated design locally",
+          "status": "pending",
+          "activeForm": "Testing the updated design locally"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "            </div>\n          </div>\n\n          {/* Nutrition Information */}\n          {recipe.nutrition && (\n            <div className=\"mb-8 max-w-2xl mx-auto\">\n              <NutritionCard nutrition={recipe.nutrition} />\n            </div>\n          )}\n\n          <div className=\"mb-12\">",
+      "new_string": "            </div>\n          </div>\n\n          <div className=\"mb-12\">"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "offset": 190
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/RecipeCard.tsx",
+      "old_string": "              </section>\n            </div>\n          </div>\n        </div>\n      </div>\n    </>\n  )",
+      "new_string": "              </section>\n            </div>\n          </div>\n\n          {/* Nutrition Information */}\n          {recipe.nutrition && (\n            <div className=\"mt-16\">\n              <NutritionCard nutrition={recipe.nutrition} />\n            </div>\n          )}\n        </div>\n      </div>\n    </>\n  )"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update utility functions to calculate daily intake percentages",
+          "status": "completed",
+          "activeForm": "Updating utility functions to calculate daily intake percentages"
+        },
+        {
+          "content": "Update NutritionCard component with minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component with minimalistic design"
+        },
+        {
+          "content": "Update CSS with Apple-style minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating CSS with Apple-style minimalistic design"
+        },
+        {
+          "content": "Relocate nutrition card to after Sposib pregotuvanya section",
+          "status": "completed",
+          "activeForm": "Relocating nutrition card to after Sposib pregotuvanya section"
+        },
+        {
+          "content": "Test the updated design locally",
+          "status": "in_progress",
+          "activeForm": "Testing the updated design locally"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "efdcb1"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run build",
+      "timeout": 180000,
+      "description": "Build the project to verify changes"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update utility functions to calculate daily intake percentages",
+          "status": "completed",
+          "activeForm": "Updating utility functions to calculate daily intake percentages"
+        },
+        {
+          "content": "Update NutritionCard component with minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component with minimalistic design"
+        },
+        {
+          "content": "Update CSS with Apple-style minimalistic design",
+          "status": "completed",
+          "activeForm": "Updating CSS with Apple-style minimalistic design"
+        },
+        {
+          "content": "Relocate nutrition card to after Sposib pregotuvanya section",
+          "status": "completed",
+          "activeForm": "Relocating nutrition card to after Sposib pregotuvanya section"
+        },
+        {
+          "content": "Test the updated design locally",
+          "status": "completed",
+          "activeForm": "Testing the updated design locally"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --stat app/globals.css components/NutritionCard.tsx components/RecipeCard.tsx lib/nutrition-utils.ts",
+      "description": "Show git diff for modified files"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --shortstat",
+      "description": "Get overall diff statistics"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "efdcb1"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "KillShell",
+    "tool_input": {
+      "shell_id": "efdcb1"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "KillShell",
+    "tool_input": {
+      "shell_id": "81d907"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run dev",
+      "description": "Restart development server",
+      "run_in_background": true
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sleep 5",
+      "description": "Wait for server startup"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "7b7f45"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sleep 2",
+      "description": "Wait a moment to see if there are any errors"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "7b7f45"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "AskUserQuestion",
+    "tool_input": {
+      "questions": [
+        {
+          "question": "What would you like to display instead of the circular progress indicators for each macronutrient?",
+          "header": "Visual Style",
+          "options": [
+            {
+              "label": "Simple horizontal bar charts",
+              "description": "Clean horizontal bars showing percentage of daily intake"
+            },
+            {
+              "label": "Just text labels with values",
+              "description": "Minimalist text-only display: '\u0411\u0456\u043b\u043a\u0438: 6\u0433 (12%)'"
+            },
+            {
+              "label": "Card-style boxes with numbers",
+              "description": "Simple rectangular cards with macro name and amount"
+            },
+            {
+              "label": "Table format",
+              "description": "Clean table with rows for each macronutrient"
+            }
+          ],
+          "multiSelect": false
+        },
+        {
+          "question": "Should the percentages (12%) be displayed at all, or just show the gram amounts?",
+          "header": "Data Display",
+          "options": [
+            {
+              "label": "Show both grams and percentage",
+              "description": "Display '6\u0433 (12%)' or '6\u0433 \u2022 12%'"
+            },
+            {
+              "label": "Show only gram amounts",
+              "description": "Display only '6\u0433' without percentages"
+            },
+            {
+              "label": "Show only percentages",
+              "description": "Display only '12%' without gram amounts"
+            }
+          ],
+          "multiSelect": false
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "AskUserQuestion",
+    "tool_input": {
+      "questions": [
+        {
+          "question": "What would you like to display instead of the circular progress indicators for each macronutrient?",
+          "header": "Visual Style",
+          "options": [
+            {
+              "label": "Simple horizontal bar charts",
+              "description": "Clean horizontal bars showing proportion of each macro"
+            },
+            {
+              "label": "Just text labels with values",
+              "description": "Minimalist text-only: '\u0411\u0456\u043b\u043a\u0438 6\u0433', '\u0412\u0443\u0433\u043b\u0435\u0432\u043e\u0434\u0438 20\u0433', '\u0416\u0438\u0440\u0438 2\u0433'"
+            },
+            {
+              "label": "Card-style boxes with numbers",
+              "description": "Simple rectangular cards with macro name and gram amount"
+            },
+            {
+              "label": "Table-style rows",
+              "description": "Clean table format with macro names and values in rows"
+            }
+          ],
+          "multiSelect": false
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "ExitPlanMode",
+    "tool_input": {
+      "plan": "## Ultra-Minimalist Nutrition Card Redesign\n\n### Changes to Implement:\n\n1. **Remove All Emojis**\n   - Remove \ud83e\udd69, \ud83c\udf3e, \ud83e\udd51 from macro labels in `components/NutritionCard.tsx`\n   - Update `getMacroIcon()` calls and emoji rendering\n\n2. **Remove Circular Progress Indicators**\n   - Delete `CircularProgress` component entirely\n   - Remove all circular SVG rendering code\n   - Remove circle-related CSS styles\n\n3. **Remove Percentage Display**\n   - Remove percentage text that appears in circles (12%, etc.)\n   - Remove `getMacroDailyPercentage()` calculation usage\n   - Show only gram amounts (e.g., \"6\u0433\")\n\n4. **Implement Horizontal Bar Charts**\n   - Create clean horizontal bars for each macronutrient\n   - Bar width represents the amount relative to total macros in recipe\n   - Minimalist design: thin bars with subtle colors\n   - Layout: Macro name on left, bar in middle, gram amount on right\n   - Format: `\u0411\u0456\u043b\u043a\u0438 \u2014\u2014\u2014\u2014\u2014 6\u0433`\n\n5. **Update CSS Styling**\n   - Remove all circular progress styles (`.nutrition-circle-*`)\n   - Add horizontal bar styles (`.nutrition-bar-*`)\n   - Keep ultra-minimal Apple aesthetic: thin bars, gray tones, system fonts\n   - Ensure proper spacing and alignment\n\n### Design Mockup:\n```\n\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c\n\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502    126 \u043a\u0430\u043b\u043e\u0440\u0456\u0439      \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u0411\u0456\u043b\u043a\u0438      \u2593\u2593\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591  6\u0433\n\u0412\u0443\u0433\u043b\u0435\u0432\u043e\u0434\u0438  \u2593\u2593\u2593\u2593\u2593\u2593\u2593\u2593\u2593\u2591  20\u0433\n\u0416\u0438\u0440\u0438       \u2593\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591  2\u0433\n```\n\n### Files to Modify:\n- `components/NutritionCard.tsx` - Remove circles, add horizontal bars, remove emojis and percentages\n- `app/globals.css` - Remove circle styles, add bar chart styles\n- `lib/nutrition-utils.ts` - No changes needed (keep existing functions)"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update NutritionCard component - remove circles and emojis",
+          "status": "in_progress",
+          "activeForm": "Updating NutritionCard component - removing circles and emojis"
+        },
+        {
+          "content": "Add horizontal bar chart layout to NutritionCard",
+          "status": "pending",
+          "activeForm": "Adding horizontal bar chart layout to NutritionCard"
+        },
+        {
+          "content": "Update CSS - remove circle styles and add bar styles",
+          "status": "pending",
+          "activeForm": "Updating CSS - removing circle styles and adding bar styles"
+        },
+        {
+          "content": "Test the new design",
+          "status": "pending",
+          "activeForm": "Testing the new design"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/components/NutritionCard.tsx",
+      "content": "import { memo, useMemo } from 'react'\nimport type { Nutrition } from '@/types/recipe'\nimport { calculateTotalMacros, getMacroLabel } from '@/lib/nutrition-utils'\n\ninterface NutritionCardProps {\n  nutrition: Nutrition\n}\n\n/**\n * NutritionCard component displays nutrition information with horizontal bar charts\n */\nfunction NutritionCardComponent({ nutrition }: NutritionCardProps) {\n  // Calculate macro percentages relative to total (for bar widths)\n  const macroData = useMemo(() => {\n    const total = calculateTotalMacros(nutrition)\n\n    return {\n      protein: {\n        amount: nutrition.protein,\n        percentage: total > 0 ? (nutrition.protein / total) * 100 : 0,\n        label: getMacroLabel('protein')\n      },\n      carbs: {\n        amount: nutrition.carbs,\n        percentage: total > 0 ? (nutrition.carbs / total) * 100 : 0,\n        label: getMacroLabel('carbs')\n      },\n      fat: {\n        amount: nutrition.fat,\n        percentage: total > 0 ? (nutrition.fat / total) * 100 : 0,\n        label: getMacroLabel('fat')\n      }\n    }\n  }, [nutrition])\n\n  return (\n    <div className=\"nutrition-card\" role=\"region\" aria-label=\"\u0406\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u044f \u043f\u0440\u043e \u0445\u0430\u0440\u0447\u0443\u0432\u0430\u043d\u043d\u044f\">\n      {/* Header */}\n      <div className=\"nutrition-header\">\n        <span>\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c</span>\n      </div>\n\n      {/* Calories Section */}\n      <div className=\"nutrition-calories\">\n        <div className=\"nutrition-calories-value\" aria-label={`${nutrition.calories} \u043a\u0430\u043b\u043e\u0440\u0456\u0439`}>\n          {nutrition.calories}\n        </div>\n        <div className=\"nutrition-calories-label\">\u041a\u0430\u043b\u043e\u0440\u0456\u0457</div>\n      </div>\n\n      {/* Macros with Horizontal Bars */}\n      <div className=\"nutrition-macros-list\">\n        {/* Protein */}\n        <div className=\"nutrition-macro-row\">\n          <span className=\"nutrition-macro-label\">{macroData.protein.label}</span>\n          <div className=\"nutrition-bar-container\">\n            <div\n              className=\"nutrition-bar nutrition-bar-protein\"\n              style={{ width: `${macroData.protein.percentage}%` }}\n              role=\"progressbar\"\n              aria-valuenow={macroData.protein.amount}\n              aria-valuemin={0}\n              aria-label={`${macroData.protein.label}: ${macroData.protein.amount} \u0433\u0440\u0430\u043c`}\n            />\n          </div>\n          <span className=\"nutrition-macro-amount\">{macroData.protein.amount}\u0433</span>\n        </div>\n\n        {/* Carbs */}\n        <div className=\"nutrition-macro-row\">\n          <span className=\"nutrition-macro-label\">{macroData.carbs.label}</span>\n          <div className=\"nutrition-bar-container\">\n            <div\n              className=\"nutrition-bar nutrition-bar-carbs\"\n              style={{ width: `${macroData.carbs.percentage}%` }}\n              role=\"progressbar\"\n              aria-valuenow={macroData.carbs.amount}\n              aria-valuemin={0}\n              aria-label={`${macroData.carbs.label}: ${macroData.carbs.amount} \u0433\u0440\u0430\u043c`}\n            />\n          </div>\n          <span className=\"nutrition-macro-amount\">{macroData.carbs.amount}\u0433</span>\n        </div>\n\n        {/* Fat */}\n        <div className=\"nutrition-macro-row\">\n          <span className=\"nutrition-macro-label\">{macroData.fat.label}</span>\n          <div className=\"nutrition-bar-container\">\n            <div\n              className=\"nutrition-bar nutrition-bar-fat\"\n              style={{ width: `${macroData.fat.percentage}%` }}\n              role=\"progressbar\"\n              aria-valuenow={macroData.fat.amount}\n              aria-valuemin={0}\n              aria-label={`${macroData.fat.label}: ${macroData.fat.amount} \u0433\u0440\u0430\u043c`}\n            />\n          </div>\n          <span className=\"nutrition-macro-amount\">{macroData.fat.amount}\u0433</span>\n        </div>\n      </div>\n    </div>\n  )\n}\n\n// Memoize the component to prevent unnecessary re-renders\nexport const NutritionCard = memo(NutritionCardComponent)\n"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update NutritionCard component - remove circles and emojis",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component - removing circles and emojis"
+        },
+        {
+          "content": "Add horizontal bar chart layout to NutritionCard",
+          "status": "completed",
+          "activeForm": "Adding horizontal bar chart layout to NutritionCard"
+        },
+        {
+          "content": "Update CSS - remove circle styles and add bar styles",
+          "status": "in_progress",
+          "activeForm": "Updating CSS - removing circle styles and adding bar styles"
+        },
+        {
+          "content": "Test the new design",
+          "status": "pending",
+          "activeForm": "Testing the new design"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": ".nutrition-macros-grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 1rem;\n  margin-bottom: 0;\n}\n\n.nutrition-macro-item {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  text-align: center;\n  padding: 0.75rem;\n  border-radius: 0.625rem;\n  background: oklch(0.985 0 0);\n  transition: none;\n  animation: none;\n}\n\n.nutrition-macro-item:hover {\n  transform: none;\n  background: oklch(0.985 0 0);\n}\n\n.nutrition-circle-progress {\n  position: relative;\n  width: 80px;\n  height: 80px;\n  margin-bottom: 0.75rem;\n}\n\n.nutrition-circle-background {\n  fill: none;\n  stroke: oklch(0.92 0 0);\n  stroke-width: 6;\n}\n\n.nutrition-circle-fill {\n  fill: none;\n  stroke-width: 6;\n  stroke-linecap: round;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n  transition: none;\n  animation: none;\n}\n\n.nutrition-circle-fill.nutrition-protein {\n  stroke: oklch(0.5 0.08 150);\n}\n\n.nutrition-circle-fill.nutrition-carbs {\n  stroke: oklch(0.55 0.08 90);\n}\n\n.nutrition-circle-fill.nutrition-fats {\n  stroke: oklch(0.45 0.05 50);\n}\n\n.nutrition-circle-text {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 1.125rem;\n  font-weight: 600;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  color: oklch(0.3 0 0);\n  letter-spacing: -0.01em;\n}\n\n.nutrition-macro-label {\n  font-size: 0.8125rem;\n  font-weight: 500;\n  color: oklch(0.4 0 0);\n  margin-bottom: 0.25rem;\n  display: flex;\n  align-items: center;\n  gap: 0.25rem;\n  letter-spacing: 0;\n}\n\n.nutrition-macro-value {\n  font-size: 0.9375rem;\n  font-weight: 500;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  color: oklch(0.5 0 0);\n  letter-spacing: -0.01em;\n}",
+      "new_string": ".nutrition-macros-list {\n  display: flex;\n  flex-direction: column;\n  gap: 1rem;\n  margin-top: 1.5rem;\n}\n\n.nutrition-macro-row {\n  display: grid;\n  grid-template-columns: 100px 1fr 60px;\n  align-items: center;\n  gap: 1rem;\n}\n\n.nutrition-macro-label {\n  font-size: 0.9375rem;\n  font-weight: 500;\n  color: oklch(0.3 0 0);\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  letter-spacing: -0.01em;\n  text-align: left;\n}\n\n.nutrition-bar-container {\n  position: relative;\n  height: 8px;\n  background: oklch(0.94 0 0);\n  border-radius: 4px;\n  overflow: hidden;\n}\n\n.nutrition-bar {\n  height: 100%;\n  border-radius: 4px;\n  transition: width 0.5s ease-out;\n}\n\n.nutrition-bar-protein {\n  background: oklch(0.5 0.08 150);\n}\n\n.nutrition-bar-carbs {\n  background: oklch(0.55 0.08 90);\n}\n\n.nutrition-bar-fat {\n  background: oklch(0.45 0.05 50);\n}\n\n.nutrition-macro-amount {\n  font-size: 0.9375rem;\n  font-weight: 600;\n  color: oklch(0.3 0 0);\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif;\n  letter-spacing: -0.01em;\n  text-align: right;\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "old_string": "/* Responsive adjustments for nutrition card */\n@media (max-width: 768px) {\n  .nutrition-card {\n    padding: 1.25rem;\n  }\n\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n    gap: 0.75rem;\n  }\n\n  .nutrition-circle-progress {\n    width: 70px;\n    height: 70px;\n  }\n\n  .nutrition-circle-text {\n    font-size: 1rem;\n  }\n\n  .nutrition-calories-value {\n    font-size: 2rem;\n  }\n}\n\n@media (max-width: 640px) {\n  .nutrition-macros-grid {\n    grid-template-columns: 1fr;\n  }\n}",
+      "new_string": "/* Responsive adjustments for nutrition card */\n@media (max-width: 768px) {\n  .nutrition-card {\n    padding: 1.25rem;\n  }\n\n  .nutrition-macro-row {\n    grid-template-columns: 80px 1fr 50px;\n    gap: 0.75rem;\n  }\n\n  .nutrition-macro-label {\n    font-size: 0.875rem;\n  }\n\n  .nutrition-macro-amount {\n    font-size: 0.875rem;\n  }\n\n  .nutrition-calories-value {\n    font-size: 2rem;\n  }\n}\n\n@media (max-width: 640px) {\n  .nutrition-macro-row {\n    grid-template-columns: 70px 1fr 45px;\n    gap: 0.5rem;\n  }\n}"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update NutritionCard component - remove circles and emojis",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component - removing circles and emojis"
+        },
+        {
+          "content": "Add horizontal bar chart layout to NutritionCard",
+          "status": "completed",
+          "activeForm": "Adding horizontal bar chart layout to NutritionCard"
+        },
+        {
+          "content": "Update CSS - remove circle styles and add bar styles",
+          "status": "completed",
+          "activeForm": "Updating CSS - removing circle styles and adding bar styles"
+        },
+        {
+          "content": "Test the new design",
+          "status": "in_progress",
+          "activeForm": "Testing the new design"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "7b7f45"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run build",
+      "timeout": 180000,
+      "description": "Build to verify changes"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update NutritionCard component - remove circles and emojis",
+          "status": "completed",
+          "activeForm": "Updating NutritionCard component - removing circles and emojis"
+        },
+        {
+          "content": "Add horizontal bar chart layout to NutritionCard",
+          "status": "completed",
+          "activeForm": "Adding horizontal bar chart layout to NutritionCard"
+        },
+        {
+          "content": "Update CSS - remove circle styles and add bar styles",
+          "status": "completed",
+          "activeForm": "Updating CSS - removing circle styles and adding bar styles"
+        },
+        {
+          "content": "Test the new design",
+          "status": "completed",
+          "activeForm": "Testing the new design"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git diff --stat components/NutritionCard.tsx app/globals.css",
+      "description": "Show diff statistics"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "7b7f45"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "ExitPlanMode",
+    "tool_input": {
+      "plan": "## Fix CSS Not Loading Issue\n\n### Problem Identified:\nThe dev server shows 404 errors for CSS files, which means the CSS is not being compiled. This is likely due to a syntax error in the globals.css file from our recent changes.\n\n### Plan:\n1. **Check globals.css for syntax errors** - Review the CSS file structure\n2. **Verify @import and @layer statements** - Ensure proper ordering\n3. **Check for duplicate or conflicting styles** - Look for issues that might break compilation\n4. **Restart dev server with clean cache** - Kill current server and restart fresh\n5. **Test that CSS loads properly** - Verify styles appear on the page\n\n### Most Likely Issue:\nWhen we removed the circular progress styles, we may have accidentally introduced a CSS syntax error or removed something critical that breaks compilation. Need to carefully review the CSS structure."
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/app/globals.css",
+      "offset": 0,
+      "limit": 50
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "KillShell",
+    "tool_input": {
+      "shell_id": "7b7f45"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "npm run dev",
+      "description": "Restart dev server",
+      "run_in_background": true
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "sleep 5",
+      "description": "Wait for server startup"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "BashOutput",
+    "tool_input": {
+      "bash_id": "04387c"
+    }
+  },
+  {
+    "session_id": "f93946af-8226-4abc-b149-feb27eb0e7ba",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f93946af-8226-4abc-b149-feb27eb0e7ba.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git add -A && git status",
+      "description": "Stage all changes and check status"
+    }
+  }
+]

@@ -2,6 +2,7 @@ import { memo, useMemo } from 'react'
 import Image from 'next/image'
 import type { Recipe } from '@/types/recipe'
 import { normalizeImagePath } from '@/lib/recipe-loader'
+import { NutritionCard } from '@/components/NutritionCard'
 
 interface RecipeCardProps {
   recipe: Recipe
@@ -219,6 +220,13 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
               </section>
             </div>
           </div>
+
+          {/* Nutrition Information */}
+          {recipe.nutrition && (
+            <div className="mt-16">
+              <NutritionCard nutrition={recipe.nutrition} />
+            </div>
+          )}
         </div>
       </div>
     </>

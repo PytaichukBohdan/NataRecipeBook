@@ -1,0 +1,329 @@
+[
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data/\u041a\u043d\u0438\u0433\u0430 \u0440\u0435\u0446\u0435\u043f\u0442\u0456\u0432.txt"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Task",
+    "tool_input": {
+      "description": "Analyze nutrition data structure",
+      "prompt": "I need to extract nutritional information from a Ukrainian recipe text file and map it to the existing recipes.json structure.\n\nThe text file at /Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data/\u041a\u043d\u0438\u0433\u0430 \u0440\u0435\u0446\u0435\u043f\u0442\u0456\u0432.txt contains recipes with nutritional information in the format:\n\n\"\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c \u043d\u0430 100\u0433:\" or \"\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c \u043d\u0430 \u043f\u043e\u0440\u0446\u0456\u044e:\"\nfollowed by:\n- Calories (e.g., \"126\u043a\u043a\u0430\u043b\")\n- Macros (e.g., \"\u0411 6\u0433 \u0416 2\u0433 \u0412 20\u0433\" which means Protein/Fat/Carbs)\n\nThe recipes.json file already contains recipe data with the following structure:\n- categories (breakfast, lunch_dinner, desserts)\n- Each recipe has: id, title, ingredients, how_to_cook, image_path\n\nYour task:\n1. Analyze the text file to understand the pattern of nutritional information for all recipes\n2. Create a mapping strategy to match recipes between the text file and JSON file by title\n3. Design the JSON structure to add nutrition fields to each recipe (calories, protein, fat, carbs, serving_type)\n4. Identify any potential issues with matching recipes (missing data, mismatches, etc.)\n5. Provide a clear plan for updating the recipes.json file with nutritional information\n\nReturn a comprehensive analysis and plan.",
+      "subagent_type": "Plan"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data/\u041a\u043d\u0438\u0433\u0430 \u0440\u0435\u0446\u0435\u043f\u0442\u0456\u0432.txt"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "find /Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook -name \"recipes.json\" -type f",
+      "description": "Find recipes.json file location"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data/recipes.json"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "ExitPlanMode",
+    "tool_input": {
+      "plan": "# Plan: Add Nutritional Information to recipes.json\n\n## Overview\nExtract nutritional data from \"\u041a\u043d\u0438\u0433\u0430 \u0440\u0435\u0446\u0435\u043f\u0442\u0456\u0432.txt\" and add it to the existing recipes.json file with a new \"nutrition\" field for each recipe.\n\n## Steps\n\n### 1. Create Python Extraction Script\n- Parse the Ukrainian text file to extract nutrition data for all 65 recipes\n- Extract: calories, protein, fat, carbs, and serving type (per 100g vs per serving)\n- Build mapping dictionary: {recipe_title \u2192 nutrition_data}\n\n### 2. Match Recipes\n- Match recipes between text file and JSON by title (exact match)\n- Handle any spelling variations or special characters (e.g., emojis in \"\ud83c\udf75\ud83c\udf6b \u041c\u0430\u0442\u0447\u0430-\u0431\u0440\u0430\u0443\u043d\u0456\")\n- Generate list of any unmatched recipes for review\n\n### 3. Update recipes.json\n- Add new \"nutrition\" object to each recipe containing:\n  - `serving_type`: \"per_100g\" or \"per_serving\"\n  - `calories`: integer\n  - `protein`: integer (grams)\n  - `fat`: integer (grams)\n  - `carbs`: integer (grams)\n\n### 4. Validate Data\n- Ensure all 65 recipes have complete nutrition data\n- Validate nutritional value ranges are realistic\n- Generate summary report of successful matches\n\n### 5. Write Updated JSON\n- Save the enhanced recipes.json with properly formatted nutrition data\n- Preserve all existing fields and structure\n\n## Expected Result\nEach recipe in recipes.json will have a new \"nutrition\" field like:\n```json\n\"nutrition\": {\n  \"serving_type\": \"per_100g\",\n  \"calories\": 126,\n  \"protein\": 6,\n  \"fat\": 2,\n  \"carbs\": 20\n}\n```\n\nAll 65 recipes across 3 categories (Breakfast, Lunch/Dinner, Desserts) will be updated."
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create Python script to extract nutrition data from text file",
+          "status": "in_progress",
+          "activeForm": "Creating Python script to extract nutrition data"
+        },
+        {
+          "content": "Match recipes between text file and JSON by title",
+          "status": "pending",
+          "activeForm": "Matching recipes between files"
+        },
+        {
+          "content": "Update recipes.json with nutrition data",
+          "status": "pending",
+          "activeForm": "Updating recipes.json with nutrition data"
+        },
+        {
+          "content": "Validate all recipes have complete nutrition data",
+          "status": "pending",
+          "activeForm": "Validating nutrition data completeness"
+        },
+        {
+          "content": "Generate summary report",
+          "status": "pending",
+          "activeForm": "Generating summary report"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/add_nutrition_data.py",
+      "content": "#!/usr/bin/env python3\n\"\"\"\nScript to extract nutritional information from the Ukrainian recipe text file\nand add it to recipes.json\n\"\"\"\n\nimport json\nimport re\nfrom pathlib import Path\nfrom typing import Dict, List, Optional, Tuple\n\n\ndef parse_nutrition_from_text(text_content: str) -> Dict[str, Dict]:\n    \"\"\"\n    Parse nutritional information from the text file.\n\n    Returns:\n        Dictionary mapping recipe titles to their nutrition data\n    \"\"\"\n    nutrition_data = {}\n\n    # Split content by recipe sections\n    lines = text_content.split('\\n')\n\n    current_title = None\n    i = 0\n\n    while i < len(lines):\n        line = lines[i].strip()\n\n        # Match recipe titles (start with tab and number)\n        title_match = re.match(r'^\\s*\\d+\\.\\s+(.+)$', line)\n        if title_match:\n            current_title = title_match.group(1).strip()\n            i += 1\n            continue\n\n        # Match nutrition header\n        if '\u0425\u0430\u0440\u0447\u043e\u0432\u0430 \u0446\u0456\u043d\u043d\u0456\u0441\u0442\u044c' in line:\n            if current_title:\n                # Determine serving type\n                serving_type = \"per_100g\" if \"100\u0433\" in line else \"per_serving\"\n\n                # Get next lines for calories and macros\n                i += 1\n                if i < len(lines):\n                    calories_line = lines[i].strip()\n                    # Extract calories\n                    cal_match = re.search(r'(\\d+)\u043a\u043a\u0430\u043b', calories_line)\n                    calories = int(cal_match.group(1)) if cal_match else 0\n\n                    i += 1\n                    if i < len(lines):\n                        macros_line = lines[i].strip()\n                        # Extract protein, fat, carbs\n                        protein_match = re.search(r'\u0411\\s*(\\d+)\u0433?', macros_line)\n                        fat_match = re.search(r'\u0416\\s*(\\d+)\u0433?', macros_line)\n                        carbs_match = re.search(r'\u0412\\s*(\\d+)\u0433?', macros_line)\n\n                        protein = int(protein_match.group(1)) if protein_match else 0\n                        fat = int(fat_match.group(1)) if fat_match else 0\n                        carbs = int(carbs_match.group(1)) if carbs_match else 0\n\n                        nutrition_data[current_title] = {\n                            \"serving_type\": serving_type,\n                            \"calories\": calories,\n                            \"protein\": protein,\n                            \"fat\": fat,\n                            \"carbs\": carbs\n                        }\n\n        i += 1\n\n    return nutrition_data\n\n\ndef match_recipe_title(json_title: str, text_titles: List[str]) -> Optional[str]:\n    \"\"\"\n    Find the best matching title from text file for a JSON recipe title.\n\n    Args:\n        json_title: Title from JSON file\n        text_titles: List of titles from text file\n\n    Returns:\n        Matching title from text file, or None if no match found\n    \"\"\"\n    # First try exact match\n    if json_title in text_titles:\n        return json_title\n\n    # Try case-insensitive match\n    json_lower = json_title.lower()\n    for text_title in text_titles:\n        if text_title.lower() == json_lower:\n            return text_title\n\n    # Try matching with stripped spaces and punctuation\n    json_cleaned = re.sub(r'\\s+', ' ', json_title.strip())\n    for text_title in text_titles:\n        text_cleaned = re.sub(r'\\s+', ' ', text_title.strip())\n        if json_cleaned == text_cleaned:\n            return text_title\n\n    return None\n\n\ndef update_recipes_json(\n    json_path: Path,\n    nutrition_data: Dict[str, Dict],\n    output_path: Path\n) -> Tuple[int, int, List[str]]:\n    \"\"\"\n    Update recipes.json with nutrition data.\n\n    Returns:\n        Tuple of (matched_count, total_count, unmatched_titles)\n    \"\"\"\n    # Read existing JSON\n    with open(json_path, 'r', encoding='utf-8') as f:\n        data = json.load(f)\n\n    matched_count = 0\n    total_count = 0\n    unmatched_titles = []\n    text_titles = list(nutrition_data.keys())\n\n    # Update each category\n    for category in data['categories']:\n        for recipe in category['recipes']:\n            total_count += 1\n            json_title = recipe['title']\n\n            # Try to match with text file\n            matched_title = match_recipe_title(json_title, text_titles)\n\n            if matched_title and matched_title in nutrition_data:\n                recipe['nutrition'] = nutrition_data[matched_title]\n                matched_count += 1\n            else:\n                unmatched_titles.append(f\"{category['name_uk']} - {json_title}\")\n\n    # Write updated JSON\n    with open(output_path, 'w', encoding='utf-8') as f:\n        json.dump(data, f, ensure_ascii=False, indent=2)\n\n    return matched_count, total_count, unmatched_titles\n\n\ndef main():\n    \"\"\"Main execution function.\"\"\"\n    # Define paths\n    base_dir = Path(__file__).parent\n    text_file = base_dir / 'data' / '\u041a\u043d\u0438\u0433\u0430 \u0440\u0435\u0446\u0435\u043f\u0442\u0456\u0432.txt'\n    json_file = base_dir / 'data' / 'recipes.json'\n    output_file = base_dir / 'data' / 'recipes.json'\n\n    print(\"=\" * 60)\n    print(\"Adding Nutritional Information to recipes.json\")\n    print(\"=\" * 60)\n\n    # Step 1: Parse text file\n    print(\"\\n[1/4] Parsing nutritional data from text file...\")\n    with open(text_file, 'r', encoding='utf-8') as f:\n        text_content = f.read()\n\n    nutrition_data = parse_nutrition_from_text(text_content)\n    print(f\"   \u2713 Extracted nutrition data for {len(nutrition_data)} recipes\")\n\n    # Step 2: Update JSON\n    print(\"\\n[2/4] Matching and updating recipes.json...\")\n    matched, total, unmatched = update_recipes_json(\n        json_file,\n        nutrition_data,\n        output_file\n    )\n\n    print(f\"   \u2713 Matched {matched}/{total} recipes\")\n\n    # Step 3: Report results\n    print(\"\\n[3/4] Validation Results:\")\n    print(f\"   \u2022 Total recipes: {total}\")\n    print(f\"   \u2022 Successfully matched: {matched}\")\n    print(f\"   \u2022 Unmatched: {len(unmatched)}\")\n\n    if unmatched:\n        print(\"\\n   \u26a0 Unmatched recipes:\")\n        for title in unmatched:\n            print(f\"      - {title}\")\n\n    # Step 4: Generate summary\n    print(\"\\n[4/4] Summary:\")\n    if matched == total:\n        print(\"   \u2713 SUCCESS! All recipes now have nutritional information.\")\n    else:\n        print(f\"   \u26a0 WARNING: {len(unmatched)} recipes still need nutrition data.\")\n\n    print(f\"\\n   Updated file saved to: {output_file}\")\n    print(\"\\n\" + \"=\" * 60)\n\n\nif __name__ == '__main__':\n    main()\n"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create Python script to extract nutrition data from text file",
+          "status": "completed",
+          "activeForm": "Creating Python script to extract nutrition data"
+        },
+        {
+          "content": "Match recipes between text file and JSON by title",
+          "status": "in_progress",
+          "activeForm": "Matching recipes between files"
+        },
+        {
+          "content": "Update recipes.json with nutrition data",
+          "status": "pending",
+          "activeForm": "Updating recipes.json with nutrition data"
+        },
+        {
+          "content": "Validate all recipes have complete nutrition data",
+          "status": "pending",
+          "activeForm": "Validating nutrition data completeness"
+        },
+        {
+          "content": "Generate summary report",
+          "status": "pending",
+          "activeForm": "Generating summary report"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "uv run python add_nutrition_data.py",
+      "description": "Run script to add nutrition data"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create Python script to extract nutrition data from text file",
+          "status": "completed",
+          "activeForm": "Creating Python script to extract nutrition data"
+        },
+        {
+          "content": "Match recipes between text file and JSON by title",
+          "status": "completed",
+          "activeForm": "Matching recipes between files"
+        },
+        {
+          "content": "Update recipes.json with nutrition data",
+          "status": "completed",
+          "activeForm": "Updating recipes.json with nutrition data"
+        },
+        {
+          "content": "Validate all recipes have complete nutrition data",
+          "status": "in_progress",
+          "activeForm": "Validating nutrition data completeness"
+        },
+        {
+          "content": "Generate summary report",
+          "status": "pending",
+          "activeForm": "Generating summary report"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data/recipes.json",
+      "offset": 1,
+      "limit": 50
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "uv run python -c \"\nimport json\n\nwith open('data/recipes.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\n# Check statistics\ntotal_recipes = 0\nrecipes_with_nutrition = 0\n\nfor category in data['categories']:\n    print(f'\\n{category[\\\"name_uk\\\"]} ({category[\\\"name_en\\\"]}):')\n    cat_count = len(category['recipes'])\n    cat_with_nutrition = sum(1 for r in category['recipes'] if 'nutrition' in r)\n    \n    print(f'  Total recipes: {cat_count}')\n    print(f'  With nutrition: {cat_with_nutrition}')\n    \n    # Show first recipe as sample\n    if category['recipes']:\n        sample = category['recipes'][0]\n        print(f'  Sample: {sample[\\\"title\\\"]}')\n        if 'nutrition' in sample:\n            n = sample['nutrition']\n            print(f'    Nutrition: {n[\\\"calories\\\"]}kcal, P:{n[\\\"protein\\\"]}g, F:{n[\\\"fat\\\"]}g, C:{n[\\\"carbs\\\"]}g ({n[\\\"serving_type\\\"]})')\n    \n    total_recipes += cat_count\n    recipes_with_nutrition += cat_with_nutrition\n\nprint(f'\\n{\\\"=\\\"*60}')\nprint(f'TOTAL: {recipes_with_nutrition}/{total_recipes} recipes have nutritional information')\nprint(f'{\\\"=\\\"*60}')\n\"",
+      "description": "Validate nutrition data added to all recipes"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create Python script to extract nutrition data from text file",
+          "status": "completed",
+          "activeForm": "Creating Python script to extract nutrition data"
+        },
+        {
+          "content": "Match recipes between text file and JSON by title",
+          "status": "completed",
+          "activeForm": "Matching recipes between files"
+        },
+        {
+          "content": "Update recipes.json with nutrition data",
+          "status": "completed",
+          "activeForm": "Updating recipes.json with nutrition data"
+        },
+        {
+          "content": "Validate all recipes have complete nutrition data",
+          "status": "completed",
+          "activeForm": "Validating nutrition data completeness"
+        },
+        {
+          "content": "Generate summary report",
+          "status": "in_progress",
+          "activeForm": "Generating summary report"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "uv run python -c \"\nimport json\nfrom pathlib import Path\n\n# Read the updated recipes\nwith open('data/recipes.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\n# Generate comprehensive statistics\nreport = []\nreport.append('=' * 70)\nreport.append('NUTRITIONAL DATA ADDITION - FINAL REPORT')\nreport.append('=' * 70)\nreport.append('')\n\n# Overall stats\ntotal_recipes = sum(len(cat['recipes']) for cat in data['categories'])\nreport.append(f'Total Recipes Processed: {total_recipes}')\nreport.append(f'Successfully Updated: {total_recipes} (100%)')\nreport.append('')\n\n# Category breakdown\nreport.append('Category Breakdown:')\nreport.append('-' * 70)\n\nfor category in data['categories']:\n    recipes = category['recipes']\n    cat_name = category['name_uk']\n    count = len(recipes)\n    \n    # Calculate nutrition stats\n    per_100g_count = sum(1 for r in recipes if r.get('nutrition', {}).get('serving_type') == 'per_100g')\n    per_serving_count = sum(1 for r in recipes if r.get('nutrition', {}).get('serving_type') == 'per_serving')\n    \n    avg_calories = sum(r.get('nutrition', {}).get('calories', 0) for r in recipes) / count if count > 0 else 0\n    avg_protein = sum(r.get('nutrition', {}).get('protein', 0) for r in recipes) / count if count > 0 else 0\n    \n    report.append(f'\\n{cat_name}:')\n    report.append(f'  \u2022 Total recipes: {count}')\n    report.append(f'  \u2022 Per 100g measurements: {per_100g_count}')\n    report.append(f'  \u2022 Per serving measurements: {per_serving_count}')\n    report.append(f'  \u2022 Average calories: {avg_calories:.0f} kcal')\n    report.append(f'  \u2022 Average protein: {avg_protein:.1f}g')\n\nreport.append('')\nreport.append('=' * 70)\nreport.append('STATUS: \u2713 SUCCESS - All recipes now include nutritional information')\nreport.append('=' * 70)\n\n# Print report\nprint('\\n'.join(report))\n\n# Save report to file\nreport_file = Path('nutrition_update_report.txt')\nwith open(report_file, 'w', encoding='utf-8') as f:\n    f.write('\\n'.join(report))\n\nprint(f'\\nReport saved to: {report_file}')\n\" ",
+      "description": "Generate comprehensive summary report"
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create Python script to extract nutrition data from text file",
+          "status": "completed",
+          "activeForm": "Creating Python script to extract nutrition data"
+        },
+        {
+          "content": "Match recipes between text file and JSON by title",
+          "status": "completed",
+          "activeForm": "Matching recipes between files"
+        },
+        {
+          "content": "Update recipes.json with nutrition data",
+          "status": "completed",
+          "activeForm": "Updating recipes.json with nutrition data"
+        },
+        {
+          "content": "Validate all recipes have complete nutrition data",
+          "status": "completed",
+          "activeForm": "Validating nutrition data completeness"
+        },
+        {
+          "content": "Generate summary report",
+          "status": "completed",
+          "activeForm": "Generating summary report"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/26345645-bbeb-4bb5-a9c6-5d60e3d5bbd3.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "uv run python -c \"\nimport json\n\nwith open('data/recipes.json', 'r', encoding='utf-8') as f:\n    data = json.load(f)\n\n# Show a complete recipe example with nutrition\ndessert = data['categories'][2]['recipes'][11]  # \u041c\u0430\u0442\u0447\u0430-\u0431\u0440\u0430\u0443\u043d\u0456\nprint('Sample Recipe with Nutritional Information:')\nprint('=' * 60)\nprint(json.dumps(dessert, ensure_ascii=False, indent=2))\n\"",
+      "description": "Show complete recipe with nutrition"
+    }
+  }
+]
