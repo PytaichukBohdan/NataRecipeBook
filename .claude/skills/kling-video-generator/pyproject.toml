@@ -1,0 +1,10 @@
+[project]
+name = "kling-video-generator"
+version = "1.0.0"
+description = "Kling AI Video Generator with start/end frame support"
+requires-python = ">=3.10"
+dependencies = [
+    "pyjwt>=2.8.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
