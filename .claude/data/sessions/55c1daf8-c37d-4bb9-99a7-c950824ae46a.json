@@ -1,0 +1,8 @@
+{
+  "session_id": "55c1daf8-c37d-4bb9-99a7-c950824ae46a",
+  "prompts": [
+    "/plan I currently have local TerraGlama Prod. I want it to be deployed in the simplest way possible. Maybe do Cloudflare because I have existing project there, but if you have easier alternative let me know.",
+    "/plan I currently have local TerraGlama Prod. I want it to be deployed in the simplest way possible. Maybe do Cloudflare because I have existing project there, but if you have easier alternative let me know.\\\n\\\nBefore doing that, present to me with options of where you plan to deploy it."
+  ],
+  "agent_name": "Nexus"
+}

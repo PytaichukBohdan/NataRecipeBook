@@ -1,16 +1,33 @@
 # Prime
-> Execute the following sections to understand the codebase then summarize your understanding.
+
+Execute the `Run`, `Read` and `Report` sections to understand the codebase then summarize your understanding.
+
+## Focus
+- Primary focus: NataRecipeBook - Ukrainian recipe book application
 
 ## Run
 git ls-files
 
 ## Read
-README.md
-.claude/commands/conditional_docs.md - this is a guide for you to determine which documentation to read based on the upcoming task.
 
-## Summarize
-Provide a brief summary of:
-- Project type (Next.js recipe book application)
-- Key technologies (Next.js 14, TypeScript, React 19, Tailwind CSS)
-- Main directories (app/, components/, lib/)
-- Available npm scripts
+### Core (always read these):
+- @README.md
+- @app/page.tsx
+- @app/layout.tsx
+- @types/recipe.ts
+- @data/recipes.json
+
+### Components:
+- @components/RecipeCard.tsx
+- @components/NutritionCard.tsx
+- @components/IntroPage.tsx
+- @components/SectionDivider.tsx
+
+### Library/Utils:
+- @lib/page-builder.ts
+- @lib/recipe-loader.ts
+- @lib/nutrition-utils.ts
+- @lib/utils.ts
+
+## Report
+Summarize your understanding of the codebase.

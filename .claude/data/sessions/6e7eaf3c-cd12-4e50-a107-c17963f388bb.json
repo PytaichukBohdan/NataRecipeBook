@@ -1,0 +1,7 @@
+{
+  "session_id": "6e7eaf3c-cd12-4e50-a107-c17963f388bb",
+  "prompts": [
+    "/plan current behavior:\n- You perfectly scrape Twitter bookmarks, that's all I need from you.\n- I need you to be able to scrape the latest of them and keep track of them.\n- If a tweet is reposted, another tweet, you should include this another reposted tweet to your data and its original content and treat it as such.\n- The text entity should be like bookmarked tweet and concatenated to the reposted one."
+  ],
+  "agent_name": "Cipher"
+}

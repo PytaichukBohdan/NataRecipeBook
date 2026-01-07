@@ -1,0 +1,8 @@
+{
+  "session_id": "5a22541d-7f7f-492a-b2e4-625ccf6cd16e",
+  "prompts": [
+    "/build specs/recipe-book-ux-enhancements.md",
+    "css is GSAS is broken, so no styles are applied. Please check it."
+  ],
+  "agent_name": "Nebula"
+}

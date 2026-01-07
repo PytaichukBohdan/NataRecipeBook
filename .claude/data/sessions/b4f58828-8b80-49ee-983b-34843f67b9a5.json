@@ -1,0 +1,8 @@
+{
+  "session_id": "b4f58828-8b80-49ee-983b-34843f67b9a5",
+  "prompts": [
+    "/build_in_parallel '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/specs/recipe-data-cleanup-and-nutrition-sync.md'",
+    "commit"
+  ],
+  "agent_name": "Nexus"
+}

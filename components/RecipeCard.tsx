@@ -1,8 +1,10 @@
-import { memo, useMemo } from 'react'
+import { memo, useMemo, useState, useEffect } from 'react'
 import Image from 'next/image'
+import { Printer } from 'lucide-react'
 import type { Recipe } from '@/types/recipe'
 import { normalizeImagePath } from '@/lib/recipe-loader'
 import { NutritionCard } from '@/components/NutritionCard'
+import { ScrollIndicator } from '@/components/ScrollIndicator'
 
 interface RecipeCardProps {
   recipe: Recipe
@@ -59,6 +61,18 @@ function getRecipeStats(recipe: Recipe) {
 
 function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardProps) {
   const imagePath = normalizeImagePath(recipe.image_path)
+
+  // Scroll indicator visibility state
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollIndicator(window.scrollY < 100)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   // Determine category display name and color
   const getCategoryInfo = () => {
@@ -133,6 +147,9 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
             </div>
           </div>
         </div>
+
+        {/* Scroll Indicator */}
+        <ScrollIndicator visible={showScrollIndicator} />
       </div>
 
       {/* Details Section */}

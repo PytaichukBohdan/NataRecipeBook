@@ -1,0 +1,13 @@
+{
+  "session_id": "621ce914-ce4e-455e-ab04-f1f315ed6b30",
+  "prompts": [
+    "/build '/Users/bohdanpytaichuk/Documents/DanaCockFight/specs/fighter-descriptions-and-presentation-images.md'",
+    "restart",
+    "<bash-notification>\n<shell-id>b83a258</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/b83a258.output</output-file>\n<status>failed</status>\n<summary>Background command \"Restart the Telegram bot\" failed with exit code 144.</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "<bash-notification>\n<shell-id>b215100</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/b215100.output</output-file>\n<status>failed</status>\n<summary>Background command \"Force kill all bot instances and restart\" failed with exit code 1.</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "restart bot (kill bg task & start",
+    "<bash-notification>\n<shell-id>b952025</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/b952025.output</output-file>\n<status>failed</status>\n<summary>Background command \"Start the bot\" failed with exit code 144.</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "kill this bg task\n"
+  ],
+  "agent_name": "Vertex"
+}

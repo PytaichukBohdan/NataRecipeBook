@@ -1,11 +1,14 @@
 "use client"
 
-import { useState, useMemo } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { buildPageArray } from "@/lib/page-builder"
+import { useState, useMemo, useEffect, useCallback } from "react"
+import { ChevronLeft, ChevronRight, Search, List } from "lucide-react"
+import { buildPageArray, getCategoryStartPage, buildRecipePageIndexMap } from "@/lib/page-builder"
+import { loadRecipes } from "@/lib/recipe-loader"
 import { IntroPage } from "@/components/IntroPage"
 import { SectionDivider } from "@/components/SectionDivider"
 import { RecipeCard } from "@/components/RecipeCard"
+import { SearchDialog } from "@/components/SearchDialog"
+import { TableOfContents } from "@/components/TableOfContents"
 
 export default function RecipePage() {
   // Build the page array once using useMemo
@@ -16,31 +19,91 @@ export default function RecipePage() {
   const currentPage = pages[currentPageIndex]
   const totalPages = pages.length
 
-  const nextPage = () => {
+  // Touch swipe gesture state
+  const [touchStart, setTouchStart] = useState<number | null>(null)
+  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+  const minSwipeDistance = 50
+
+  const nextPage = useCallback(() => {
     if (isAnimating) return
     setIsAnimating(true)
     setTimeout(() => {
       setCurrentPageIndex((prev) => (prev + 1) % totalPages)
       setTimeout(() => setIsAnimating(false), 50)
     }, 300)
-  }
+  }, [isAnimating, totalPages])
 
-  const prevPage = () => {
+  const prevPage = useCallback(() => {
     if (isAnimating) return
     setIsAnimating(true)
     setTimeout(() => {
       setCurrentPageIndex((prev) => (prev - 1 + totalPages) % totalPages)
       setTimeout(() => setIsAnimating(false), 50)
     }, 300)
-  }
+  }, [isAnimating, totalPages])
 
-  const goToPage = (index: number) => {
+  const goToPage = useCallback((index: number) => {
     if (isAnimating || index === currentPageIndex) return
     setIsAnimating(true)
     setTimeout(() => {
       setCurrentPageIndex(index)
       setTimeout(() => setIsAnimating(false), 50)
     }, 300)
+  }, [isAnimating, currentPageIndex])
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ignore if user is typing in an input/textarea
+      const target = e.target as HTMLElement
+      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA') {
+        return
+      }
+
+      // Ignore if dialog is open
+      if (document.querySelector('[role="dialog"]')) {
+        return
+      }
+
+      // Handle arrow keys
+      switch(e.key) {
+        case 'ArrowLeft':
+          e.preventDefault()
+          prevPage()
+          break
+        case 'ArrowRight':
+          e.preventDefault()
+          nextPage()
+          break
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [prevPage, nextPage])
+
+  // Touch swipe gesture handlers
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null)
+    setTouchStart(e.targetTouches[0].clientX)
+  }
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX)
+  }
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return
+
+    const distance = touchStart - touchEnd
+    const isLeftSwipe = distance > minSwipeDistance
+    const isRightSwipe = distance < -minSwipeDistance
+
+    if (isLeftSwipe) {
+      nextPage() // Swipe left = next page
+    } else if (isRightSwipe) {
+      prevPage() // Swipe right = previous page
+    }
   }
 
   // Render the current page based on its type
@@ -69,7 +132,12 @@ export default function RecipePage() {
   }
 
   return (
-    <div className="min-h-screen bg-background relative">
+    <div
+      className="min-h-screen bg-background relative"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       {/* Navigation Buttons */}
       <div className="fixed top-1/2 left-4 z-50 transform -translate-y-1/2">
         <button onClick={prevPage} className="recipe-nav-button group" aria-label="Попередня сторінка">

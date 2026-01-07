@@ -1,0 +1,15 @@
+{
+  "session_id": "41e07104-43bc-464c-aef2-428d3b06c89c",
+  "prompts": [
+    "/build_in_parallel '/Users/bohdanpytaichuk/Documents/DanaCockFight/specs/dana-cockfight-telegram-bot.md'",
+    "8549606143:AAEYecRFxxoPnVaqDRvujHjvV0-9rUvf7xQ - add as tg bot token\\\nAntropic - obtain from my environment",
+    "look better for entropic by echoing env",
+    "use gemini instead of anropic",
+    "start bot",
+    "commit ",
+    "<bash-notification>\n<shell-id>b91c43a</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/b91c43a.output</output-file>\n<status>failed</status>\n<summary>Background command \"Start bot as module\" failed with exit code 144.</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "<bash-notification>\n<shell-id>bb2269c</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/bb2269c.output</output-file>\n<status>failed</status>\n<summary>Background command \"Restart bot\" failed with exit code 144.</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "kill bg tasl"
+  ],
+  "agent_name": "Vortex"
+}

@@ -1,4 +1,14 @@
-export function IntroPage() {
+interface IntroPageProps {
+  onCategoryClick?: (categoryId: string) => void
+}
+
+export function IntroPage({ onCategoryClick }: IntroPageProps) {
+  const categories = [
+    { id: 'breakfast', count: 20, name: 'Сніданки', desc: 'Енергійний старт дня' },
+    { id: 'lunch_dinner', count: 25, name: 'Обід/Вечеря', desc: 'Ситні та збалансовані' },
+    { id: 'desserts', count: 20, name: 'Десерти', desc: 'Солодкі без провини' },
+  ]
+
   return (
     <div className="recipe-hero min-h-screen flex flex-col justify-center items-center px-8 py-16">
       <div className="max-w-4xl mx-auto text-center">

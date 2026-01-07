@@ -53,6 +53,40 @@ export function buildPageArray(): Page[] {
  * Gets statistics about the page array
  * Useful for validation and debugging
  */
+/**
+ * Gets the page index for the start of a category
+ * For breakfast, returns page 1 (first recipe after intro)
+ * For others, returns the first recipe after the section divider
+ */
+export function getCategoryStartPage(pages: Page[], categoryId: string): number {
+  // For breakfast, return page 1 (first recipe after intro)
+  if (categoryId === 'breakfast') return 1
+
+  // For others, find the section divider
+  const dividerIndex = pages.findIndex(
+    page => page.type === 'section-divider' && page.categoryId === categoryId
+  )
+
+  // Return the page after the divider (first recipe in category)
+  return dividerIndex !== -1 ? dividerIndex + 1 : 1
+}
+
+/**
+ * Builds a map from recipe ID to page index
+ * Useful for direct navigation to specific recipes
+ */
+export function buildRecipePageIndexMap(pages: Page[]): Map<number, number> {
+  const map = new Map<number, number>()
+
+  pages.forEach((page, index) => {
+    if (page.type === 'recipe') {
+      map.set(page.recipe.id, index)
+    }
+  })
+
+  return map
+}
+
 export function getPageStats(pages: Page[]): {
   totalPages: number
   introPages: number

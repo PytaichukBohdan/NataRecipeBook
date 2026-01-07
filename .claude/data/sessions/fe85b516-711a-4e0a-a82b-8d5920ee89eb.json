@@ -1,0 +1,10 @@
+{
+  "session_id": "fe85b516-711a-4e0a-a82b-8d5920ee89eb",
+  "prompts": [
+    "use images inside '/Users/bohdanpytaichuk/Documents/DanaCockFight/data/images' to generate only one of presenting the cock; and use it everywhere\\\nSave this image to data/competition",
+    "Make it so this bot is used where fighters are presented",
+    "kill all bg tasks & start bot",
+    "<bash-notification>\n<shell-id>b81373c</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/b81373c.output</output-file>\n<status>failed</status>\n<summary>Background command \"Start the Telegram bot\" failed with exit code 137.</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  ],
+  "agent_name": "Catalyst"
+}

@@ -1,0 +1,7 @@
+{
+  "session_id": "2b2c106c-560a-4cab-b50a-8a97287f5d84",
+  "prompts": [
+    "/plan use image generator nano banana to to replace all existing images with newly generated ones, they should be wide aspect ratio. As a base, like a helper for the prompt, you should use existing images on the current pages. It should be consistent with the book theme. Visually consistent. But all ingredients should be present and should be put on the plate. Do it in parallel. Use subagents."
+  ],
+  "agent_name": "Catalyst"
+}

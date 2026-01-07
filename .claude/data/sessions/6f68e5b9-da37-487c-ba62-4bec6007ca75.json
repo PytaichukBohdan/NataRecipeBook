@@ -1,0 +1,14 @@
+{
+  "session_id": "6f68e5b9-da37-487c-ba62-4bec6007ca75",
+  "prompts": [
+    "Bot often responds to image with \u041e\u0439, \u0441\u0442\u0430\u043b\u0430\u0441\u044f \u043f\u043e\u043c\u0438\u043b\u043a\u0430! Message caption is too long\\\n\\\nWhat can be an issue?\\\nExample of image \\\n\\\n\\\nP.S. I have bot running on prod remote instance with same bot api - I don't want it to stop",
+    "commit & push remote",
+    "Where is my remote?",
+    "i mean deployment)",
+    "Ok, right now it sends the photo and then sends a separate text message. I want to send the photo, send the text, and if the text is longer than those symbols, to add next message separately.",
+    "Ok, right now it sends the photo and then sends a separate text message. I want to send the photo, send the text, and if the text is longer than those symbols, to add next message separately.\\\n\\\nMaybe even decrease the limit to be sure to 900 per image message, and it's important that text and corresponding link should not be separated in different messages.",
+    "Ok, right now it sends the photo and then sends a separate text message. I want to send the photo + the text in one post, and if the text is longer than those symbols, to add next message separately.\\\n\\\nMaybe even decrease the limit to be sure to 900 per image message, and it's important that text and corresponding link should not be separated in different messages.",
+    "push "
+  ],
+  "agent_name": "Atlas"
+}

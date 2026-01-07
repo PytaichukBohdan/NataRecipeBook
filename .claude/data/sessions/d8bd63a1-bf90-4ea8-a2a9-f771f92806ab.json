@@ -1,0 +1,7 @@
+{
+  "session_id": "d8bd63a1-bf90-4ea8-a2a9-f771f92806ab",
+  "prompts": [
+    "/plan Originl LINK:\\\nhttps://www.tokopedia.com/search?q=Bando%20tanduk%20iblis%20merah%20murah\\\n\\\nLINK WITH BALI FILTER:\\\nhttps://www.tokopedia.com/search?fcity=258%2C259%2C260%2C261%2C262%2C263%2C264%2C265%2C476%2C266&q=Bando%20tanduk%20iblis%20merah%20murah\\\n\\\n\\\n\\\nANOTHER ORIGINAL LINK:\\\nhttps://www.tokopedia.com/search?q=Aksesoris%20kostum%20ekor%20iblis%20merah%20murah\\\n\\\nANOTHER BALI FILTER:\\\nhttps://www.tokopedia.com/search?fcity=258%2C259%2C260%2C261%2C262%2C263%2C264%2C265%2C476%2C266&q=Aksesoris%20kostum%20ekor%20iblis%20merah%20murah\\\n\\\n\\\nOkay, from now on I want you to always return the Bando filter link."
+  ],
+  "agent_name": "Phoenix"
+}

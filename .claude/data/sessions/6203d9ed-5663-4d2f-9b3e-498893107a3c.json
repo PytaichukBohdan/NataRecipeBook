@@ -1,0 +1,9 @@
+{
+  "session_id": "6203d9ed-5663-4d2f-9b3e-498893107a3c",
+  "prompts": [
+    "Should open my browser \n(let me know for credentials for login); obtain my bookmark posst \n(whole text & image). Use dev-browser skill. I'm about twitter",
+    "Research if its possible for later to NOT have to re-login to twitter every time - like if its posssilbbe to use cookies/other stuff from existing chrome on my laptop",
+    "BetterBohdan username - check if it works\\\nOption 1)"
+  ],
+  "agent_name": "Axiom"
+}

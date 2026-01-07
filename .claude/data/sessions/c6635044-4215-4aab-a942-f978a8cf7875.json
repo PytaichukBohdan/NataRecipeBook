@@ -1,0 +1,7 @@
+{
+  "session_id": "c6635044-4215-4aab-a942-f978a8cf7875",
+  "prompts": [
+    "/plan new project (inside app). Should open my browser (let me know for credentials for login); obtain my bookmark posst (whole text & image). Use dev-browser skill"
+  ],
+  "agent_name": "Prism"
+}

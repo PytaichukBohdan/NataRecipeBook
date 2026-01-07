@@ -1,0 +1,16 @@
+{
+  "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+  "prompts": [
+    "/build_in_parallel specs/recipe-image-generation-from-data.md",
+    "WHere are the images? Generate them & put where they belong",
+    "NOPE - do parallel subagents",
+    "You have generated overhead, but you have not generated another prompt. Generate another prompt and replace existing images with that one.And feel free to delete all the other recipe images, it's ok, I have a backup.",
+    "<bash-notification>\n<shell-id>b74e1b6</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/b74e1b6.output</output-file>\n<status>completed</status>\n<summary>Background command \"Wait and count images\" completed (exit code 0).</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "Great job! Now - redo it again\\\nBUT - change formatting AND translate to Ukraininan\\\n\\\nFresh fig (1) - \u0421\u0432\u0456\u0436\u0438\u0439 \u0406\u043d\u0436\u0438\u0440 1\u0448\u0442\\\nGreek yougurt(15g) - \u0413\u0440\u0435\u0446\u044c\u043a\u0438\u0439 \u0419\u043e\u0433\u0443\u0440\u0442 15\u0433\\\nMeaning never use ()\\\nEND there's never should be a title \\\n\\\nRegenerate",
+    "You have generated overhead, but you have not generated another prompt. Generate another prompt and replace existing images with that one.And feel free to delete all the other recipe images, it's ok, I have a backup.\\\n\\\nBefore that - hange formatting AND translate to Ukraininan\\\n\\\nFresh fig (1) - \u0421\u0432\u0456\u0436\u0438\u0439 \u0406\u043d\u0436\u0438\u0440 1\u0448\u0442\\\nGreek yougurt(15g) - \u0413\u0440\u0435\u0446\u044c\u043a\u0438\u0439 \u0419\u043e\u0433\u0443\u0440\u0442 15\u0433\\\nMeaning never use ()\\\nEND there's never should be a title \\",
+    "<agent-notification>\n<agent-id>acb6b2e</agent-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/acb6b2e.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate exploded lunch_dinner 14-25\" completed.</summary>\nRead the output file to retrieve the full result.\n</agent-notification>",
+    "You have generated overhead, but you have not generated another prompt. Generate another prompt and replace existing images with that one.And feel free to delete all the other recipe images, it's ok, I have a backup.\\\n\\\nBefore that - hange formatting AND translate to Ukraininan\\\n\\\nFresh fig (1) - \u0421\u0432\u0456\u0436\u0438\u0439 \u0406\u043d\u0436\u0438\u0440 1\u0448\u0442\\\nGreek yougurt(15g) - \u0413\u0440\u0435\u0446\u044c\u043a\u0438\u0439 \u0419\u043e\u0433\u0443\u0440\u0442 15\u0433\\\nMeaning never use ()\\\nEND there's never should be a title \\\\\n\\\nIN SUCH WAY YOU\"VE ALREADY GENERATED \u23fa 59 images - almost there! Let me wait for completion:\\\n\\\nNOW GENERATE UNTIL FINISH",
+    "<agent-notification>\n<agent-id>ac072b1</agent-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/ac072b1.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate exploded breakfast 11-20\" completed.</summary>\nRead the output file to retrieve the full result.\n</agent-notification>"
+  ],
+  "agent_name": "Prism"
+}

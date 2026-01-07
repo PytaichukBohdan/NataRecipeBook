@@ -1,0 +1,7 @@
+{
+  "session_id": "59c8c0b4-4b3b-43e8-81ca-60a28fe8ae1a",
+  "prompts": [
+    "/plan while using image-generator=nano=banana-pro skill, based on existing\n  images create beautiful wide images same size & put them instead of the\n  images we have currently (which are differnet size)\\\n  They must be coherent with the theme of the book itself\\\n  use parallelist\\\n  \n"
+  ],
+  "agent_name": "Atlas"
+}

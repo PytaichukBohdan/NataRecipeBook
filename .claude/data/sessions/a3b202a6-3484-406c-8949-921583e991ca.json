@@ -1,0 +1,11 @@
+{
+  "session_id": "a3b202a6-3484-406c-8949-921583e991ca",
+  "prompts": [
+    "/build specs/enhanced-draw-matchup-announcements.md",
+    "start bot",
+    "<bash-notification>\n<shell-id>bc0fe8b</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-DanaCockFight/tasks/bc0fe8b.output</output-file>\n<status>failed</status>\n<summary>Background command \"Start the Dana CockFight Telegram bot\" failed with exit code 1.</summary>\nRead the output file to retrieve the output.\n</bash-notification>",
+    "start not - I've killed it",
+    "stop bg process"
+  ],
+  "agent_name": "Sage"
+}

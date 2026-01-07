@@ -1,0 +1,7 @@
+{
+  "session_id": "2a4fbac5-debe-4037-8767-63a44658f932",
+  "prompts": [
+    "adapt '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/image-generator-nano-banana-pro' to be using uv instead of venv "
+  ],
+  "agent_name": "Nova"
+}

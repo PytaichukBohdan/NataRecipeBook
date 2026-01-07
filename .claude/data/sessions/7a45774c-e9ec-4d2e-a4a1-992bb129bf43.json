@@ -1,0 +1,9 @@
+{
+  "session_id": "7a45774c-e9ec-4d2e-a4a1-992bb129bf43",
+  "prompts": [
+    "/build specs/deploy-telegram-bot.md",
+    "/build specs/deploy-telegram-bot.md",
+    "git@github.com:BetterBohdanGaiera/tokopedia_image_inspiration.git via BetterBohdanGaiera ssh key "
+  ],
+  "agent_name": "Vertex"
+}

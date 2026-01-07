@@ -1,0 +1,7 @@
+{
+  "session_id": "4ce48b9e-c65d-4f58-8f2a-a39e36662ed0",
+  "prompts": [
+    "<bash-notification>\n<shell-id>b5fc49b</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-TAC-agent-experts/tasks/b5fc49b.output</output-file>\n<status>failed</status>\n<summary>Background command \"Start dev-browser server\" failed with exit code 137.</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  ],
+  "agent_name": "Nebula"
+}

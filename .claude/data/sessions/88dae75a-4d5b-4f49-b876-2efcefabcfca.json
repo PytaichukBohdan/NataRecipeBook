@@ -1,0 +1,9 @@
+{
+  "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+  "prompts": [
+    "/build_in_parallel '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/specs/recipe-image-regeneration-parallel.md'",
+    "NOW REPLACE previous images on slides with newly generated ",
+    "AND backup old ones"
+  ],
+  "agent_name": "Cipher"
+}
