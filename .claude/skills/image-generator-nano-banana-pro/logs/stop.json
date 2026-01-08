@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/image-generator-nano-banana-pro",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "f65ffd3e-c27b-4654-9b6b-a9c1b681273d",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f65ffd3e-c27b-4654-9b6b-a9c1b681273d.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/image-generator-nano-banana-pro",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/image-generator-nano-banana-pro",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]

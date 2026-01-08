@@ -1,0 +1,122 @@
+[
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ab1e96b",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-ab1e96b.jsonl"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a0a950e",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-a0a950e.jsonl"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a2dbff1",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-a2dbff1.jsonl"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "afe9462",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-afe9462.jsonl"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "aeb3583",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-aeb3583.jsonl"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "acb8df8",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-acb8df8.jsonl"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ac68ef2",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-ac68ef2.jsonl"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a7f24c9",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-a7f24c9.jsonl"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "adfe8b5",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-adfe8b5.jsonl"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a448d4c",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-a448d4c.jsonl"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "afa82e0",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-afa82e0.jsonl"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/public/recipe_images",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ae99a8b",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/agent-ae99a8b.jsonl"
+  }
+]

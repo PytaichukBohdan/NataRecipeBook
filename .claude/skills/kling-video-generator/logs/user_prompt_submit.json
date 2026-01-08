@@ -1,0 +1,50 @@
+[
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/kling-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "UNAPOLOGETICALLY NEVER USE WORSE MODELS \\\nWHY DID YOU SWITCH FROM o1??"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/kling-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "UNAPOLOGETICALLY NEVER USE WORSE MODELS \\\nWHY DID YOU SWITCH FROM o1??\\\n\\\nHERE IS LINK TO THE DOcUMENTATION \\\nhttps://app.klingai.com/global/dev/document-api/apiReference/model/OmniVideo"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/kling-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "There is a prompt WITH ANOHTHER INGREDIENTS\\\n\\\nModify the prompt to correpspond to breakfast 1 recipe\\\nAND execute video generation based on it\\\n\\\nKling 2.5 Turbo Prompt:\n\nA high-angle, cinematic studio shot of a fresh steak salad in a white ceramic bowl, centered on a clean white background. The salad is fully assembled: finely chopped curly kale and leafy greens, medium-rare sliced steak, avocado slices, diced red bell peppers, crumbled white cheese, and a lemon wedge.\nAfter a brief moment of stillness, the salad bursts upward in a controlled, elegant explosion, with each ingredient separating cleanly and moving upward along a vertical axis. The motion is smooth, slow, and weightless\u2014no chaos, no spinning\u2014creating a precise, visually satisfying deconstruction.\nThe ingredients settle into a perfectly aligned exploded-view composition, hovering in mid-air in distinct horizontal layers, evenly spaced and centered:\n\u2013 Leafy greens at the bottom\n\u2013 Red bell peppers and crumbled cheese above\n\u2013 Medium-rare sliced steak laid flat and neatly fanned\n\u2013 Avocado slices symmetrically arranged\n\u2013 Lemon wedge and light vinaigrette droplets at the tgredients are fully separated and stable, minimal technical annotation lines and labels fade in, alternating left and right for balance. Text is clean, modern, and readable, connected with thin leader lines, never overlapping the ingredients.\nLighting is soft and diffuse, studio-style, with minimal shadows.\nMotion is slow-motion and cinematic, emphasizing clarity and elegance.\nUltra-realistic food textures, high detail, premium editorial aesthetic.\nCamera remains locked and steady throughout.\nNo hands, no people, no clutter, no branding, no background movement.\nEnd on the fully exploded, clearly labeled ingredient view.]"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/kling-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "List me prompt (final) you've used"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/kling-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Now, with the same logic\\\nAdapt prompts and generate for breakfast_2 and breakfast_3"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/kling-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Move already generated to corresponding public/recipe_images/videos folder\\\n\\\nGenerate for all the others with the same approach\\\nUse parallel subagents in doing so"
+  }
+]

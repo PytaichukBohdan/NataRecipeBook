@@ -1,0 +1,418 @@
+[
+  {
+    "session_id": "af7b841e-5697-4882-80ef-096496a9c682",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/af7b841e-5697-4882-80ef-096496a9c682.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "update @.claude/commands/ to this project"
+  },
+  {
+    "session_id": "c7749e5b-4999-46a4-86b1-1bbd4c2d0358",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/c7749e5b-4999-46a4-86b1-1bbd4c2d0358.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Adapt @.claude/  to this repo"
+  },
+  {
+    "session_id": "50866e17-3fc1-4455-b87d-22c3471a20f9",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/50866e17-3fc1-4455-b87d-22c3471a20f9.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "start the project locally"
+  },
+  {
+    "session_id": "faab2395-4478-499b-9b68-5678878b3e13",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/faab2395-4478-499b-9b68-5678878b3e13.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/plan_w_scouters '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data/\u041a\u043d\u0438\u0433\u0430\u0420\u0435\u0446\u0435\u043f\u0442\u0456\u0432Updated.txt' \u0442\u0443\u0442 \u043f\u0440\u043e\u043f\u0438\u0441\u043d\u0456 \u0444\u0456\u043d\u0430\u043b\u044c\u043d\u043e \u0443\u0441\u0456 \u0411\u0416\u0423. \\\n\u041f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0457\u0445 \u0434\u043e\u0434\u0430\u0442\u0438 \u0422\u0410 \u0443\u0441\u0456 \u0434\u0435\u0442\u0430\u043b\u0456, \u044f\u043a\u0456 \u043d\u0435 \u0434\u043e\u0434\u0430\u043d\u0456\\\n\\\n\\\n\u0422\u0410\u041a\u041e\u0416\\\n\u0406\u041d\u041e\u0414\u0406 \u0456\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438 \u043d\u0430 \u0441\u043f\u043e\u0441\u0456\u0431 \u043f\u0440\u0438\u0433\u043e\u0442\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0437\u043c\u0456\u0448\u0430\u043b\u0438\u0441\u044f (\u0456\u043d\u0433\u0440\u0435\u0434\u0456\u0454\u043d\u0442\u0438 \u043f\u0456\u0448\u043b\u0438 \u0443 \u0441\u043f\u043e\u0441\u0456\u0431 \u043f\u0440\u0438\u0433\u043e\u0442\u0443\u0432\u0430\u043d\u043d\u044f)\\\n\u041f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0446\u0435 \u043f\u0440\u043e\u0430\u043d\u0430\u043b\u0456\u0437\u0443\u0432\u0430\u0442\u0438 \u0442\u0430 \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0442\u0438\\\n\\\n\u041f\u043b\u0430\u043d \u043c\u0430\u0454 \u0437\u0430\u043a\u043b\u0430\u0434\u0430\u0442\u0438, \u0449\u043e \u043a\u043e\u0436\u043d\u0430 \u043e\u043a\u0440\u0435\u043c\u0430 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0430 \u0442\u0430 \u0440\u0435\u0446\u0435\u043f\u0442 - \u043d\u0435\u0437\u0430\u043b\u0435\u0436\u043d\u0456 \u043e\u0434\u0438\u043d \u0432\u0456\u0434 \u043e\u0434\u043d\u043e\u0433\u043e \u0456 \u043c\u043e\u0436\u043d\u0430 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u0442\u0438 \u043f\u0430\u0440\u0430\u043b\u0435\u043b\u0456\u0437\u043c \u0456\u0437 subagents \u043d\u0430 \u043a\u043e\u0436\u043d\u0443 \u043e\u043a\u0440\u0435\u043c\u0443 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0443"
+  },
+  {
+    "session_id": "b4f58828-8b80-49ee-983b-34843f67b9a5",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/b4f58828-8b80-49ee-983b-34843f67b9a5.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/build_in_parallel '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/specs/recipe-data-cleanup-and-nutrition-sync.md'"
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "do you have browser use skill?"
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Take a look at localhost 3000 - this is a food recipes books. Think ultrahard and navigate as much as you need to provide list of UX and other improvements that will make it look great & selling"
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/plan based on this ino add:\\\nsearch functionality; category cards clickable; larger food photos; table of content; print-friendly version "
+  },
+  {
+    "session_id": "b4f58828-8b80-49ee-983b-34843f67b9a5",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/b4f58828-8b80-49ee-983b-34843f67b9a5.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "commit"
+  },
+  {
+    "session_id": "5a22541d-7f7f-492a-b2e4-625ccf6cd16e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/5a22541d-7f7f-492a-b2e4-625ccf6cd16e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/build specs/recipe-book-ux-enhancements.md"
+  },
+  {
+    "session_id": "5a22541d-7f7f-492a-b2e4-625ccf6cd16e",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/5a22541d-7f7f-492a-b2e4-625ccf6cd16e.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "css is GSAS is broken, so no styles are applied. Please check it."
+  },
+  {
+    "session_id": "50866e17-3fc1-4455-b87d-22c3471a20f9",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/50866e17-3fc1-4455-b87d-22c3471a20f9.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<bash-notification>\n<shell-id>bd481c6</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/bd481c6.output</output-file>\n<status>completed</status>\n<summary>Background command \"Start Next.js dev server\" completed (exit code 0).</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  },
+  {
+    "session_id": "86e5b204-14b8-43e5-b55b-7e17db7c0fa0",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/86e5b204-14b8-43e5-b55b-7e17db7c0fa0.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/quick-plan make it so when i press buttons left & right I change the pages; make it so its adapted to mobile; make it so its obvious to scroll down to see the recipe"
+  },
+  {
+    "session_id": "6f53bca2-f8cc-40f2-b8b5-3d4e978eebe7",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/6f53bca2-f8cc-40f2-b8b5-3d4e978eebe7.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/build  specs/keyboard-mobile-scroll-enhancements.md"
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "kill bg task; start this project"
+  },
+  {
+    "session_id": "50866e17-3fc1-4455-b87d-22c3471a20f9",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/50866e17-3fc1-4455-b87d-22c3471a20f9.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "kill bg task"
+  },
+  {
+    "session_id": "6f53bca2-f8cc-40f2-b8b5-3d4e978eebe7",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/6f53bca2-f8cc-40f2-b8b5-3d4e978eebe7.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Current css - fix it "
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<bash-notification>\n<shell-id>b745699</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/b745699.output</output-file>\n<status>completed</status>\n<summary>Background command \"Start recipe book dev server\" completed (exit code 0).</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<bash-notification>\n<shell-id>bea137a</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/bea137a.output</output-file>\n<status>completed</status>\n<summary>Background command \"Restart recipe book dev server\" completed (exit code 0).</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  },
+  {
+    "session_id": "d1d6213a-4789-4d78-81da-0b3e5e699095",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/d1d6213a-4789-4d78-81da-0b3e5e699095.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<bash-notification>\n<shell-id>baab36e</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/baab36e.output</output-file>\n<status>completed</status>\n<summary>Background command \"Kill ports and restart dev server\" completed (exit code 0).</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  },
+  {
+    "session_id": "2a4fbac5-debe-4037-8767-63a44658f932",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/2a4fbac5-debe-4037-8767-63a44658f932.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "adapt '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/image-generator-nano-banana-pro' to be using uv instead of venv "
+  },
+  {
+    "session_id": "59c8c0b4-4b3b-43e8-81ca-60a28fe8ae1a",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/59c8c0b4-4b3b-43e8-81ca-60a28fe8ae1a.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/plan while using image-generator=nano=banana-pro skill, based on existing\n  images create beautiful wide images same size & put them instead of the\n  images we have currently (which are differnet size)\\\n  They must be coherent with the theme of the book itself\\\n  use parallelist\\\n  \n"
+  },
+  {
+    "session_id": "2b2c106c-560a-4cab-b50a-8a97287f5d84",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/2b2c106c-560a-4cab-b50a-8a97287f5d84.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/plan use image generator nano banana to to replace all existing images with newly generated ones, they should be wide aspect ratio. As a base, like a helper for the prompt, you should use existing images on the current pages. It should be consistent with the book theme. Visually consistent. But all ingredients should be present and should be put on the plate. Do it in parallel. Use subagents."
+  },
+  {
+    "session_id": "48dc7b63-90c9-44c0-ba93-be8c28f54b5d",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/48dc7b63-90c9-44c0-ba93-be8c28f54b5d.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "test nano banana image generation - generate by using it 1 random image of a cat"
+  },
+  {
+    "session_id": "48dc7b63-90c9-44c0-ba93-be8c28f54b5d",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/48dc7b63-90c9-44c0-ba93-be8c28f54b5d.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Update need of this variable to just be using current directory. After that - keep testing the skill"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/build_in_parallel '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/specs/recipe-image-regeneration-parallel.md'"
+  },
+  {
+    "session_id": "e4fda42f-e6f1-4526-93d2-a7545f65472d",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/e4fda42f-e6f1-4526-93d2-a7545f65472d.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "start localhost"
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "NOW REPLACE previous images on slides with newly generated "
+  },
+  {
+    "session_id": "88dae75a-4d5b-4f49-b876-2efcefabcfca",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/88dae75a-4d5b-4f49-b876-2efcefabcfca.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "AND backup old ones"
+  },
+  {
+    "session_id": "f65ffd3e-c27b-4654-9b6b-a9c1b681273d",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/f65ffd3e-c27b-4654-9b6b-a9c1b681273d.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "'/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/image-generator-nano-banana-pro' use LATEST nano panana pro 3.0 - update & test that its working "
+  },
+  {
+    "session_id": "db1814a4-60b7-4557-8e0b-1d5938125e5a",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/db1814a4-60b7-4557-8e0b-1d5938125e5a.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/plan I want to create a video based on 2 images I need you to generate. They will serve as starting & finishing slide - so they must be on the same background\\\n\\\nFOR NOW WE ONLY GENERATE IMAGES using image-generator-nano-banana skill\\\naspect ratio should be horizontal 16 vertical 9 \\\nThis will later replace existing images for food\\\n\\\n\\\nHOW TO LIST INGREDIENTS?\\\nTake '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/data' recipes & ingredients from it (only ingredients) EVEN if ingreidents are inside \"How to Cook\" section\\\n\\\n\\\nAND USE TWO PROMPTS BELOW FOR GENERATING (and use parallel processes for generation):\\\nImage Prompt 1:\n\n[Overhead, top-down food photography of a vibrant, healthy steak salad bowl on a light beige stone surface. A shallow ceramic bowl filled with finely chopped curly kale as the base. Medium-rare sliced steak arranged neatly across the center, pink interior with seared edges and visible seasoning. On one side, fanned avocado slices with cracked black pepper. Bright red diced bell peppers, crumbled white cheese (feta-style), and finely chopped greens distributed evenly around the bowl. A lemon wedge tucked against the edge of the bowl. A blue-handled fork resting inside the bowl, angled slightly toward the center. Natural soft daylight from above, minimal shadows, clean editorial food styling. Sharp focus, high detail, realistic textures, fresh and appetizing. Modern cookbook / Instagram food photography aesthetic. No hands, no text, no branding, no clutter.]\n\nImage Prompt 2:\n\n[Using the original steak salad image as the sole ingredient reference, create a clean, vertically stacked exploded-view visualization of the same salad.\nThe ingredients are arranged in a strict bottom-to-top order, evenly spaced along a single centered vertical axis, with symmetry, alignment, and visual balance.\nBottom layer (base of the salad):\nFinely chopped curly kale and mixed leafy greens, forming a soft, natural pile that anchors the composition.\nMiddle layers (core ingredients), stacked upward in this order:\n\u2013 Diced red bell peppers and chopped greens, evenly distributed\n\u2013 Crumbled white cheese (feta-style), centered and proportionally scaled\n\u2013 Medium-rare sliced steak, laid flat and neatly fanned, pink interior visible\n\u2013 Avocado slices, evenly cut and symmetrically fanned\nTop layer (finishing elements):\nLemon wedge and light vinaigrette droplets, placed delicately at the top of the image to signal freshness and completion.\nAll ingredient layers are parallel, evenly spaced, and centered, with no rotation, tilt, or perspective distortion.\nIngredients appear to float gently while maintaining realistic pns, textures, and color accuracy.\nAdd short, minimal annotations with thin leader lines.\nAlternate caption placement from left to right as you move up the stack to create visual balance and avoid crowding.\nExample annotations:\n\u2013 Leafy greens: \u201cFresh base, rich in nutrients\u201d\n\u2013 Steak: \u201cHigh-quality protein\u201d\n\u2013 Avocado: \u201cHealthy fats, creamy balance\u201d\n\u2013 Red pepper: \u201cNatural sweetness & antioxidants\u201d\n\u2013 Lemon & vinaigrette: \u201cLight finish enhancing natural flavors\u201d\nBackground is pure white or very light neutral, matte and distraction-free.\nLighting is soft, even, and shadow-minimized with a clean editorial food-photography feel.\nStyle is premium food photography combined with a technical exploded diagram, suitable for marketing, nutrition education, or app UI.\nNo hands, no bowl, no clutter, no branding, no dramatic shadows.]"
+  },
+  {
+    "session_id": "db1814a4-60b7-4557-8e0b-1d5938125e5a",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/db1814a4-60b7-4557-8e0b-1d5938125e5a.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Now modify instruction\\\nThat INSTEAD OF STEAK - YOU SHOULD REPLACE INGREDIENDS from data recipes. And save them to be set to corresponding slides and pages \\\nRight now - even just set image from Exploded-view-diagram as a replacement of original images from pages of the book when you generate it; but starting slide also save"
+  },
+  {
+    "session_id": "db1814a4-60b7-4557-8e0b-1d5938125e5a",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/db1814a4-60b7-4557-8e0b-1d5938125e5a.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Modify specification"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "/build_in_parallel specs/recipe-image-generation-from-data.md"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "WHere are the images? Generate them & put where they belong"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "NOPE - do parallel subagents"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "You have generated overhead, but you have not generated another prompt. Generate another prompt and replace existing images with that one.And feel free to delete all the other recipe images, it's ok, I have a backup."
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<bash-notification>\n<shell-id>b74e1b6</shell-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/b74e1b6.output</output-file>\n<status>completed</status>\n<summary>Background command \"Wait and count images\" completed (exit code 0).</summary>\nRead the output file to retrieve the output.\n</bash-notification>"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Great job! Now - redo it again\\\nBUT - change formatting AND translate to Ukraininan\\\n\\\nFresh fig (1) - \u0421\u0432\u0456\u0436\u0438\u0439 \u0406\u043d\u0436\u0438\u0440 1\u0448\u0442\\\nGreek yougurt(15g) - \u0413\u0440\u0435\u0446\u044c\u043a\u0438\u0439 \u0419\u043e\u0433\u0443\u0440\u0442 15\u0433\\\nMeaning never use ()\\\nEND there's never should be a title \\\n\\\nRegenerate"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "You have generated overhead, but you have not generated another prompt. Generate another prompt and replace existing images with that one.And feel free to delete all the other recipe images, it's ok, I have a backup.\\\n\\\nBefore that - hange formatting AND translate to Ukraininan\\\n\\\nFresh fig (1) - \u0421\u0432\u0456\u0436\u0438\u0439 \u0406\u043d\u0436\u0438\u0440 1\u0448\u0442\\\nGreek yougurt(15g) - \u0413\u0440\u0435\u0446\u044c\u043a\u0438\u0439 \u0419\u043e\u0433\u0443\u0440\u0442 15\u0433\\\nMeaning never use ()\\\nEND there's never should be a title \\"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<agent-notification>\n<agent-id>acb6b2e</agent-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/acb6b2e.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate exploded lunch_dinner 14-25\" completed.</summary>\nRead the output file to retrieve the full result.\n</agent-notification>"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "You have generated overhead, but you have not generated another prompt. Generate another prompt and replace existing images with that one.And feel free to delete all the other recipe images, it's ok, I have a backup.\\\n\\\nBefore that - hange formatting AND translate to Ukraininan\\\n\\\nFresh fig (1) - \u0421\u0432\u0456\u0436\u0438\u0439 \u0406\u043d\u0436\u0438\u0440 1\u0448\u0442\\\nGreek yougurt(15g) - \u0413\u0440\u0435\u0446\u044c\u043a\u0438\u0439 \u0419\u043e\u0433\u0443\u0440\u0442 15\u0433\\\nMeaning never use ()\\\nEND there's never should be a title \\\\\n\\\nIN SUCH WAY YOU\"VE ALREADY GENERATED \u23fa 59 images - almost there! Let me wait for completion:\\\n\\\nNOW GENERATE UNTIL FINISH"
+  },
+  {
+    "session_id": "a8d171ed-76c7-476e-828f-ce1a46c7314f",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a8d171ed-76c7-476e-828f-ce1a46c7314f.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<agent-notification>\n<agent-id>ac072b1</agent-id>\n<output-file>/tmp/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/ac072b1.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate exploded breakfast 11-20\" completed.</summary>\nRead the output file to retrieve the full result.\n</agent-notification>"
+  },
+  {
+    "session_id": "c520c832-4311-452a-bc33-c6352e517019",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/c520c832-4311-452a-bc33-c6352e517019.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "commit uncommited changes"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "I've added KLING_ACCESS_KEY and KLING_SECRET_KEY to .env. By using '/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/meta-skill' - create new skill for using Kling video generation with Kling-Video-O1 model. \\\nIMPORTANT it have to be able to have starting & finishing image as a reference\\\n\\\n\\\nGenerate to test ONLY ONE TEST VIDEO describing transition from two images provided (breakfast into overhhead breakfast)\\\nUse web to see latest documentation"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Image containing link to 01 documentation\\\n\\\nTwo images as start & end "
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Take a deeper look - not all videos were generated; analyze which were NOT - keep generating them "
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "We're missing some exploded images\\\n\\\n\\\nGenerate them (Based on recipe in @data)\\\n\\\n\\do it in parallel\nHere is the prompt:\\\n```\\\n[Using the original steak salad image as the sole ingredient reference, create a clean, vertically stacked exploded-view visualization of the same salad.\nThe ingredients are arranged in a strict bottom-to-top order, evenly spaced along a single centered vertical axis, with symmetry, alignment, and visual balance.\nBottom layer (base of the salad):\nFinely chopped curly kale and mixed leafy greens, forming a soft, natural pile that anchors the composition.\nMiddle layers (core ingredients), stacked upward in this order:\n\u2013 Diced red bell peppers and chopped greens, evenly distributed\n\u2013 Crumbled white cheese (feta-style), centered and proportionally scaled\n\u2013 Medium-rare sliced steak, laid flat and neatly fanned, pink interior visible\n\u2013 Avocado slices, evenly cut and symmetrically fanned\nTop layer (finishing elements):\nLemon wedge and light vinaigrette droplets, placed delicately at the top of the image to signal freshness and completion.\nAll ingredient layers are parallel, evenly spaced, and centereno rotation, tilt, or perspective distortion.\nIngredients appear to float gently while maintaining realistic proportions, textures, and color accuracy.\nAdd short, minimal annotations with thin leader lines.\nAlternate caption placement from left to right as you move up the stack to create visual balance and avoid crowding.\nExample annotations:\n\u2013 Leafy greens: \u201cFresh base, rich in nutrients\u201d\n\u2013 Steak: \u201cHigh-quality protein\u201d\n\u2013 Avocado: \u201cHealthy fats, creamy balance\u201d\n\u2013 Red pepper: \u201cNatural sweetness & antioxidants\u201d\n\u2013 Lemon & vinaigrette: \u201cLight finish enhancing natural flavors\u201d\nBackground is pure white or very light neutral, matte and distraction-free.\nLighting is soft, even, and shadow-minimized with a clean editorial food-photography feel.\nStyle is premium food photography combined with a technical exploded diagram, suitable for marketing, nutrition education, or app UI.\nNo hands, no bowl, no clutter, no branding, no dramatic shadows.]\\\n```\\\n\\\nINSIDE PROMPT THERE'RE OTHER INGREDIENTS - your task is to be replacing them "
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Perfect! Now for those missing exploded view images, generate video. Let me know if you still remember the prompt to generate those videos and do them in parallel."
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Yes, commit \\\nAND ADD FILE describing videos you've generated this session (their pathers) & those which existed previously\\\n\\\nThis time - you from exploded image genberated dish\\\nEarlier - from dish gebnerated expploded\\\n\\\nIts okay\\\nI just now need to know which is which"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "and add to that document stil missing\\\nAND emplasise that still missing should be generated as today - exploede to overhead"
+  },
+  {
+    "session_id": "99f90ce1-a5cb-40c9-af70-5d04c7ae0475",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/99f90ce1-a5cb-40c9-af70-5d04c7ae0475.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "commit ALL files\\\n"
+  }
+]
