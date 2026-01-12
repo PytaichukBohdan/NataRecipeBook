@@ -865,10 +865,10 @@
   z-index: 10;
 }
 
-/* Video container - FIXED size, always 16:9 horizontal */
+/* Video container - FIXED size, always 16:9 horizontal (1.5x larger) */
 .recipe-video-container {
-  width: 700px !important;
-  height: 394px !important;
+  width: 1050px !important;
+  height: 591px !important;
   max-width: calc(100vw - 2rem);
   aspect-ratio: 16 / 9 !important;
   margin: 0 auto 2rem !important;
