@@ -37,7 +37,7 @@ export function SectionDivider({ categoryName, categoryId }: SectionDividerProps
 
         <div className="mt-16">
           <p className="text-sm text-muted-foreground italic tracking-wide">
-            Гортайте далі для перегляду рецептів
+            Гортай далі для перегляду рецептів
           </p>
         </div>
       </div>

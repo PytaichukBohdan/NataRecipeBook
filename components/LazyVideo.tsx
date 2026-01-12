@@ -7,13 +7,60 @@ interface LazyVideoProps {
   poster?: string
   alt: string
   className?: string
+  fadeTransition?: boolean // Enable fade out/in on loop
 }
 
-function LazyVideoComponent({ src, poster, alt, className = '' }: LazyVideoProps) {
+function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition = true }: LazyVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [hasError, setHasError] = useState(false)
+  const [videoOpacity, setVideoOpacity] = useState(1)
+  const animationFrameRef = useRef<number | null>(null)
+
+  const FADE_DURATION = 0.8 // seconds for fade in/out
+
+  // Smooth opacity animation loop
+  useEffect(() => {
+    if (!fadeTransition || !isLoaded) return
+
+    const updateOpacity = () => {
+      const video = videoRef.current
+      if (!video || !video.duration) {
+        animationFrameRef.current = requestAnimationFrame(updateOpacity)
+        return
+      }
+
+      const currentTime = video.currentTime
+      const duration = video.duration
+      const timeRemaining = duration - currentTime
+
+      let opacity = 1
+
+      // Fade in at the start
+      if (currentTime < FADE_DURATION) {
+        opacity = currentTime / FADE_DURATION
+      }
+      // Fade out at the end
+      else if (timeRemaining < FADE_DURATION) {
+        opacity = timeRemaining / FADE_DURATION
+      }
+
+      // Clamp and apply
+      opacity = Math.max(0, Math.min(1, opacity))
+      setVideoOpacity(opacity)
+
+      animationFrameRef.current = requestAnimationFrame(updateOpacity)
+    }
+
+    animationFrameRef.current = requestAnimationFrame(updateOpacity)
+
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current)
+      }
+    }
+  }, [fadeTransition, isLoaded])
 
   // Auto-play video when component mounts
   useEffect(() => {
@@ -48,8 +95,8 @@ function LazyVideoComponent({ src, poster, alt, className = '' }: LazyVideoProps
 
   return (
     <div ref={containerRef} className={`${className} w-full h-full`}>
-      {/* Show poster while video loads */}
-      {!isLoaded && poster && (
+      {/* Always show poster as background - visible during fade transitions */}
+      {poster && (
         <img
           src={poster}
           alt={alt}
@@ -57,7 +104,7 @@ function LazyVideoComponent({ src, poster, alt, className = '' }: LazyVideoProps
         />
       )}
 
-      {/* Always render video - load immediately */}
+      {/* Video with dynamic opacity for smooth fade in/out */}
       <video
         ref={videoRef}
         src={src}
@@ -69,7 +116,8 @@ function LazyVideoComponent({ src, poster, alt, className = '' }: LazyVideoProps
         preload="auto"
         onLoadedData={handleLoadedData}
         onError={handleError}
-        className={`absolute inset-0 w-full h-full object-cover ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
+        style={{ opacity: videoOpacity }}
+        className="absolute inset-0 w-full h-full object-cover"
       />
     </div>
   )

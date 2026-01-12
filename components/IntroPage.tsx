@@ -1,12 +1,22 @@
+import { LazyVideo } from './LazyVideo'
+
 interface IntroPageProps {
   onCategoryClick?: (categoryId: string) => void
 }
 
 export function IntroPage({ onCategoryClick }: IntroPageProps) {
-  const categories = [
-    { id: 'breakfast', count: 20, name: 'Сніданки', desc: 'Енергійний старт дня' },
-    { id: 'lunch_dinner', count: 25, name: 'Обід/Вечеря', desc: 'Ситні та збалансовані' },
-    { id: 'desserts', count: 20, name: 'Десерти', desc: 'Солодкі без провини' },
+  // Video previews - 6 videos (2 per category), all play from ingredients → dish
+  const videoPreviewData = [
+    // Сніданки (Session 2: ingredients → dish)
+    { src: '/recipe_images/videos/breakfast_15.mp4', poster: '/recipe_images/breakfast_15.jpeg', alt: 'Сніданок' },
+    // Обід/Вечеря (Session 2: ingredients → dish)
+    { src: '/recipe_images/videos/lunch_dinner_5.mp4', poster: '/recipe_images/lunch_dinner_5.jpeg', alt: 'Обід' },
+    { src: '/recipe_images/videos/lunch_dinner_11.mp4', poster: '/recipe_images/lunch_dinner_11.jpeg', alt: 'Обід' },
+    { src: '/recipe_images/videos/lunch_dinner_12.mp4', poster: '/recipe_images/lunch_dinner_12.jpeg', alt: 'Обід' },
+    // Десерти (Session 2: ingredients → dish)
+    { src: '/recipe_images/videos/desserts_4.mp4', poster: '/recipe_images/desserts_4.jpeg', alt: 'Десерт' },
+    // Extra lunch/dinner to fill 6
+    { src: '/recipe_images/videos/lunch_dinner_18.mp4', poster: '/recipe_images/lunch_dinner_18.jpeg', alt: 'Обід' },
   ]
 
   return (
@@ -24,44 +34,33 @@ export function IntroPage({ onCategoryClick }: IntroPageProps) {
           </h1>
           <div className="recipe-divider w-32 mx-auto mb-8"></div>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty mb-8">
-            Ласкаво просимо до світу смачних та здорових страв. Ця книга – ваш провідник до збалансованого харчування без відчуття вини.
+            Ласкаво просимо до світу смачних та здорових страв. Ця книга – твій провідник до збалансованого харчування без відчуття вини.
           </p>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed text-pretty">
-            Кожен рецепт створений з любов'ю та увагою до деталей, щоб ви могли насолоджуватися їжею, яка живить тіло і душу.
+            Кожен рецепт створений з любов'ю та увагою до деталей, щоб ти міг насолоджуватися їжею, яка живить тіло і душу.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mb-12">
-          <div className="p-6 rounded-lg bg-background/50 border border-border">
-            <div className="text-4xl font-serif text-foreground mb-3">20</div>
-            <div className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Сніданки</div>
-            <p className="text-xs text-muted-foreground">
-              Енергійний старт дня
-            </p>
-          </div>
-          <div className="p-6 rounded-lg bg-background/50 border border-border">
-            <div className="text-4xl font-serif text-foreground mb-3">25</div>
-            <div className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Обід/Вечеря</div>
-            <p className="text-xs text-muted-foreground">
-              Ситні та збалансовані
-            </p>
-          </div>
-          <div className="p-6 rounded-lg bg-background/50 border border-border">
-            <div className="text-4xl font-serif text-foreground mb-3">20</div>
-            <div className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Десерти</div>
-            <p className="text-xs text-muted-foreground">
-              Солодкі без провини
-            </p>
-          </div>
+        {/* Video Grid */}
+        <div className="intro-video-grid grid grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
+          {videoPreviewData.map((video, index) => (
+            <div key={index} className="intro-video-item">
+              <LazyVideo
+                src={video.src}
+                poster={video.poster}
+                alt={video.alt}
+              />
+            </div>
+          ))}
         </div>
 
         <div className="text-center">
           <p className="text-sm text-muted-foreground italic mb-4">
-            Використовуйте стрілки або індикатори внизу для навігації
+            Використовуй стрілки або індикатори внизу для навігації
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
-            <span className="text-xs text-accent-foreground font-medium">Гортайте для відкриття рецептів</span>
+            <span className="text-xs text-accent-foreground font-medium">Гортай для відкриття рецептів</span>
           </div>
         </div>
       </div>
