@@ -49,3 +49,23 @@ export function normalizeImagePath(imagePath: string): string {
   // Otherwise add '/' prefix
   return "/" + imagePath
 }
+
+/**
+ * Derives video path from image path
+ * Converts "/recipe_images/breakfast_1.jpeg" to "/recipe_images/videos/breakfast_1.mp4"
+ * @param imagePath - The normalized image path (already processed by normalizeImagePath)
+ * @returns Video path for the recipe
+ */
+export function deriveVideoPath(imagePath: string): string {
+  if (!imagePath || imagePath === "/placeholder.svg") return ""
+
+  // Insert /videos before the filename and change extension to .mp4
+  const lastSlash = imagePath.lastIndexOf('/')
+  const directory = imagePath.substring(0, lastSlash)
+  const filename = imagePath.substring(lastSlash + 1)
+
+  // Change extension to .mp4
+  const videoFilename = filename.replace(/\.(jpeg|jpg|png|webp)$/i, '.mp4')
+
+  return `${directory}/videos/${videoFilename}`
+}

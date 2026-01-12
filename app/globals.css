@@ -865,6 +865,61 @@
   z-index: 10;
 }
 
+/* Video container - FIXED size, always 16:9 horizontal */
+.recipe-video-container {
+  width: 700px !important;
+  height: 394px !important;
+  max-width: calc(100vw - 2rem);
+  aspect-ratio: 16 / 9 !important;
+  margin: 0 auto 2rem !important;
+  position: relative;
+  overflow: hidden;
+  background: oklch(0.15 0 0);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px oklch(0 0 0 / 0.15);
+}
+
+@media (max-width: 768px) {
+  .recipe-video-container {
+    width: calc(100vw - 2rem) !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+
+.recipe-video-container video,
+.recipe-video-container img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 1rem;
+}
+
+/* Loading placeholder for video */
+.recipe-video-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: oklch(0.95 0 0);
+}
+
+.recipe-video-loading::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 3px solid oklch(0.8 0 0);
+  border-top-color: oklch(0.4 0 0);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 /* Print Styles */
 @media print {
   /* Hide navigation and interactive elements */
