@@ -1,0 +1,42 @@
+[
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>a78b926</task-id>\n<output-file>/var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a78b926.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate breakfast videos 7-10\" completed.</summary>\n</task-notification>\nRead the output file to retrieve the result: /var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a78b926.output"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>a26f6c7</task-id>\n<output-file>/var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a26f6c7.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate breakfast videos 16-20\" completed.</summary>\n</task-notification>\nRead the output file to retrieve the result: /var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a26f6c7.output"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "<task-notification>\n<task-id>acdebc0</task-id>\n<output-file>/var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/acdebc0.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate lunch_dinner videos 6-13\" completed.</summary>\n</task-notification>\nRead the output file to retrieve the result: /var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/acdebc0.output\n<task-notification>\n<task-id>ac93b1a</task-id>\n<output-file>/var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/ac93b1a.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate dessert videos 16-20\" completed.</summary>\n</task-notification>\nRead the output file to retrieve the result: /var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/ac93b1a.output\n<task-notification>\n<task-id>a2dd5c5</task-id>\n<output-file>/var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a2dd5c5.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate dessert videos 5-10\" completed.</summary>\n</task-notification>\nRead the output file to retrieve the result: /var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a2dd5c5.output\n<task-notification>\n<task-id>a309ef5</task-id>\n<output-file>/var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a309ef5.output</output-file>\n<status>completed</status>\n<summary>Agent \"Generate lunch_dinner videos 20-25\" completed.</summary>\n</task-notification>\nRead the output file to retrieve the result: /var/folders/lz/376cv1kj2nx6xcnws2ftmfmm0000gn/T/claude/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/tasks/a309ef5.output"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Keep going."
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "I've deleted breakfast_1, _2, and _3 - regenerate them "
+  }
+]

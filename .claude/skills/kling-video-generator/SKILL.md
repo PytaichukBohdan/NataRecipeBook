@@ -1,7 +1,6 @@
 ---
 name: kling-video-generator
-description: |
-  Generates AI videos using Kling Video API with first-frame and last-frame control.
+description: Generates AI videos using Kling Video API with first-frame and last-frame control.
   Creates smooth transitions between two images. Use when user asks to create videos,
   generate video transitions, animate between images, or create recipe transformation videos.
 ---

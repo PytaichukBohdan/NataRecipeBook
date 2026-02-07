@@ -1,7 +1,6 @@
 ---
 name: image-generator-nano-banana-pro
-description: |
-  Skill for image generation.
+description: Skill for image generation.
   Uses Google Nano Banana Pro (Gemini 3 Pro Image) API to generate high-quality images.
   Supports logos, infographics, illustrations, photorealistic images, and more.
 ---

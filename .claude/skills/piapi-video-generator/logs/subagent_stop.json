@@ -1,0 +1,112 @@
+[
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a154698",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-a154698.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a78b926",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-a78b926.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a26f6c7",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-a26f6c7.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ab0c4fe",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-ab0c4fe.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "acdebc0",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-acdebc0.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ac93b1a",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-ac93b1a.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a2dd5c5",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-a2dd5c5.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a309ef5",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-a309ef5.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "a5a8699",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-a5a8699.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ac776cc",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-ac776cc.jsonl"
+  },
+  {
+    "session_id": "a3ac997d-3663-4d66-9c97-4e08498b5e85",
+    "transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85.jsonl",
+    "cwd": "/Users/bohdanpytaichuk/Documents/NataBook/NataRecipeBook/.claude/skills/piapi-video-generator",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "SubagentStop",
+    "stop_hook_active": false,
+    "agent_id": "ab309b1",
+    "agent_transcript_path": "/Users/bohdanpytaichuk/.claude/projects/-Users-bohdanpytaichuk-Documents-NataBook-NataRecipeBook/a3ac997d-3663-4d66-9c97-4e08498b5e85/subagents/agent-ab309b1.jsonl"
+  }
+]
