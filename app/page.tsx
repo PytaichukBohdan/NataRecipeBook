@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useMemo, useEffect, useCallback } from "react"
-import { ChevronLeft, ChevronRight, Search, List } from "lucide-react"
+import { useState, useMemo, useEffect, useCallback, useRef } from "react"
+import { ChevronLeft, ChevronRight, Search, List, Filter, Home } from "lucide-react"
 import { buildPageArray, getCategoryStartPage, buildRecipePageIndexMap } from "@/lib/page-builder"
 import { loadRecipes } from "@/lib/recipe-loader"
 import { IntroPage } from "@/components/IntroPage"
@@ -9,15 +9,33 @@ import { SectionDivider } from "@/components/SectionDivider"
 import { RecipeCard } from "@/components/RecipeCard"
 import { SearchDialog } from "@/components/SearchDialog"
 import { TableOfContents } from "@/components/TableOfContents"
+import { FilterDialog } from "@/components/FilterDialog"
+import { CookingMode } from "@/components/CookingMode"
+import { useFavorites } from "@/hooks/useFavorites"
+import type { Recipe } from "@/types/recipe"
 
 export default function RecipePage() {
   // Build the page array once using useMemo
   const pages = useMemo(() => buildPageArray(), [])
 
+  // Memoized recipe data and page index map
+  const recipeData = useMemo(() => loadRecipes(), [])
+  const pageIndexMap = useMemo(() => buildRecipePageIndexMap(pages), [pages])
+
   const [currentPageIndex, setCurrentPageIndex] = useState(0)
+  const hasInitializedFromHash = useRef(false)
   const [isAnimating, setIsAnimating] = useState(false)
   const currentPage = pages[currentPageIndex]
   const totalPages = pages.length
+
+  // Dialog/overlay state
+  const [searchOpen, setSearchOpen] = useState(false)
+  const [tocOpen, setTocOpen] = useState(false)
+  const [filterOpen, setFilterOpen] = useState(false)
+  const [cookingRecipe, setCookingRecipe] = useState<{recipe: Recipe, categoryId: string} | null>(null)
+
+  // Favorites hook
+  const { favorites, toggleFavorite, isFavorite } = useFavorites()
 
   // Touch swipe gesture state
   const [touchStart, setTouchStart] = useState<number | null>(null)
@@ -50,6 +68,61 @@ export default function RecipePage() {
       setTimeout(() => setIsAnimating(false), 50)
     }, 300)
   }, [isAnimating, currentPageIndex])
+
+  // Deep link helpers
+  const getHashForPage = useCallback((pageIndex: number) => {
+    const page = pages[pageIndex]
+    if (!page) return '#intro'
+    if (page.type === 'intro') return '#intro'
+    if (page.type === 'section-divider') return `#${page.categoryId}`
+    if (page.type === 'recipe') return `#${page.categoryId}-${page.recipe.id}`
+    return '#intro'
+  }, [pages])
+
+  const getPageIndexForHash = useCallback((hash: string) => {
+    const h = hash.replace('#', '')
+    if (!h || h === 'intro') return 0
+
+    // Check if it's a category name (section divider)
+    const categoryPage = getCategoryStartPage(pages, h)
+    if (categoryPage > 1 || h === 'breakfast') return categoryPage
+
+    // Check if it's a recipe key (categoryId-recipeId)
+    const pageIndex = pageIndexMap.get(h as `${string}-${number}`)
+    if (pageIndex !== undefined) return pageIndex
+
+    return 0
+  }, [pages, pageIndexMap])
+
+  // Deep link: sync URL -> page (initial load + hashchange)
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash
+      if (hash) {
+        const targetPage = getPageIndexForHash(hash)
+        setCurrentPageIndex(targetPage)
+      }
+      hasInitializedFromHash.current = true
+    }
+    handleHash()
+    window.addEventListener('hashchange', handleHash)
+    return () => window.removeEventListener('hashchange', handleHash)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Deep link: sync page -> URL (skip first render to avoid overwriting initial hash)
+  const isFirstRender = useRef(true)
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+      return
+    }
+    if (!hasInitializedFromHash.current) return
+    const hash = getHashForPage(currentPageIndex)
+    if (window.location.hash !== hash) {
+      history.replaceState(null, '', hash)
+    }
+  }, [currentPageIndex, getHashForPage])
 
   // Keyboard navigation
   useEffect(() => {
@@ -110,7 +183,7 @@ export default function RecipePage() {
   const renderPage = () => {
     switch (currentPage.type) {
       case 'intro':
-        return <IntroPage />
+        return <IntroPage onCategoryClick={(categoryId) => goToPage(getCategoryStartPage(pages, categoryId))} />
       case 'section-divider':
         return (
           <SectionDivider
@@ -118,14 +191,19 @@ export default function RecipePage() {
             categoryId={currentPage.categoryId}
           />
         )
-      case 'recipe':
+      case 'recipe': {
+        const recipeKey = `${currentPage.categoryId}-${currentPage.recipe.id}`
         return (
           <RecipeCard
             recipe={currentPage.recipe}
             categoryNameUk={currentPage.categoryNameUk}
             categoryId={currentPage.categoryId}
+            isFavorite={isFavorite(recipeKey)}
+            onToggleFavorite={() => toggleFavorite(recipeKey)}
+            onStartCooking={() => setCookingRecipe({ recipe: currentPage.recipe, categoryId: currentPage.categoryId })}
           />
         )
+      }
       default:
         return <div>Unknown page type</div>
     }
@@ -138,6 +216,30 @@ export default function RecipePage() {
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
+      {/* Home button - top left */}
+      {currentPageIndex !== 0 && (
+        <button
+          onClick={() => goToPage(0)}
+          className="nav-action-button fixed top-6 left-6 z-50"
+          aria-label="На головну"
+        >
+          <Home className="w-5 h-5" />
+        </button>
+      )}
+
+      {/* Fixed toolbar - above page content */}
+      <div className="fixed top-6 right-6 z-50 flex gap-3">
+        <button onClick={() => setFilterOpen(true)} className="nav-action-button" aria-label="Фільтри">
+          <Filter className="w-5 h-5" />
+        </button>
+        <button onClick={() => setTocOpen(true)} className="nav-action-button" aria-label="Зміст">
+          <List className="w-5 h-5" />
+        </button>
+        <button onClick={() => setSearchOpen(true)} className="nav-action-button" aria-label="Пошук">
+          <Search className="w-5 h-5" />
+        </button>
+      </div>
+
       {/* Navigation Buttons */}
       <div className="fixed top-1/2 left-4 z-50 transform -translate-y-1/2">
         <button onClick={prevPage} className="recipe-nav-button group" aria-label="Попередня сторінка">
@@ -221,6 +323,42 @@ export default function RecipePage() {
       <div className={`recipe-content ${isAnimating ? "fade-out" : "fade-in"}`}>
         {renderPage()}
       </div>
+
+      {/* Dialogs */}
+      <SearchDialog
+        open={searchOpen}
+        onOpenChange={setSearchOpen}
+        categories={recipeData.categories}
+        pageIndexMap={pageIndexMap}
+        onSelectRecipe={goToPage}
+      />
+
+      <TableOfContents
+        open={tocOpen}
+        onOpenChange={setTocOpen}
+        categories={recipeData.categories}
+        pageIndexMap={pageIndexMap}
+        onSelectRecipe={goToPage}
+        currentPageIndex={currentPageIndex}
+        favorites={favorites}
+      />
+
+      <FilterDialog
+        open={filterOpen}
+        onOpenChange={setFilterOpen}
+        categories={recipeData.categories}
+        favorites={favorites}
+        pageIndexMap={pageIndexMap}
+        onSelectRecipe={goToPage}
+      />
+
+      {cookingRecipe && (
+        <CookingMode
+          recipe={cookingRecipe.recipe}
+          categoryId={cookingRecipe.categoryId}
+          onClose={() => setCookingRecipe(null)}
+        />
+      )}
     </div>
   )
 }

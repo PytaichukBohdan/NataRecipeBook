@@ -16,7 +16,7 @@ export interface SearchResult {
 export function searchRecipes(
   query: string,
   categories: Category[],
-  pageIndexMap: Map<number, number>
+  pageIndexMap: Map<string, number>
 ): SearchResult[] {
   const normalizedQuery = query.toLowerCase().trim()
   if (!normalizedQuery) return []
@@ -35,7 +35,7 @@ export function searchRecipes(
           },
           categoryId: category.id,
           categoryNameUk: category.name_uk,
-          pageIndex: pageIndexMap.get(recipe.id) ?? 0,
+          pageIndex: pageIndexMap.get(`${category.id}-${recipe.id}`) ?? 0,
           matchType: 'title',
           matchedText: recipe.title
         })
@@ -55,7 +55,7 @@ export function searchRecipes(
           },
           categoryId: category.id,
           categoryNameUk: category.name_uk,
-          pageIndex: pageIndexMap.get(recipe.id) ?? 0,
+          pageIndex: pageIndexMap.get(`${category.id}-${recipe.id}`) ?? 0,
           matchType: 'ingredient',
           matchedText: matchedIngredient
         })

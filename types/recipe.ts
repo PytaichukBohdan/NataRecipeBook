@@ -51,3 +51,5 @@ export interface SectionDividerPageData {
 }
 
 export type Page = IntroPageData | RecipePageData | SectionDividerPageData
+
+export type RecipeKey = `${string}-${number}`

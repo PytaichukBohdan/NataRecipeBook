@@ -8,17 +8,33 @@ interface LazyVideoProps {
   alt: string
   className?: string
   fadeTransition?: boolean // Enable fade out/in on loop
+  startDelay?: number // Milliseconds to hold poster before starting video playback
 }
 
-function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition = true }: LazyVideoProps) {
+function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition = true, startDelay = 0 }: LazyVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [hasError, setHasError] = useState(false)
   const [videoOpacity, setVideoOpacity] = useState(1)
+  const [isDelayComplete, setIsDelayComplete] = useState(startDelay === 0)
   const animationFrameRef = useRef<number | null>(null)
 
   const FADE_DURATION = 0.8 // seconds for fade in/out
+
+  // Start delay: hold poster image visible before beginning video playback
+  useEffect(() => {
+    if (startDelay === 0) {
+      setIsDelayComplete(true)
+      return
+    }
+
+    const timer = setTimeout(() => {
+      setIsDelayComplete(true)
+    }, startDelay)
+
+    return () => clearTimeout(timer)
+  }, [startDelay])
 
   // Smooth opacity animation loop
   useEffect(() => {
@@ -62,13 +78,13 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
     }
   }, [fadeTransition, isLoaded])
 
-  // Auto-play video when component mounts
+  // Auto-play video when component mounts and delay is complete
   useEffect(() => {
     const video = videoRef.current
-    if (video && src) {
+    if (video && src && isDelayComplete) {
       video.play().catch(() => {})
     }
-  }, [src])
+  }, [src, isDelayComplete])
 
   const handleLoadedData = () => {
     setIsLoaded(true)
@@ -109,7 +125,6 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
         ref={videoRef}
         src={src}
         poster={poster}
-        autoPlay
         loop
         muted
         playsInline

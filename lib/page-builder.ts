@@ -1,4 +1,4 @@
-import type { Page, RecipeData } from '@/types/recipe'
+import type { Page, RecipeData, RecipeKey } from '@/types/recipe'
 import { loadRecipes } from './recipe-loader'
 
 /**
@@ -72,15 +72,16 @@ export function getCategoryStartPage(pages: Page[], categoryId: string): number 
 }
 
 /**
- * Builds a map from recipe ID to page index
+ * Builds a map from compound recipe key (categoryId-recipeId) to page index
+ * Uses compound keys to avoid collisions when recipe IDs are non-unique across categories
  * Useful for direct navigation to specific recipes
  */
-export function buildRecipePageIndexMap(pages: Page[]): Map<number, number> {
-  const map = new Map<number, number>()
+export function buildRecipePageIndexMap(pages: Page[]): Map<RecipeKey, number> {
+  const map = new Map<RecipeKey, number>()
 
   pages.forEach((page, index) => {
     if (page.type === 'recipe') {
-      map.set(page.recipe.id, index)
+      map.set(`${page.categoryId}-${page.recipe.id}`, index)
     }
   })
 

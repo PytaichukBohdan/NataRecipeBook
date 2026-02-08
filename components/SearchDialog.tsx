@@ -10,7 +10,7 @@ interface SearchDialogProps {
   open: boolean
   onOpenChange: (open: boolean) => void
   categories: Category[]
-  pageIndexMap: Map<number, number>
+  pageIndexMap: Map<string, number>
   onSelectRecipe: (pageIndex: number) => void
 }
 
@@ -74,7 +74,7 @@ export function SearchDialog({
 
             {results.map((result) => (
               <Command.Item
-                key={result.recipe.id}
+                key={`${result.categoryId}-${result.recipe.id}`}
                 value={result.recipe.title}
                 onSelect={() => {
                   onSelectRecipe(result.pageIndex)

@@ -4,11 +4,15 @@ import { normalizeImagePath, deriveVideoPath } from '@/lib/recipe-loader'
 import { NutritionCard } from '@/components/NutritionCard'
 import { ScrollIndicator } from '@/components/ScrollIndicator'
 import { LazyVideo } from '@/components/LazyVideo'
+import { Heart, ChefHat } from 'lucide-react'
 
 interface RecipeCardProps {
   recipe: Recipe
   categoryNameUk: string
   categoryId: string
+  isFavorite?: boolean
+  onToggleFavorite?: () => void
+  onStartCooking?: () => void
 }
 
 // Helper interface for ingredient sections
@@ -54,7 +58,7 @@ function getRecipeStats(recipe: Recipe) {
   }
 }
 
-function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardProps) {
+function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, onToggleFavorite, onStartCooking }: RecipeCardProps) {
   const imagePath = normalizeImagePath(recipe.image_path)
   const videoPath = deriveVideoPath(imagePath)
 
@@ -115,6 +119,27 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
                 <span className="stat-icon">🥘</span>
                 <span>{stats.ingredientLabel}</span>
               </div>
+
+              {onToggleFavorite && (
+                <button
+                  onClick={onToggleFavorite}
+                  className="nav-action-button"
+                  aria-label={isFavorite ? 'Прибрати з обраного' : 'Додати до обраного'}
+                >
+                  <Heart className={`w-5 h-5 ${isFavorite ? 'fill-red-500 text-red-500' : ''}`} />
+                </button>
+              )}
+
+              {recipe.how_to_cook.length > 0 && onStartCooking && (
+                <button
+                  onClick={onStartCooking}
+                  className="nav-action-button"
+                  aria-label="Готувати"
+                >
+                  <ChefHat className="w-5 h-5" />
+                  <span className="ml-1">Готувати</span>
+                </button>
+              )}
             </div>
           </div>
 
@@ -124,6 +149,7 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId }: RecipeCardP
               poster={imagePath}
               alt={recipe.title}
               className="absolute inset-0"
+              startDelay={3000}
             />
           </div>
 
