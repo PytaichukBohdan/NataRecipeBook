@@ -57,15 +57,17 @@ export function IntroPage({ onCategoryClick }: IntroPageProps) {
         {/* Category Sections */}
         <div className="flex flex-col gap-10 max-w-3xl mx-auto mb-12">
           {categories.map((cat) => (
-            <button
+            <div
               key={cat.id}
               onClick={() => onCategoryClick?.(cat.id)}
-              className="intro-category-section group"
+              role="button"
+              tabIndex={0}
+              className="intro-category-section group cursor-pointer"
             >
               <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
                 {cat.name}
               </h2>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 w-full">
                 {cat.videos.map((video, index) => (
                   <div key={index} className="intro-video-item">
                     <LazyVideo
@@ -76,7 +78,7 @@ export function IntroPage({ onCategoryClick }: IntroPageProps) {
                   </div>
                 ))}
               </div>
-            </button>
+            </div>
           ))}
         </div>
 
