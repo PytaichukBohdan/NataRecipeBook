@@ -4,21 +4,34 @@ interface IntroPageProps {
   onCategoryClick?: (categoryId: string) => void
 }
 
-export function IntroPage({ onCategoryClick }: IntroPageProps) {
-  // Video previews - 6 videos (2 per category), all play from ingredients → dish
-  const videoPreviewData = [
-    // Сніданки (Session 2: ingredients → dish)
-    { src: '/recipe_images/videos/breakfast_15.mp4', poster: '/recipe_images/breakfast_15.jpeg', alt: 'Сніданок' },
-    // Обід/Вечеря (Session 2: ingredients → dish)
-    { src: '/recipe_images/videos/lunch_dinner_5.mp4', poster: '/recipe_images/lunch_dinner_5.jpeg', alt: 'Обід' },
-    { src: '/recipe_images/videos/lunch_dinner_11.mp4', poster: '/recipe_images/lunch_dinner_11.jpeg', alt: 'Обід' },
-    { src: '/recipe_images/videos/lunch_dinner_12.mp4', poster: '/recipe_images/lunch_dinner_12.jpeg', alt: 'Обід' },
-    // Десерти (Session 2: ingredients → dish)
-    { src: '/recipe_images/videos/desserts_4.mp4', poster: '/recipe_images/desserts_4.jpeg', alt: 'Десерт' },
-    // Extra lunch/dinner to fill 6
-    { src: '/recipe_images/videos/lunch_dinner_18.mp4', poster: '/recipe_images/lunch_dinner_18.jpeg', alt: 'Обід' },
-  ]
+const categories = [
+  {
+    id: 'breakfast',
+    name: 'Сніданки',
+    videos: [
+      { src: '/recipe_images/videos/breakfast_1.mp4', poster: '/recipe_images/breakfast_1.jpeg', alt: 'Творожні панкейки з фруктами' },
+      { src: '/recipe_images/videos/breakfast_3.mp4', poster: '/recipe_images/breakfast_3.jpeg', alt: 'Тости твого настрою' },
+    ],
+  },
+  {
+    id: 'lunch_dinner',
+    name: 'Обід / Вечеря',
+    videos: [
+      { src: '/recipe_images/videos/lunch_dinner_4.mp4', poster: '/recipe_images/lunch_dinner_4.jpeg', alt: 'Різото з трюфелем' },
+      { src: '/recipe_images/videos/lunch_dinner_11.mp4', poster: '/recipe_images/lunch_dinner_11.jpeg', alt: 'Обід' },
+    ],
+  },
+  {
+    id: 'desserts',
+    name: 'Десерти',
+    videos: [
+      { src: '/recipe_images/videos/desserts_3.mp4', poster: '/recipe_images/desserts_3.jpeg', alt: 'Галетна творожна піцца' },
+      { src: '/recipe_images/videos/desserts_5.mp4', poster: '/recipe_images/desserts_5.jpeg', alt: 'Шоколадний десерт' },
+    ],
+  },
+]
 
+export function IntroPage({ onCategoryClick }: IntroPageProps) {
   return (
     <div className="recipe-hero min-h-screen flex flex-col justify-center items-center px-8 py-16">
       <div className="max-w-4xl mx-auto text-center">
@@ -41,22 +54,35 @@ export function IntroPage({ onCategoryClick }: IntroPageProps) {
           </p>
         </div>
 
-        {/* Video Grid */}
-        <div className="intro-video-grid grid grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
-          {videoPreviewData.map((video, index) => (
-            <div key={index} className="intro-video-item">
-              <LazyVideo
-                src={video.src}
-                poster={video.poster}
-                alt={video.alt}
-              />
-            </div>
+        {/* Category Sections */}
+        <div className="flex flex-col gap-10 max-w-3xl mx-auto mb-12">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => onCategoryClick?.(cat.id)}
+              className="intro-category-section group"
+            >
+              <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
+                {cat.name}
+              </h2>
+              <div className="grid grid-cols-2 gap-4">
+                {cat.videos.map((video, index) => (
+                  <div key={index} className="intro-video-item">
+                    <LazyVideo
+                      src={video.src}
+                      poster={video.poster}
+                      alt={video.alt}
+                    />
+                  </div>
+                ))}
+              </div>
+            </button>
           ))}
         </div>
 
         <div className="text-center">
           <p className="text-sm text-muted-foreground italic mb-4">
-            Використовуй стрілки або індикатори внизу для навігації
+            Натисни на розділ або використовуй стрілки для навігації
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse"></div>
