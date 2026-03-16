@@ -51,6 +51,20 @@ export function normalizeImagePath(imagePath: string): string {
 }
 
 /**
+ * Derives the "cooked" (last-frame) image path from the normalized image path
+ * Converts "/recipe_images/breakfast_1.jpeg" to "/recipe_images/cooked/breakfast_1.jpeg"
+ */
+export function deriveCookedImagePath(imagePath: string): string {
+  if (!imagePath || imagePath === "/placeholder.svg") return imagePath
+
+  const lastSlash = imagePath.lastIndexOf('/')
+  const directory = imagePath.substring(0, lastSlash)
+  const filename = imagePath.substring(lastSlash + 1)
+
+  return `${directory}/cooked/${filename}`
+}
+
+/**
  * Derives video path from image path
  * Converts "/recipe_images/breakfast_1.jpeg" to "/recipe_images/videos/breakfast_1.mp4"
  * @param imagePath - The normalized image path (already processed by normalizeImagePath)

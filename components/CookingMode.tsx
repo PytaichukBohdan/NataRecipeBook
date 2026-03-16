@@ -3,8 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { X, ChevronLeft, ChevronRight, ChefHat } from 'lucide-react'
 import type { Recipe } from '@/types/recipe'
-import { normalizeImagePath, deriveVideoPath } from '@/lib/recipe-loader'
-import { LazyVideo } from '@/components/LazyVideo'
+import { normalizeImagePath, deriveCookedImagePath } from '@/lib/recipe-loader'
 
 interface CookingModeProps {
   recipe: Recipe
@@ -75,9 +74,9 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
   // Parsed ingredient sections for rich display
   const ingredientSections = parseIngredientSections(recipe.ingredients)
 
-  // Image and video paths for the done step
+  // Image path for the done step (cooked dish = last frame of video)
   const imagePath = normalizeImagePath(recipe.image_path)
-  const videoPath = deriveVideoPath(imagePath)
+  const cookedImagePath = deriveCookedImagePath(imagePath)
 
   // --- Wake Lock API ---
   useEffect(() => {
@@ -240,30 +239,11 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
         return (
           <div className="cooking-step-done">
             <div className="cooking-done-image-container">
-              {videoPath ? (
-                <video
-                  src={videoPath}
-                  poster={imagePath}
-                  className="cooking-done-image"
-                  muted
-                  playsInline
-                  preload="auto"
-                  ref={(el) => {
-                    if (el) {
-                      // Jump to the last frame to show the cooked dish
-                      el.addEventListener('loadedmetadata', () => {
-                        el.currentTime = Math.max(0, el.duration - 0.1)
-                      }, { once: true })
-                    }
-                  }}
-                />
-              ) : (
-                <img
-                  src={imagePath}
-                  alt={recipe.title}
-                  className="cooking-done-image"
-                />
-              )}
+              <img
+                src={cookedImagePath}
+                alt={recipe.title}
+                className="cooking-done-image"
+              />
             </div>
             <h2 className="cooking-done-title">Готово!</h2>
             <p className="cooking-done-subtitle">{recipe.title}</p>
