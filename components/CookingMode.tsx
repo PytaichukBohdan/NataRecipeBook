@@ -3,7 +3,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { X, ChevronLeft, ChevronRight, ChefHat } from 'lucide-react'
 import type { Recipe } from '@/types/recipe'
-import { normalizeImagePath } from '@/lib/recipe-loader'
+import { normalizeImagePath, deriveVideoPath } from '@/lib/recipe-loader'
+import { LazyVideo } from '@/components/LazyVideo'
 
 interface CookingModeProps {
   recipe: Recipe
@@ -74,8 +75,9 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
   // Parsed ingredient sections for rich display
   const ingredientSections = parseIngredientSections(recipe.ingredients)
 
-  // Image path for the done step
+  // Image and video paths for the done step
   const imagePath = normalizeImagePath(recipe.image_path)
+  const videoPath = deriveVideoPath(imagePath)
 
   // --- Wake Lock API ---
   useEffect(() => {
@@ -237,12 +239,21 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
       case 'done':
         return (
           <div className="cooking-step-done">
-            <div className="cooking-done-image-container">
-              <img
-                src={imagePath}
-                alt={recipe.title}
-                className="cooking-done-image"
-              />
+            <div className="cooking-done-image-container relative">
+              {videoPath ? (
+                <LazyVideo
+                  src={videoPath}
+                  poster={imagePath}
+                  alt={recipe.title}
+                  className="cooking-done-image"
+                />
+              ) : (
+                <img
+                  src={imagePath}
+                  alt={recipe.title}
+                  className="cooking-done-image"
+                />
+              )}
             </div>
             <h2 className="cooking-done-title">Готово!</h2>
             <p className="cooking-done-subtitle">{recipe.title}</p>
