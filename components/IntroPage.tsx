@@ -1,8 +1,4 @@
-'use client'
-
-import { useState, useRef, useCallback } from 'react'
 import { LazyVideo } from './LazyVideo'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface IntroPageProps {
   onCategoryClick?: (categoryId: string) => void
@@ -13,7 +9,7 @@ const categories = [
     id: 'breakfast',
     name: 'Сніданки',
     videos: [
-      { src: '/recipe_images/videos/breakfast_1.mp4', poster: '/recipe_images/breakfast_1.jpeg', alt: 'Творожні панкейки з фруктами' },
+      { src: '/recipe_images/videos/breakfast_1.mp4', poster: '/recipe_images/breakfast_1.jpeg', alt: 'Домашні сирнички з фруктами' },
       { src: '/recipe_images/videos/breakfast_3.mp4', poster: '/recipe_images/breakfast_3.jpeg', alt: 'Тости твого настрою' },
     ],
   },
@@ -34,111 +30,6 @@ const categories = [
     ],
   },
 ]
-
-function VideoCarousel({ videos, onCategoryClick, categoryId }: {
-  videos: typeof categories[0]['videos']
-  onCategoryClick?: (id: string) => void
-  categoryId: string
-}) {
-  const [activeSlide, setActiveSlide] = useState(0)
-  const touchStartX = useRef<number | null>(null)
-  const touchEndX = useRef<number | null>(null)
-
-  const handleTouchStart = useCallback((e: React.TouchEvent) => {
-    e.stopPropagation()
-    touchStartX.current = e.targetTouches[0].clientX
-    touchEndX.current = null
-  }, [])
-
-  const handleTouchMove = useCallback((e: React.TouchEvent) => {
-    touchEndX.current = e.targetTouches[0].clientX
-  }, [])
-
-  const handleTouchEnd = useCallback(() => {
-    if (touchStartX.current === null || touchEndX.current === null) return
-    const dist = touchStartX.current - touchEndX.current
-    if (Math.abs(dist) > 50) {
-      if (dist > 0 && activeSlide < videos.length - 1) {
-        setActiveSlide(prev => prev + 1)
-      } else if (dist < 0 && activeSlide > 0) {
-        setActiveSlide(prev => prev - 1)
-      }
-    }
-    touchStartX.current = null
-    touchEndX.current = null
-  }, [activeSlide, videos.length])
-
-  return (
-    <div className="relative">
-      <div
-        className="overflow-hidden rounded-xl"
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        onClick={() => onCategoryClick?.(categoryId)}
-      >
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${activeSlide * 100}%)` }}
-        >
-          {videos.map((video, index) => (
-            <div key={index} className="w-full flex-shrink-0" style={{ minWidth: '100%' }}>
-              <div className="intro-video-item aspect-video">
-                <LazyVideo
-                  src={video.src}
-                  poster={video.poster}
-                  alt={video.alt}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Navigation arrows */}
-      {videos.length > 1 && (
-        <>
-          {activeSlide > 0 && (
-            <button
-              onClick={(e) => { e.stopPropagation(); setActiveSlide(prev => prev - 1) }}
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/70 backdrop-blur-sm flex items-center justify-center border border-border/50 hover:bg-background/90 transition-colors z-10"
-              aria-label="Попереднє відео"
-            >
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-          )}
-          {activeSlide < videos.length - 1 && (
-            <button
-              onClick={(e) => { e.stopPropagation(); setActiveSlide(prev => prev + 1) }}
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/70 backdrop-blur-sm flex items-center justify-center border border-border/50 hover:bg-background/90 transition-colors z-10"
-              aria-label="Наступне відео"
-            >
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          )}
-        </>
-      )}
-
-      {/* Dots */}
-      {videos.length > 1 && (
-        <div className="flex justify-center gap-2 mt-3">
-          {videos.map((_, index) => (
-            <button
-              key={index}
-              onClick={(e) => { e.stopPropagation(); setActiveSlide(index) }}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === activeSlide
-                  ? 'bg-accent scale-125'
-                  : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
-              }`}
-              aria-label={`Відео ${index + 1}`}
-            />
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
 
 export function IntroPage({ onCategoryClick }: IntroPageProps) {
   return (
@@ -163,21 +54,30 @@ export function IntroPage({ onCategoryClick }: IntroPageProps) {
           </p>
         </div>
 
-        {/* Category Sections - all visible, videos swipe inside each */}
+        {/* Category Sections */}
         <div className="flex flex-col gap-10 max-w-3xl mx-auto mb-12">
           {categories.map((cat) => (
-            <div key={cat.id} className="intro-category-section group cursor-pointer">
-              <h2
-                className="text-2xl md:text-3xl font-serif text-foreground mb-4 group-hover:text-accent transition-colors duration-300"
-                onClick={() => onCategoryClick?.(cat.id)}
-              >
+            <div
+              key={cat.id}
+              onClick={() => onCategoryClick?.(cat.id)}
+              role="button"
+              tabIndex={0}
+              className="intro-category-section group cursor-pointer"
+            >
+              <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4 group-hover:text-accent transition-colors duration-300">
                 {cat.name}
               </h2>
-              <VideoCarousel
-                videos={cat.videos}
-                onCategoryClick={onCategoryClick}
-                categoryId={cat.id}
-              />
+              <div className="grid grid-cols-2 gap-4 w-full">
+                {cat.videos.map((video, index) => (
+                  <div key={index} className="intro-video-item">
+                    <LazyVideo
+                      src={video.src}
+                      poster={video.poster}
+                      alt={video.alt}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
