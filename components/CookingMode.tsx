@@ -159,15 +159,18 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
   const minSwipeDistance = 50
 
   const onTouchStart = (e: React.TouchEvent) => {
+    e.stopPropagation()
     setTouchEnd(null)
     setTouchStart(e.targetTouches[0].clientX)
   }
 
   const onTouchMove = (e: React.TouchEvent) => {
+    e.stopPropagation()
     setTouchEnd(e.targetTouches[0].clientX)
   }
 
-  const onTouchEnd = () => {
+  const onTouchEnd = (e: React.TouchEvent) => {
+    e.stopPropagation()
     if (!touchStart || !touchEnd) return
 
     const distance = touchStart - touchEnd

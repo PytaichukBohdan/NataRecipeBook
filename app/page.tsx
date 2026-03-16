@@ -164,10 +164,12 @@ export default function RecipePage() {
   }
 
   const onTouchMove = (e: React.TouchEvent) => {
+    if (cookingRecipe) return
     setTouchEnd({ x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY })
   }
 
   const onTouchEnd = () => {
+    if (cookingRecipe) return
     if (!touchStart || !touchEnd) return
 
     const distX = touchStart.x - touchEnd.x
