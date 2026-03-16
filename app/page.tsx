@@ -38,8 +38,8 @@ export default function RecipePage() {
   const { favorites, toggleFavorite, isFavorite } = useFavorites()
 
   // Touch swipe gesture state
-  const [touchStart, setTouchStart] = useState<number | null>(null)
-  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+  const [touchStart, setTouchStart] = useState<{ x: number; y: number } | null>(null)
+  const [touchEnd, setTouchEnd] = useState<{ x: number; y: number } | null>(null)
   const minSwipeDistance = 50
 
   const nextPage = useCallback(() => {
@@ -158,23 +158,26 @@ export default function RecipePage() {
   // Touch swipe gesture handlers
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(null)
-    setTouchStart(e.targetTouches[0].clientX)
+    setTouchStart({ x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY })
   }
 
   const onTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX)
+    setTouchEnd({ x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY })
   }
 
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return
 
-    const distance = touchStart - touchEnd
-    const isLeftSwipe = distance > minSwipeDistance
-    const isRightSwipe = distance < -minSwipeDistance
+    const distX = touchStart.x - touchEnd.x
+    const distY = Math.abs(touchStart.y - touchEnd.y)
+    const absDistX = Math.abs(distX)
 
-    if (isLeftSwipe) {
+    // Only trigger horizontal navigation when horizontal distance > 2x vertical distance
+    if (absDistX < minSwipeDistance || absDistX < distY * 2) return
+
+    if (distX > 0) {
       nextPage() // Swipe left = next page
-    } else if (isRightSwipe) {
+    } else {
       prevPage() // Swipe right = previous page
     }
   }
@@ -193,6 +196,9 @@ export default function RecipePage() {
         )
       case 'recipe': {
         const recipeKey = `${currentPage.categoryId}-${currentPage.recipe.id}`
+        const category = recipeData.categories.find(c => c.id === currentPage.categoryId)
+        const recipeTotalInCategory = category ? category.recipes.length : 0
+        const recipeIndex = category ? category.recipes.findIndex(r => r.id === currentPage.recipe.id) + 1 : 0
         return (
           <RecipeCard
             recipe={currentPage.recipe}
@@ -201,6 +207,8 @@ export default function RecipePage() {
             isFavorite={isFavorite(recipeKey)}
             onToggleFavorite={() => toggleFavorite(recipeKey)}
             onStartCooking={() => setCookingRecipe({ recipe: currentPage.recipe, categoryId: currentPage.categoryId })}
+            recipeIndex={recipeIndex}
+            recipeTotalInCategory={recipeTotalInCategory}
           />
         )
       }

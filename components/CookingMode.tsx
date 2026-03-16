@@ -50,11 +50,18 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
   const [touchStart, setTouchStart] = useState<number | null>(null)
   const [touchEnd, setTouchEnd] = useState<number | null>(null)
 
+  // Filter out header-only entries from how_to_cook (e.g. "Приготування:", "Спосіб приготування:")
+  const filteredInstructions = recipe.how_to_cook.filter((step) => {
+    const trimmed = step.trim()
+    if (trimmed.endsWith(':') && trimmed.length < 30) return false
+    return true
+  })
+
   // Build the steps array:
   // Step 0 = ingredients, steps 1..N = cooking instructions, final step = done
   const steps: Step[] = [
     { type: 'ingredients', content: recipe.ingredients },
-    ...recipe.how_to_cook.map((instruction, idx) => ({
+    ...filteredInstructions.map((instruction, idx) => ({
       type: 'instruction' as const,
       content: instruction,
       index: idx + 1,

@@ -13,6 +13,8 @@ interface RecipeCardProps {
   isFavorite?: boolean
   onToggleFavorite?: () => void
   onStartCooking?: () => void
+  recipeIndex?: number
+  recipeTotalInCategory?: number
 }
 
 // Helper interface for ingredient sections
@@ -58,7 +60,7 @@ function getRecipeStats(recipe: Recipe) {
   }
 }
 
-function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, onToggleFavorite, onStartCooking }: RecipeCardProps) {
+function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, onToggleFavorite, onStartCooking, recipeIndex, recipeTotalInCategory }: RecipeCardProps) {
   const imagePath = normalizeImagePath(recipe.image_path)
   const videoPath = deriveVideoPath(imagePath)
 
@@ -103,7 +105,7 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, o
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <p className="text-sm tracking-widest text-muted-foreground uppercase font-mono">
-              • {categoryInfo.name} •
+              • {categoryInfo.name} {recipeIndex !== undefined && recipeTotalInCategory !== undefined ? `• ${recipeIndex} / ${recipeTotalInCategory}` : '•'}
             </p>
           </div>
 
