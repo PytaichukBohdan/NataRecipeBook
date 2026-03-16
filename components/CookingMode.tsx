@@ -239,13 +239,23 @@ export function CookingMode({ recipe, categoryId, onClose }: CookingModeProps) {
       case 'done':
         return (
           <div className="cooking-step-done">
-            <div className="cooking-done-image-container relative">
+            <div className="cooking-done-image-container">
               {videoPath ? (
-                <LazyVideo
+                <video
                   src={videoPath}
                   poster={imagePath}
-                  alt={recipe.title}
                   className="cooking-done-image"
+                  muted
+                  playsInline
+                  preload="auto"
+                  ref={(el) => {
+                    if (el) {
+                      // Jump to the last frame to show the cooked dish
+                      el.addEventListener('loadedmetadata', () => {
+                        el.currentTime = Math.max(0, el.duration - 0.1)
+                      }, { once: true })
+                    }
+                  }}
                 />
               ) : (
                 <img
