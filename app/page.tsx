@@ -157,6 +157,8 @@ export default function RecipePage() {
 
   // Touch swipe gesture handlers
   const onTouchStart = (e: React.TouchEvent) => {
+    // Don't register swipes when cooking mode is open
+    if (cookingRecipe) return
     setTouchEnd(null)
     setTouchStart({ x: e.targetTouches[0].clientX, y: e.targetTouches[0].clientY })
   }
