@@ -43,7 +43,7 @@ export function IntroPage({ onCategoryClick }: IntroPageProps) {
 
         <div className="mb-12">
           <h1 className="text-6xl md:text-8xl font-serif text-foreground mb-6 text-balance leading-tight">
-            Без вини, з силою
+            Їжа, яка працює на тебе
           </h1>
           <div className="recipe-divider w-32 mx-auto mb-8"></div>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed text-pretty mb-8">
