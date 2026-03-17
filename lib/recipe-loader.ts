@@ -1,6 +1,9 @@
 import type { RecipeData } from "@/types/recipe"
 import recipesData from "@/data/recipes.json"
 
+// Cache-busting version - increment when updating images/videos
+const ASSET_VERSION = "v3"
+
 /**
  * Loads and validates recipe data from recipes.json
  * @returns Typed recipe data with all categories and recipes
@@ -61,7 +64,7 @@ export function deriveCookedImagePath(imagePath: string): string {
   const directory = imagePath.substring(0, lastSlash)
   const filename = imagePath.substring(lastSlash + 1)
 
-  return `${directory}/cooked/${filename}`
+  return `${directory}/cooked/${filename}?${ASSET_VERSION}`
 }
 
 /**
@@ -81,5 +84,5 @@ export function deriveVideoPath(imagePath: string): string {
   // Change extension to .mp4
   const videoFilename = filename.replace(/\.(jpeg|jpg|png|webp)$/i, '.mp4')
 
-  return `${directory}/videos/${videoFilename}`
+  return `${directory}/videos/${videoFilename}?${ASSET_VERSION}`
 }
