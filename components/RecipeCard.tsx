@@ -1,6 +1,6 @@
 import { memo, useMemo, useState, useEffect } from 'react'
 import type { Recipe } from '@/types/recipe'
-import { normalizeImagePath, deriveVideoPath } from '@/lib/recipe-loader'
+import { normalizeImagePath, deriveVideoPath, deriveCookedImagePath } from '@/lib/recipe-loader'
 import { NutritionCard } from '@/components/NutritionCard'
 import { ScrollIndicator } from '@/components/ScrollIndicator'
 import { LazyVideo } from '@/components/LazyVideo'
@@ -63,6 +63,7 @@ function getRecipeStats(recipe: Recipe) {
 function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, onToggleFavorite, onStartCooking, recipeIndex, recipeTotalInCategory }: RecipeCardProps) {
   const imagePath = normalizeImagePath(recipe.image_path)
   const videoPath = deriveVideoPath(imagePath)
+  const cookedImagePath = deriveCookedImagePath(imagePath)
 
   // Scroll indicator visibility state
   const [showScrollIndicator, setShowScrollIndicator] = useState(true)
@@ -148,7 +149,7 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, o
           <div className="recipe-video-container">
             <LazyVideo
               src={videoPath}
-              poster={imagePath}
+              poster={cookedImagePath}
               alt={recipe.title}
               className="absolute inset-0"
               startDelay={3000}
