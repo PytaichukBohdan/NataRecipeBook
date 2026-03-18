@@ -9,8 +9,8 @@ const categories = [
     id: 'breakfast',
     name: 'Сніданки',
     videos: [
-      { src: '/recipe_images/videos/breakfast_1.mp4', poster: '/recipe_images/cooked/breakfast_1.jpeg', alt: 'Домашні бананові панкейки' },
-      { src: '/recipe_images/videos/breakfast_3.mp4', poster: '/recipe_images/cooked/breakfast_3.jpeg', alt: 'Тости твого настрою' },
+      { src: '/recipe_images/videos/breakfast_1.mp4', poster: '/recipe_images/breakfast_1.jpeg', alt: 'Домашні бананові панкейки' },
+      { src: '/recipe_images/videos/breakfast_3.mp4', poster: '/recipe_images/breakfast_3.jpeg', alt: 'Тости твого настрою' },
     ],
   },
   {
