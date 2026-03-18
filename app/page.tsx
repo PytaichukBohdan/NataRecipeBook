@@ -42,32 +42,36 @@ export default function RecipePage() {
   const [touchEnd, setTouchEnd] = useState<{ x: number; y: number } | null>(null)
   const minSwipeDistance = 50
 
-  const nextPage = useCallback(() => {
-    if (isAnimating) return
+  const animatingRef = useRef(false)
+
+  const navigateTo = useCallback((getIndex: (prev: number) => number) => {
+    if (animatingRef.current) return
+    animatingRef.current = true
     setIsAnimating(true)
+    // Fade out for 250ms, then swap content, then fade in
     setTimeout(() => {
-      setCurrentPageIndex((prev) => (prev + 1) % totalPages)
-      setTimeout(() => setIsAnimating(false), 50)
-    }, 300)
-  }, [isAnimating, totalPages])
+      // Scroll to top before showing new page to prevent ingredient glitch
+      window.scrollTo(0, 0)
+      setCurrentPageIndex(getIndex)
+      // Use rAF to ensure the DOM has updated before fading in
+      requestAnimationFrame(() => {
+        setIsAnimating(false)
+        animatingRef.current = false
+      })
+    }, 250)
+  }, [])
+
+  const nextPage = useCallback(() => {
+    navigateTo((prev) => (prev + 1) % totalPages)
+  }, [navigateTo, totalPages])
 
   const prevPage = useCallback(() => {
-    if (isAnimating) return
-    setIsAnimating(true)
-    setTimeout(() => {
-      setCurrentPageIndex((prev) => (prev - 1 + totalPages) % totalPages)
-      setTimeout(() => setIsAnimating(false), 50)
-    }, 300)
-  }, [isAnimating, totalPages])
+    navigateTo((prev) => (prev - 1 + totalPages) % totalPages)
+  }, [navigateTo, totalPages])
 
   const goToPage = useCallback((index: number) => {
-    if (isAnimating || index === currentPageIndex) return
-    setIsAnimating(true)
-    setTimeout(() => {
-      setCurrentPageIndex(index)
-      setTimeout(() => setIsAnimating(false), 50)
-    }, 300)
-  }, [isAnimating, currentPageIndex])
+    navigateTo(() => index)
+  }, [navigateTo])
 
   // Deep link helpers
   const getHashForPage = useCallback((pageIndex: number) => {

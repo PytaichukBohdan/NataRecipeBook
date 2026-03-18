@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState, memo } from 'react'
+import { useEffect, useRef, useState, memo, useCallback } from 'react'
 
 interface LazyVideoProps {
   src: string
@@ -16,9 +16,10 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
   const containerRef = useRef<HTMLDivElement>(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const [videoOpacity, setVideoOpacity] = useState(1)
+  const [videoOpacity, setVideoOpacity] = useState(0) // Start hidden — poster shows through
   const [isDelayComplete, setIsDelayComplete] = useState(startDelay === 0)
   const animationFrameRef = useRef<number | null>(null)
+  const prevSrcRef = useRef(src)
 
   const FADE_DURATION = 0.8 // seconds for fade in/out
 
@@ -80,32 +81,42 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
 
   // Reset state when src changes (page navigation)
   useEffect(() => {
-    setIsLoaded(false)
-    setHasError(false)
-    setVideoOpacity(1) // Keep visible - poster shows underneath anyway
-    const video = videoRef.current
-    if (video) {
-      video.pause()
-      video.currentTime = 0
+    if (prevSrcRef.current !== src) {
+      prevSrcRef.current = src
+      setIsLoaded(false)
+      setHasError(false)
+      setVideoOpacity(0) // Hide video — poster shows through, no black flash
+      setIsDelayComplete(startDelay === 0)
+      const video = videoRef.current
+      if (video) {
+        video.pause()
+        video.removeAttribute('src')
+        video.load() // Reset video element fully to avoid stale frame
+      }
     }
-  }, [src])
+  }, [src, startDelay])
 
-  // Auto-play video when component mounts and delay is complete
+  // Load and auto-play video when delay is complete
   useEffect(() => {
     const video = videoRef.current
     if (video && src && isDelayComplete) {
+      video.src = src
+      video.load()
       video.play().catch(() => {})
     }
   }, [src, isDelayComplete])
 
-  const handleLoadedData = () => {
+  const handleLoadedData = useCallback(() => {
     setIsLoaded(true)
-    setVideoOpacity(1) // Show video once loaded
-  }
+    // If no fade transition, show immediately; otherwise the animation loop handles it
+    if (!fadeTransition) {
+      setVideoOpacity(1)
+    }
+  }, [fadeTransition])
 
-  const handleError = () => {
+  const handleError = useCallback(() => {
     setHasError(true)
-  }
+  }, [])
 
   // Fallback to poster image if video fails or hasn't loaded yet
   if (hasError || !src) {
@@ -115,6 +126,7 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
           <img
             src={poster}
             alt={alt}
+            loading="eager"
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
@@ -124,19 +136,19 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
 
   return (
     <div ref={containerRef} className={`${className} w-full h-full`}>
-      {/* Always show poster as background - visible during fade transitions */}
+      {/* Always show poster as background — visible during load & fade transitions */}
       {poster && (
         <img
           src={poster}
           alt={alt}
+          loading="eager"
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
 
-      {/* Video with dynamic opacity for smooth fade in/out */}
+      {/* Video with dynamic opacity for smooth fade in/out — hidden until loaded */}
       <video
         ref={videoRef}
-        src={src}
         poster={poster}
         loop
         muted
@@ -144,7 +156,10 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
         preload="auto"
         onLoadedData={handleLoadedData}
         onError={handleError}
-        style={{ opacity: videoOpacity }}
+        style={{
+          opacity: videoOpacity,
+          transition: isLoaded ? 'none' : 'opacity 0.4s ease-in',
+        }}
         className="absolute inset-0 w-full h-full object-cover"
       />
     </div>
