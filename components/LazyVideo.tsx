@@ -82,7 +82,7 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
   useEffect(() => {
     setIsLoaded(false)
     setHasError(false)
-    setVideoOpacity(0) // Hide video until loaded
+    setVideoOpacity(1) // Keep visible - poster shows underneath anyway
     const video = videoRef.current
     if (video) {
       video.pause()
