@@ -78,6 +78,18 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
     }
   }, [fadeTransition, isLoaded])
 
+  // Reset state when src changes (page navigation)
+  useEffect(() => {
+    setIsLoaded(false)
+    setHasError(false)
+    setVideoOpacity(0) // Hide video until loaded
+    const video = videoRef.current
+    if (video) {
+      video.pause()
+      video.currentTime = 0
+    }
+  }, [src])
+
   // Auto-play video when component mounts and delay is complete
   useEffect(() => {
     const video = videoRef.current
@@ -88,6 +100,7 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
 
   const handleLoadedData = () => {
     setIsLoaded(true)
+    setVideoOpacity(1) // Show video once loaded
   }
 
   const handleError = () => {
