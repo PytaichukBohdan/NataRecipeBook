@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState, memo, useCallback } from 'react'
+import { useEffect, useRef, useState, memo } from 'react'
 
 interface LazyVideoProps {
   src: string
@@ -16,10 +16,9 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
   const containerRef = useRef<HTMLDivElement>(null)
   const [isLoaded, setIsLoaded] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const [videoOpacity, setVideoOpacity] = useState(0) // Start hidden — poster shows through
+  const [videoOpacity, setVideoOpacity] = useState(1)
   const [isDelayComplete, setIsDelayComplete] = useState(startDelay === 0)
   const animationFrameRef = useRef<number | null>(null)
-  const prevSrcRef = useRef(src)
 
   const FADE_DURATION = 0.8 // seconds for fade in/out
 
@@ -79,44 +78,21 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
     }
   }, [fadeTransition, isLoaded])
 
-  // Reset state when src changes (page navigation)
-  useEffect(() => {
-    if (prevSrcRef.current !== src) {
-      prevSrcRef.current = src
-      setIsLoaded(false)
-      setHasError(false)
-      setVideoOpacity(0) // Hide video — poster shows through, no black flash
-      setIsDelayComplete(startDelay === 0)
-      const video = videoRef.current
-      if (video) {
-        video.pause()
-        video.removeAttribute('src')
-        video.load() // Reset video element fully to avoid stale frame
-      }
-    }
-  }, [src, startDelay])
-
-  // Load and auto-play video when delay is complete
+  // Auto-play video when component mounts and delay is complete
   useEffect(() => {
     const video = videoRef.current
     if (video && src && isDelayComplete) {
-      video.src = src
-      video.load()
       video.play().catch(() => {})
     }
   }, [src, isDelayComplete])
 
-  const handleLoadedData = useCallback(() => {
+  const handleLoadedData = () => {
     setIsLoaded(true)
-    // If no fade transition, show immediately; otherwise the animation loop handles it
-    if (!fadeTransition) {
-      setVideoOpacity(1)
-    }
-  }, [fadeTransition])
+  }
 
-  const handleError = useCallback(() => {
+  const handleError = () => {
     setHasError(true)
-  }, [])
+  }
 
   // Fallback to poster image if video fails or hasn't loaded yet
   if (hasError || !src) {
@@ -126,7 +102,6 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
           <img
             src={poster}
             alt={alt}
-            loading="eager"
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}
@@ -135,22 +110,20 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
   }
 
   return (
-    <div ref={containerRef} className={`${className} w-full h-full`} style={{ backgroundColor: '#f5f0eb' }}>
-      {/* Always show poster as background — visible during load & fade transitions */}
+    <div ref={containerRef} className={`${className} w-full h-full`}>
+      {/* Always show poster as background - visible during fade transitions */}
       {poster && (
         <img
           src={poster}
           alt={alt}
-          loading="eager"
-          decoding="sync"
-          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
 
-      {/* Video with dynamic opacity for smooth fade in/out — hidden until loaded */}
+      {/* Video with dynamic opacity for smooth fade in/out */}
       <video
         ref={videoRef}
+        src={src}
         poster={poster}
         loop
         muted
@@ -158,9 +131,7 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
         preload="auto"
         onLoadedData={handleLoadedData}
         onError={handleError}
-        style={{
-          opacity: videoOpacity,
-        }}
+        style={{ opacity: videoOpacity }}
         className="absolute inset-0 w-full h-full object-cover"
       />
     </div>

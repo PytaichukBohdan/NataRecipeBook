@@ -42,36 +42,32 @@ export default function RecipePage() {
   const [touchEnd, setTouchEnd] = useState<{ x: number; y: number } | null>(null)
   const minSwipeDistance = 50
 
-  const animatingRef = useRef(false)
-
-  const navigateTo = useCallback((getIndex: (prev: number) => number) => {
-    if (animatingRef.current) return
-    animatingRef.current = true
-    setIsAnimating(true)
-    // Fade out for 250ms, then swap content, then fade in
-    setTimeout(() => {
-      // Scroll to top before showing new page to prevent ingredient glitch
-      window.scrollTo(0, 0)
-      setCurrentPageIndex(getIndex)
-      // Use rAF to ensure the DOM has updated before fading in
-      requestAnimationFrame(() => {
-        setIsAnimating(false)
-        animatingRef.current = false
-      })
-    }, 250)
-  }, [])
-
   const nextPage = useCallback(() => {
-    navigateTo((prev) => (prev + 1) % totalPages)
-  }, [navigateTo, totalPages])
+    if (isAnimating) return
+    setIsAnimating(true)
+    setTimeout(() => {
+      setCurrentPageIndex((prev) => (prev + 1) % totalPages)
+      setTimeout(() => setIsAnimating(false), 50)
+    }, 300)
+  }, [isAnimating, totalPages])
 
   const prevPage = useCallback(() => {
-    navigateTo((prev) => (prev - 1 + totalPages) % totalPages)
-  }, [navigateTo, totalPages])
+    if (isAnimating) return
+    setIsAnimating(true)
+    setTimeout(() => {
+      setCurrentPageIndex((prev) => (prev - 1 + totalPages) % totalPages)
+      setTimeout(() => setIsAnimating(false), 50)
+    }, 300)
+  }, [isAnimating, totalPages])
 
   const goToPage = useCallback((index: number) => {
-    navigateTo(() => index)
-  }, [navigateTo])
+    if (isAnimating || index === currentPageIndex) return
+    setIsAnimating(true)
+    setTimeout(() => {
+      setCurrentPageIndex(index)
+      setTimeout(() => setIsAnimating(false), 50)
+    }, 300)
+  }, [isAnimating, currentPageIndex])
 
   // Deep link helpers
   const getHashForPage = useCallback((pageIndex: number) => {
@@ -336,7 +332,7 @@ export default function RecipePage() {
       </div>
 
       {/* Page Content */}
-      <div key={currentPageIndex} className={`recipe-content ${isAnimating ? "fade-out" : "fade-in"}`}>
+      <div className={`recipe-content ${isAnimating ? "fade-out" : "fade-in"}`}>
         {renderPage()}
       </div>
 

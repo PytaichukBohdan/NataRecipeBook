@@ -262,16 +262,19 @@
 
 /* Adding elegant fade animations for recipe transitions */
 .recipe-content {
-  transition: opacity 0.15s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   opacity: 1;
+  transform: translateY(0);
 }
 
 .recipe-content.fade-out {
   opacity: 0;
+  transform: translateY(-10px);
 }
 
 .recipe-content.fade-in {
   opacity: 1;
+  transform: translateY(0);
 }
 
 /* Recipe stat badges for quick-scan information */
@@ -871,7 +874,7 @@
   margin: 0 auto 2rem !important;
   position: relative;
   overflow: hidden;
-  background: var(--color-background, oklch(0.98 0 0));
+  background: oklch(0.15 0 0);
   border-radius: 1rem;
   box-shadow: 0 8px 32px oklch(0 0 0 / 0.15);
 }

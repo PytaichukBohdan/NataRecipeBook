@@ -149,7 +149,7 @@ function RecipeCardComponent({ recipe, categoryNameUk, categoryId, isFavorite, o
           <div className="recipe-video-container">
             <LazyVideo
               src={videoPath}
-              poster={imagePath}
+              poster={cookedImagePath}
               alt={recipe.title}
               className="absolute inset-0"
               startDelay={3000}
