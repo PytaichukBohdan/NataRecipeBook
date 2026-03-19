@@ -82,6 +82,7 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
   useEffect(() => {
     const video = videoRef.current
     if (video && src && isDelayComplete) {
+      video.currentTime = 0 // Always start from the beginning
       video.play().catch(() => {})
     }
   }, [src, isDelayComplete])
