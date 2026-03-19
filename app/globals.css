@@ -262,19 +262,16 @@
 
 /* Adding elegant fade animations for recipe transitions */
 .recipe-content {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
   opacity: 1;
-  transform: translateY(0);
 }
 
 .recipe-content.fade-out {
   opacity: 0;
-  transform: translateY(-10px);
 }
 
 .recipe-content.fade-in {
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* Recipe stat badges for quick-scan information */

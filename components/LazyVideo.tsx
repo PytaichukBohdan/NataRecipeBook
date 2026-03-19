@@ -135,13 +135,15 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
   }
 
   return (
-    <div ref={containerRef} className={`${className} w-full h-full`}>
+    <div ref={containerRef} className={`${className} w-full h-full`} style={{ backgroundColor: '#f5f0eb' }}>
       {/* Always show poster as background — visible during load & fade transitions */}
       {poster && (
         <img
           src={poster}
           alt={alt}
           loading="eager"
+          decoding="sync"
+          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
@@ -158,7 +160,6 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
         onError={handleError}
         style={{
           opacity: videoOpacity,
-          transition: isLoaded ? 'none' : 'opacity 0.4s ease-in',
         }}
         className="absolute inset-0 w-full h-full object-cover"
       />
