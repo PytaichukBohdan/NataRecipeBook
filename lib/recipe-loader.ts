@@ -2,7 +2,7 @@ import type { RecipeData } from "@/types/recipe"
 import recipesData from "@/data/recipes.json"
 
 // Cache-busting version - increment when updating images/videos
-const ASSET_VERSION = "v33"
+const ASSET_VERSION = "v34"
 
 /**
  * Loads and validates recipe data from recipes.json
