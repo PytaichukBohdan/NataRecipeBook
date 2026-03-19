@@ -125,7 +125,6 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
         ref={videoRef}
         src={src}
         poster={poster}
-        loop
         muted
         playsInline
         preload="auto"
