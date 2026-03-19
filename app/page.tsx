@@ -332,7 +332,7 @@ export default function RecipePage() {
       </div>
 
       {/* Page Content */}
-      <div className={`recipe-content ${isAnimating ? "fade-out" : "fade-in"}`}>
+      <div key={currentPageIndex} className={`recipe-content ${isAnimating ? "fade-out" : "fade-in"}`}>
         {renderPage()}
       </div>
 
