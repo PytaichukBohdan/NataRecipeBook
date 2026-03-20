@@ -64,7 +64,7 @@ export function deriveCookedImagePath(imagePath: string): string {
   const directory = imagePath.substring(0, lastSlash)
   const filename = imagePath.substring(lastSlash + 1)
 
-  return `${directory}/cooked/${filename}?${ASSET_VERSION}`
+  return `${directory}/cooked/${filename}`
 }
 
 /**
@@ -84,5 +84,5 @@ export function deriveVideoPath(imagePath: string): string {
   // Change extension to .mp4
   const videoFilename = filename.replace(/\.(jpeg|jpg|png|webp)$/i, '.mp4')
 
-  return `${directory}/videos/${videoFilename}?${ASSET_VERSION}`
+  return `${directory}/videos/${videoFilename}`
 }

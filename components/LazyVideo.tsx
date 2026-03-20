@@ -117,6 +117,8 @@ function LazyVideoComponent({ src, poster, alt, className = '', fadeTransition =
         <img
           src={poster}
           alt={alt}
+          loading="eager"
+          decoding="sync"
           className="absolute inset-0 w-full h-full object-cover"
         />
       )}
